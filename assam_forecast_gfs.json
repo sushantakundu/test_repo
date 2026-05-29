@@ -1,0 +1,338 @@
+{
+    "source": "GFS",
+    "model_run": "2026-05-29 05:30 IST",
+    "Valid (Today)": "29 May 05:30 - 30 May 05:30",
+    "Valid (Tomorrow)": "30 May 05:30 - 31 May 05:30",
+    "data": [
+        {
+            "district": "Jorhat",
+            "district_id": "jorhat",
+            "Rain Today": 2.38,
+            "Rain Tomorrow": 0.82,
+            "tmax Today": 33.8,
+            "tmin Today": 24.5,
+            "tmax Tomorrow": 33.1,
+            "tmin Tomorrow": 23.7
+        },
+        {
+            "district": "Golaghat",
+            "district_id": "golaghat",
+            "Rain Today": 0.62,
+            "Rain Tomorrow": 3.6,
+            "tmax Today": 33.8,
+            "tmin Today": 23.9,
+            "tmax Tomorrow": 34.2,
+            "tmin Tomorrow": 23.8
+        },
+        {
+            "district": "Nagaon",
+            "district_id": "nagaon",
+            "Rain Today": 0.04,
+            "Rain Tomorrow": 6.09,
+            "tmax Today": 34.6,
+            "tmin Today": 25.1,
+            "tmax Tomorrow": 35.5,
+            "tmin Tomorrow": 24.3
+        },
+        {
+            "district": "East Karbi Anglong",
+            "district_id": "east_karbi_anglong",
+            "Rain Today": 0.18,
+            "Rain Tomorrow": 3.02,
+            "tmax Today": 34.0,
+            "tmin Today": 22.4,
+            "tmax Tomorrow": 34.5,
+            "tmin Tomorrow": 22.2
+        },
+        {
+            "district": "Morigaon",
+            "district_id": "morigaon",
+            "Rain Today": 0.49,
+            "Rain Tomorrow": 7.53,
+            "tmax Today": 35.6,
+            "tmin Today": 24.8,
+            "tmax Tomorrow": 36.4,
+            "tmin Tomorrow": 23.6
+        },
+        {
+            "district": "Dhubri",
+            "district_id": "dhubri",
+            "Rain Today": 1.18,
+            "Rain Tomorrow": 1.22,
+            "tmax Today": 33.5,
+            "tmin Today": 25.5,
+            "tmax Tomorrow": 33.9,
+            "tmin Tomorrow": 25.6
+        },
+        {
+            "district": "West Karbi Anglong",
+            "district_id": "west_karbi_anglong",
+            "Rain Today": 2.15,
+            "Rain Tomorrow": 10.76,
+            "tmax Today": 33.0,
+            "tmin Today": 21.5,
+            "tmax Tomorrow": 33.5,
+            "tmin Tomorrow": 21.3
+        },
+        {
+            "district": "Kamrup Metro",
+            "district_id": "kamrup_metro",
+            "Rain Today": 0.39,
+            "Rain Tomorrow": 4.51,
+            "tmax Today": 35.7,
+            "tmin Today": 24.7,
+            "tmax Tomorrow": 36.4,
+            "tmin Tomorrow": 23.4
+        },
+        {
+            "district": "Sibsagar",
+            "district_id": "sibsagar",
+            "Rain Today": 0.46,
+            "Rain Tomorrow": 0.06,
+            "tmax Today": 34.1,
+            "tmin Today": 25.6,
+            "tmax Tomorrow": 32.6,
+            "tmin Tomorrow": 24.4
+        },
+        {
+            "district": "Barpeta",
+            "district_id": "barpeta",
+            "Rain Today": 1.36,
+            "Rain Tomorrow": 1.52,
+            "tmax Today": 34.8,
+            "tmin Today": 25.3,
+            "tmax Tomorrow": 35.4,
+            "tmin Tomorrow": 25.4
+        },
+        {
+            "district": "Kamrup Rural",
+            "district_id": "kamrup_rural",
+            "Rain Today": 1.21,
+            "Rain Tomorrow": 6.34,
+            "tmax Today": 33.9,
+            "tmin Today": 23.3,
+            "tmax Tomorrow": 34.4,
+            "tmin Tomorrow": 23.4
+        },
+        {
+            "district": "Goalpara",
+            "district_id": "goalpara",
+            "Rain Today": 0.5,
+            "Rain Tomorrow": 1.86,
+            "tmax Today": 33.6,
+            "tmin Today": 24.8,
+            "tmax Tomorrow": 34.5,
+            "tmin Tomorrow": 24.5
+        },
+        {
+            "district": "Lakhimpur",
+            "district_id": "lakhimpur",
+            "Rain Today": 0.1,
+            "Rain Tomorrow": 0.69,
+            "tmax Today": 33.2,
+            "tmin Today": 23.8,
+            "tmax Tomorrow": 33.2,
+            "tmin Tomorrow": 23.9
+        },
+        {
+            "district": "Darrang",
+            "district_id": "darrang",
+            "Rain Today": 0.06,
+            "Rain Tomorrow": 1.08,
+            "tmax Today": 35.6,
+            "tmin Today": 26.0,
+            "tmax Tomorrow": 36.2,
+            "tmin Tomorrow": 24.8
+        },
+        {
+            "district": "Chirang",
+            "district_id": "chirang",
+            "Rain Today": 0.41,
+            "Rain Tomorrow": 3.09,
+            "tmax Today": 33.0,
+            "tmin Today": 23.7,
+            "tmax Tomorrow": 33.6,
+            "tmin Tomorrow": 23.3
+        },
+        {
+            "district": "Baksa",
+            "district_id": "baksa",
+            "Rain Today": 0.03,
+            "Rain Tomorrow": 1.7,
+            "tmax Today": 34.4,
+            "tmin Today": 23.8,
+            "tmax Tomorrow": 34.6,
+            "tmin Tomorrow": 23.2
+        },
+        {
+            "district": "Nalbari",
+            "district_id": "nalbari",
+            "Rain Today": 0.79,
+            "Rain Tomorrow": 3.96,
+            "tmax Today": 35.0,
+            "tmin Today": 25.3,
+            "tmax Tomorrow": 35.7,
+            "tmin Tomorrow": 25.6
+        },
+        {
+            "district": "Bongaigaon",
+            "district_id": "bongaigaon",
+            "Rain Today": 0.28,
+            "Rain Tomorrow": 1.31,
+            "tmax Today": 34.3,
+            "tmin Today": 25.5,
+            "tmax Tomorrow": 34.4,
+            "tmin Tomorrow": 25.3
+        },
+        {
+            "district": "Dibrugarh",
+            "district_id": "dibrugarh",
+            "Rain Today": 0.23,
+            "Rain Tomorrow": 0.17,
+            "tmax Today": 33.7,
+            "tmin Today": 25.2,
+            "tmax Tomorrow": 32.0,
+            "tmin Tomorrow": 23.8
+        },
+        {
+            "district": "Tinsukia",
+            "district_id": "tinsukia",
+            "Rain Today": 0.92,
+            "Rain Tomorrow": 0.25,
+            "tmax Today": 33.2,
+            "tmin Today": 24.1,
+            "tmax Tomorrow": 32.5,
+            "tmin Tomorrow": 23.2
+        },
+        {
+            "district": "Dhemaji",
+            "district_id": "dhemaji",
+            "Rain Today": 0.05,
+            "Rain Tomorrow": 0.0,
+            "tmax Today": 33.0,
+            "tmin Today": 24.5,
+            "tmax Tomorrow": 32.3,
+            "tmin Tomorrow": 23.5
+        },
+        {
+            "district": "Kokrajhar",
+            "district_id": "kokrajhar",
+            "Rain Today": 0.13,
+            "Rain Tomorrow": 1.3,
+            "tmax Today": 33.7,
+            "tmin Today": 23.7,
+            "tmax Tomorrow": 34.4,
+            "tmin Tomorrow": 23.5
+        },
+        {
+            "district": "Udalguri",
+            "district_id": "udalguri",
+            "Rain Today": 0.06,
+            "Rain Tomorrow": 0.51,
+            "tmax Today": 34.5,
+            "tmin Today": 25.0,
+            "tmax Tomorrow": 35.1,
+            "tmin Tomorrow": 25.2
+        },
+        {
+            "district": "Hojai",
+            "district_id": "hojai",
+            "Rain Today": 0.01,
+            "Rain Tomorrow": 3.08,
+            "tmax Today": 34.4,
+            "tmin Today": 24.1,
+            "tmax Tomorrow": 35.5,
+            "tmin Tomorrow": 23.6
+        },
+        {
+            "district": "Charaideo",
+            "district_id": "charaideo",
+            "Rain Today": 1.14,
+            "Rain Tomorrow": 1.31,
+            "tmax Today": 32.8,
+            "tmin Today": 24.1,
+            "tmax Tomorrow": 31.4,
+            "tmin Tomorrow": 23.2
+        },
+        {
+            "district": "Majuli",
+            "district_id": "majuli",
+            "Rain Today": 1.69,
+            "Rain Tomorrow": 0.44,
+            "tmax Today": 33.9,
+            "tmin Today": 25.2,
+            "tmax Tomorrow": 33.3,
+            "tmin Tomorrow": 24.9
+        },
+        {
+            "district": "Mancachar",
+            "district_id": "mancachar",
+            "Rain Today": 1.34,
+            "Rain Tomorrow": 2.22,
+            "tmax Today": 33.5,
+            "tmin Today": 24.4,
+            "tmax Tomorrow": 33.6,
+            "tmin Tomorrow": 24.6
+        },
+        {
+            "district": "Biswanath",
+            "district_id": "biswanath",
+            "Rain Today": 0.0,
+            "Rain Tomorrow": 0.74,
+            "tmax Today": 33.5,
+            "tmin Today": 23.7,
+            "tmax Tomorrow": 34.5,
+            "tmin Tomorrow": 23.9
+        },
+        {
+            "district": "Sonitpur",
+            "district_id": "sonitpur",
+            "Rain Today": 0.01,
+            "Rain Tomorrow": 0.36,
+            "tmax Today": 34.1,
+            "tmin Today": 23.7,
+            "tmax Tomorrow": 34.8,
+            "tmin Tomorrow": 24.3
+        },
+        {
+            "district": "Cachar",
+            "district_id": "cachar",
+            "Rain Today": 1.53,
+            "Rain Tomorrow": 7.95,
+            "tmax Today": 33.3,
+            "tmin Today": 22.2,
+            "tmax Tomorrow": 32.6,
+            "tmin Tomorrow": 22.8
+        },
+        {
+            "district": "Karimganj",
+            "district_id": "karimganj",
+            "Rain Today": 5.16,
+            "Rain Tomorrow": 6.55,
+            "tmax Today": 34.2,
+            "tmin Today": 23.2,
+            "tmax Tomorrow": 34.4,
+            "tmin Tomorrow": 23.5
+        },
+        {
+            "district": "Hailakandi",
+            "district_id": "hailakandi",
+            "Rain Today": 6.22,
+            "Rain Tomorrow": 8.44,
+            "tmax Today": 35.6,
+            "tmin Today": 22.2,
+            "tmax Tomorrow": 33.5,
+            "tmin Tomorrow": 22.5
+        },
+        {
+            "district": "Dima Hasao",
+            "district_id": "dima_hasao",
+            "Rain Today": 0.93,
+            "Rain Tomorrow": 4.76,
+            "tmax Today": 34.6,
+            "tmin Today": 20.8,
+            "tmax Tomorrow": 34.1,
+            "tmin Tomorrow": 21.4
+        }
+    ]
+}
