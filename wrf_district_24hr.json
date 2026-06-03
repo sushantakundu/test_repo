@@ -13,7 +13,7 @@
         {
             "district": "Barpeta",
             "district_id": "barpeta",
-            "Rain Today": 0.0,
+            "Rain Today": 50.0,
             "Rain Tomorrow": 0.0
         },
         {
@@ -103,7 +103,7 @@
         {
             "district": "Hojai",
             "district_id": "hojai",
-            "Rain Today": 0.0,
+            "Rain Today": 100.0,
             "Rain Tomorrow": 5.99
         },
         {
