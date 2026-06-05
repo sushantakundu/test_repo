@@ -1,8 +1,8 @@
 {
     "Source": "Hybrid Forecast",
     "Model Run": "05 Jun 05:30 IST",
-    "Valid (Today)": "05 Jun 05:30 \u2013 06 Jun 05:30",
-    "Valid (Tomorrow)": "06 Jun 05:30 \u2013 07 Jun 05:30",
+    "Valid (Today)": "05 Jun 05:30 – 06 Jun 05:30",
+    "Valid (Tomorrow)": "06 Jun 05:30 – 07 Jun 05:30",
     "data": [
         {
             "district": "Baksa",
