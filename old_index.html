@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMD Live Map - Kamrup Metro</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <style>
+    body { margin:0; }
+    #map { height: 100vh; }
+
+    /* =========================
+       RAINFALL RING
+    ========================= */
+    .rain-ring {
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.6);
+      animation: pulse 1.5s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.5); opacity: 0.9; }
+      70% { transform: scale(1.6); opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* =========================
+       INFO BOX
+    ========================= */
+    .info-box {
+      background: white;
+      padding: 8px 12px;
+      font-size: 13px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      line-height: 1.5;
+    }
+
+    /* =========================
+       LEGEND
+    ========================= */
+    .legend {
+      background: white;
+      padding: 10px;
+      font-size: 13px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+const map = L.map('map').setView([26.1, 91.7], 10);
+
+// =============================
+// BASEMAP (slightly muted)
+// =============================
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  { opacity: 0.75 }
+).addTo(map);
+
+// =============================
+// TEMPERATURE COLOR
+// =============================
+function getColor(temp) {
+  return temp > 35 ? "#d73027" :
+         temp > 30 ? "#fc8d59" :
+         temp > 25 ? "#fee08b" :
+         temp > 20 ? "#91bfdb" :
+                     "#4575b4";
+}
+
+// =============================
+// RAINFALL RING SIZE
+// =============================
+function getRingSize(rain) {
+  if (rain >= 10) return 36;
+  if (rain >= 5) return 30;
+  if (rain >= 1) return 24;
+  return 0;
+}
+
+// =============================
+// LOAD BOUNDARY
+// =============================
+fetch("metro_boundary.geojson")
+  .then(res => res.json())
+  .then(data => {
+    const boundary = L.geoJSON(data, {
+      style: {
+        color: "black",
+        weight: 2,
+        fillOpacity: 0.05
+      }
+    }).addTo(map);
+
+    map.fitBounds(boundary.getBounds());
+  });
+
+// =============================
+// LAYER GROUP
+// =============================
+let layerGroup = L.layerGroup().addTo(map);
+
+// =============================
+// INFO PANEL
+// =============================
+const info = L.control({position: "topright"});
+
+info.onAdd = function () {
+  this._div = L.DomUtil.create('div', 'info-box');
+  this.update("Loading...", "Waiting...");
+  return this._div;
+};
+
+info.update = function(time, status) {
+  this._div.innerHTML = `
+    <b>Last Update:</b><br>${time}<br>
+    <b>Status:</b> ${status}
+  `;
+};
+
+info.addTo(map);
+
+// =============================
+// LOAD DATA
+// =============================
+function loadData() {
+
+  info.update("Updating...", "Fetching data");
+
+  layerGroup.clearLayers();
+
+  fetch("https://raw.githubusercontent.com/sushantakundu/assam-weather-forecast/main/imd_realtime_latest.json")
+    .then(res => res.json())
+    .then(data => {
+
+      const generated = data.generated_at || "";
+      let timeStr = generated;
+
+      try {
+        const dt = new Date(generated + " UTC");
+        timeStr = dt.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }) + " IST";
+      } catch {}
+
+      data.data.forEach(stn => {
+
+        const lat = parseFloat(stn.Latitude);
+        const lon = parseFloat(stn.Longitude);
+        const temp = parseFloat(stn.CURR_TEMP);
+        const rain = parseFloat(stn.RAINFALL_SEL);
+
+        if (!lat || !lon) return;
+
+        const color = getColor(temp);
+        const ringSize = getRingSize(rain);
+
+        const baseSize = rain > 0 ? 12 : 10;
+
+        let ringHTML = "";
+        if (ringSize > 0) {
+          ringHTML = `
+            <div class="rain-ring"
+                 style="width:${ringSize}px;height:${ringSize}px;">
+            </div>`;
+        }
+
+        const html = `
+          <div style="
+            width:${baseSize}px;
+            height:${baseSize}px;
+            background:${color};
+            border:2px solid white;
+            border-radius:50%;
+            position:relative;
+            box-shadow:0 0 4px rgba(0,0,0,0.6);
+          ">
+            ${ringHTML}
+          </div>
+        `;
+
+        const icon = L.divIcon({
+          className: "",
+          html: html,
+          iconSize: [24, 24]
+        });
+
+        const marker = L.marker([lat, lon], { icon: icon });
+
+        marker.bindPopup(
+          `<b>${stn.STATION}</b><br>
+           🌡 ${temp.toFixed(1)}°C<br>
+           🌧 ${rain.toFixed(1)} mm`
+        );
+
+        layerGroup.addLayer(marker);
+      });
+
+      info.update(timeStr, "Updated ✔");
+
+    })
+    .catch(err => {
+      console.error(err);
+      info.update("Error", "Failed ❌");
+    });
+}
+
+// =============================
+// INITIAL + AUTO REFRESH
+// =============================
+loadData();
+setInterval(loadData, 300000);
+
+// =============================
+// LEGEND
+// =============================
+const legend = L.control({position: "bottomright"});
+
+legend.onAdd = function () {
+  const div = L.DomUtil.create("div", "legend");
+
+  div.innerHTML += "<b>Temperature (°C)</b><br>";
+  div.innerHTML += '<i style="background:#d73027;width:12px;height:12px;display:inline-block;"></i> >35<br>';
+  div.innerHTML += '<i style="background:#fc8d59;width:12px;height:12px;display:inline-block;"></i> 30–35<br>';
+  div.innerHTML += '<i style="background:#fee08b;width:12px;height:12px;display:inline-block;"></i> 25–30<br>';
+  div.innerHTML += '<i style="background:#91bfdb;width:12px;height:12px;display:inline-block;"></i> 20–25<br>';
+  div.innerHTML += '<i style="background:#4575b4;width:12px;height:12px;display:inline-block;"></i> <20<br>';
+
+  div.innerHTML += "<br><b>Rainfall</b><br>";
+  div.innerHTML += "Pulse ring = Rain present<br>";
+  div.innerHTML += "Bigger ring = Higher rainfall";
+
+  return div;
+};
+
+legend.addTo(map);
+
+</script>
+
+</body>
+</html>
