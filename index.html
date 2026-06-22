@@ -160,6 +160,13 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     transition: background-color 0.3s, border-color 0.3s;
   }
+  .header-meta { text-align:right; font-size:10px; color:var(--muted); line-height:1.4; }
+  .header-meta span { color:var(--accent); }
+  .header-actions { display:flex; align-items:center; gap:12px; }
+  /* Desktop: meta + actions grouped on the right */
+  @media(min-width:769px) {
+    .header-right { display:flex; align-items:center; gap:12px; }
+  }
   .logo { display:flex; align-items:center; gap:10px; }
   .logo-icon {
     width:32px; height:32px; border-radius:8px;
@@ -742,14 +749,50 @@
     .logo-text {
       font-size: 13px !important;
     }
+    /* ── MOBILE HEADER: 3-row layout ─────────────────────────────
+       Row 1: Logo + title
+       Row 2: LIVE status — centred
+       Row 3: Report, ⓘ, Dark Mode — centred
+       Desktop header completely unchanged.
+    ────────────────────────────────────────────────────────────── */
+    header {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 6px !important;
+      padding: 10px 16px !important;
+    }
+    .logo { justify-content: flex-start !important; }
+    /* header-right becomes a column on mobile */
+    .header-right {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 6px !important;
+      width: 100% !important;
+    }
+    /* Row 2 — centred, single line */
+    .header-meta {
+      text-align: center !important;
+      width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0 !important;
+      font-size: 10px !important;
+      flex-wrap: nowrap !important;
+      white-space: nowrap !important;
+    }
+    .header-meta > div:first-child::after {
+      content: ' · ';
+      color: var(--muted);
+    }
+    .header-meta > div { display: inline !important; }
+    /* Row 3 — centred */
     .header-actions {
       width: 100% !important;
       justify-content: center !important;
       gap: 8px !important;
-    }
-    .header-meta {
-      text-align: center !important;
-      width: 100% !important;
+      flex-wrap: nowrap !important;
     }
     
     /* SWIPEABLE TABS FOR SMALL PHONES */
@@ -859,7 +902,7 @@
     }
     .ticker-item .t-dist,
     .ticker-item .t-val  { font-size: 11px !important; }
-    .ticker-item .t-src  { font-size: 8px !important; display: none !important; }
+    .ticker-item .t-src  { font-size: 9px !important; }
 
     .obs-ticker-item {
       padding: 0 10px !important;
@@ -892,16 +935,21 @@
       <div class="logo-sub">HIU-WRD · NESAC · IMD · GFS</div>
     </div>
   </div>
-  <div class="header-actions">
+  <!-- Desktop: meta + buttons grouped right; Mobile: separate rows -->
+  <div class="header-right">
+    <!-- Row 2 (mobile) / meta text (desktop) -->
     <div class="header-meta">
-      <div><span class="live-dot"></span>LIVE · Updated <span id="update-time">—</span> <span id="update-ago" style="color:var(--muted);font-weight:700;"></span></div>
-      <div style="margin-top:2px;">Auto-refresh in <span id="refresh-countdown" style="color:var(--accent);font-weight:700">10:00</span></div>
+      <div><span class="live-dot"></span>LIVE · Updated <span id="update-time">—</span> <span id="update-ago" style="font-weight:700;"></span></div>
+      <div>Auto-refresh in <span id="refresh-countdown" style="color:var(--accent);font-weight:700">10:00</span></div>
     </div>
-    <button class="theme-btn" onclick="generatePDF()" id="pdfBtn" title="Generate PDF Report">
-      📄 <span id="pdfBtnText">Report</span>
-    </button>
-    <button class="theme-btn" onclick="openAboutModal()" id="aboutBtn" title="About this dashboard">ⓘ<span class="about-btn-text"> About</span></button>
-    <button class="theme-btn" onclick="toggleTheme()" id="themeToggleBtn">🌙 Dark Mode</button>
+    <!-- Row 3 (mobile) / buttons (desktop) -->
+    <div class="header-actions">
+      <button class="theme-btn" onclick="generatePDF()" id="pdfBtn" title="Generate PDF Report">
+        📄 <span id="pdfBtnText">Report</span>
+      </button>
+      <button class="theme-btn" onclick="openAboutModal()" id="aboutBtn" title="About this dashboard">ⓘ<span class="about-btn-text"> About</span></button>
+      <button class="theme-btn" onclick="toggleTheme()" id="themeToggleBtn">🌙 Dark Mode</button>
+    </div>
   </div>
 </header>
 
@@ -2029,16 +2077,22 @@ function renderDashboard() {
   if (tomorrowTempEl) tomorrowTempEl.innerHTML = tempCardHTML(hybridTmaxTomorrow, hybridTminTomorrow, hybridMeta.tomorrow || '—', 0.38);
 
   function alertColor(mm) {
-    if (mm <= 64.4)  return '#d97706'; 
-    if (mm <= 115.5) return '#f97316'; 
-    if (mm <= 204.4) return '#ef4444'; 
-    return '#c026d3';                  
+    if (mm <= 64.4)  return '#d97706';
+    if (mm <= 115.5) return '#f97316';
+    if (mm <= 204.4) return '#ef4444';
+    return '#c026d3';
+  }
+  function alertLabel(mm) {
+    if (mm <= 64.4)  return 'Moderate';
+    if (mm <= 115.5) return 'Heavy';
+    if (mm <= 204.4) return 'Very Heavy';
+    return 'Ext. Heavy';
   }
   const alertItems = [];
   wrfData.forEach(d => {
-    [['Rain Today', wrfMeta.today], ['Rain Tomorrow', wrfMeta.tomorrow]].forEach(([key, period]) => {
+    [['Rain Today', 'Today'], ['Rain Tomorrow', 'Tomorrow']].forEach(([key, dayLabel]) => {
       const val = d[key] ?? 0;
-      if (val > 15.5) alertItems.push({ district: d.district, val, period });
+      if (val > 15.5) alertItems.push({ district: d.district, val, dayLabel });
     });
   });
   alertItems.sort((a,b) => b.val - a.val);
@@ -2047,7 +2101,12 @@ function renderDashboard() {
     ticker.style.display = 'flex';
     const itemsHTML = alertItems.map(a => {
       const col = alertColor(a.val);
-      return `<div class="ticker-item"><span class="t-dist" style="color:${col}">${a.district}</span><span class="t-val" style="color:${col}">${a.val.toFixed(1)} mm</span><span class="t-src" style="color:${col};opacity:0.8">WRF · ${a.period}</span></div>`;
+      const lbl = alertLabel(a.val);
+      return `<div class="ticker-item">
+        <span class="t-dist" style="color:${col}">${a.district}</span>
+        <span class="t-val" style="color:${col}">${a.val.toFixed(1)} mm</span>
+        <span class="t-src" style="color:${col};opacity:0.85">${lbl} · ${a.dayLabel}</span>
+      </div>`;
     }).join('');
     document.getElementById('tickerInner').innerHTML = itemsHTML + itemsHTML;
     document.getElementById('tickerInner').style.animationDuration = Math.max(15, alertItems.length * 4) + 's';
