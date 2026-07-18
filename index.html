@@ -9,6 +9,17 @@
      SECTION 1 — EXTERNAL LIBRARIES
      Leaflet (maps), html2canvas + jsPDF (PDF bulletin)
      ════════════════════════════════════════════════════════════════════ -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSXYGE9RTD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSXYGE9RTD');
+</script>
+<!-- Chart.js for Historical Rainfall Analysis tab -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -292,6 +303,9 @@
     #dashMap { height: 280px !important; }
     /* Temperature cards hidden on mobile only — rainfall cards remain */
     #dashTempColumn { display: none !important; }
+    /* Rainfall Analysis tab — stack panels on mobile */
+    #raMainGrid { grid-template-columns: 1fr !important; height: auto !important; }
+    #raChoroMap { height: 220px !important; }
   }
 
   /* Hide logo icon on mobile — save header space */
@@ -958,6 +972,7 @@
   <div class="tab" onclick="showTab('map',this)">Live Weather</div>
   <div class="tab" onclick="showTab('distmap',this)">District Forecast Map</div>
   <div class="tab" onclick="showTab('forecast',this)">Hybrid Forecast</div>
+  <div class="tab" onclick="showTab('rainfall',this)">Rainfall Analysis</div>
 </nav>
 
 <div id="disclaimerBanner" style="background:rgba(244,162,56,0.1);border-bottom:1px solid rgba(244,162,56,0.25);
@@ -1158,6 +1173,10 @@
           <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-size:11px;font-weight:700;color:var(--text);">
             <input type="radio" name="mapLayerSelect" value="wind" onchange="toggleInteractiveMapLayer()" style="accent-color:var(--accent);cursor:pointer;"> 🌬️ Wind Speed
           </label>
+          <!-- Water Level — shown only when FEATURE_WATER_LEVEL is enabled via JS boot -->
+          <label id="waterLevelLayerControl" style="display:none;align-items:center;gap:6px;cursor:pointer;font-size:11px;font-weight:700;color:var(--text);">
+            <input type="radio" name="mapLayerSelect" value="waterlevel" onchange="toggleInteractiveMapLayer()" style="accent-color:#0284c7;cursor:pointer;"> 💧 Water Level
+          </label>
         </div>
 
         <div style="font-size:9px; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; border-bottom:1px solid var(--border); padding-bottom:4px; margin-top:4px;">Overlays</div>
@@ -1222,9 +1241,15 @@
           <span style="color:var(--muted)">Wind Speed (m/s):</span>
           <span style="color:#28a745">● 0–1.5</span> <span style="color:#007bff">● 1.5–5</span> <span style="color:#fd7e14">● 5–10.8</span> <span style="color:#dc3545">● &gt;10.8</span>
         </div>
-
-      </div>
-    </div>
+        <div id="legendWaterLevelMap" style="display:none;align-items:center;gap:8px;flex-wrap:wrap;font-size:10px;font-weight:700;">
+          <span style="color:var(--muted)">Water Level:</span>
+          <span style="display:inline-flex;align-items:center;gap:3px;">
+            <span style="display:inline-block;width:10px;height:10px;background:#0284c7;transform:rotate(45deg);border:1.5px solid #fff;"></span>
+            <span style="color:#0284c7">AWLR / ARG+AWLR Gauge (m above MSL)</span>
+          </span>
+        </div>
+      </div><!-- end mapLegendPanel -->
+    </div><!-- end flex:7 map panel -->
 
     <div style="flex:3; display:flex; flex-direction:column; gap:10px; background:var(--panel); border:1px solid var(--border); border-radius:8px; padding:14px; min-width:260px; max-width:340px; overflow:hidden;">
       <div style="display:flex;gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;flex-shrink:0;">
@@ -1273,8 +1298,8 @@
         <div class="loading"><div class="spinner"></div> Loading stations…</div>
       </div>
     </div>
-  </div>
-</div>
+  </div>  <!-- end map-stations-container -->
+</div>  <!-- end page-map -->
 
 <!-- ════════════════════════════════════════════════════════════════════
      SECTION 6 — HTML: HYBRID FORECAST PAGE
@@ -1342,6 +1367,124 @@
   </div>
 </div>
 </main>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     SECTION 7B — HTML: HISTORICAL RAINFALL ANALYSIS PAGE
+     GPM IMERG Final Run V07 · 2000–2025 · District Level
+     ════════════════════════════════════════════════════════════════════ -->
+<div class="page" id="page-rainfall">
+
+  <!-- Compact single-row header: title + mode buttons + year seeker -->
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px;">
+    <div class="section-title" style="margin:0;white-space:nowrap;">Historical Rainfall Analysis</div>
+    <!-- Mode buttons -->
+    <div style="display:flex;gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;">
+      <button id="raBtn-monthly" onclick="setRaMode('monthly')"
+        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--panel);color:var(--muted);transition:all 0.2s;">
+        Monthly View
+      </button>
+      <button id="raBtn-trend" onclick="setRaMode('trend')"
+        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--panel);color:var(--muted);transition:all 0.2s;">
+        Yearly Trend
+      </button>
+      <button id="raBtn-clim" onclick="setRaMode('clim')"
+        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--accent);color:#fff;transition:all 0.2s;">
+        Long-term Average
+      </button>
+    </div>
+    <!-- Year seeker — active only in Monthly View -->
+    <div id="raYearSeekerWrap" style="display:none;align-items:center;gap:6px;font-size:11px;font-weight:700;color:var(--muted);">
+      <span>Year:</span>
+      <input type="range" id="raYearSlider" min="2000" max="2024" value="2024" step="1"
+        oninput="document.getElementById('raYearLabel').textContent=this.value; renderRaAll();"
+        style="width:160px;accent-color:var(--accent);">
+      <span id="raYearLabel" style="color:var(--accent);font-weight:800;min-width:36px;">2024</span>
+    </div>
+  </div>
+
+  <!-- Main grid: equal width & height panels -->
+  <div id="raMainGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch;height:calc(100vh - 200px);min-height:580px;">
+
+    <!-- ═══ LEFT PANEL: District ═══ -->
+    <div style="display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px;overflow:hidden;">
+      <!-- District header -->
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <span style="font-size:11px;font-weight:800;color:var(--muted);letter-spacing:0.05em;white-space:nowrap;">DISTRICT:</span>
+        <select id="raDistrict" onchange="renderRaAll()"
+          style="flex:1;background:var(--panel2);border:1px solid var(--border);color:var(--text);
+                 font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;
+                 padding:6px 10px;border-radius:8px;outline:none;"></select>
+      </div>
+      <!-- District chart -->
+      <div style="flex-shrink:0;height:230px;background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:10px;display:flex;flex-direction:column;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px;flex-shrink:0;">
+          <div id="raDistChartTitle" style="font-size:10px;font-weight:800;color:var(--text);"></div>
+          <div id="raDistStat" style="font-size:9px;font-weight:700;color:var(--muted);"></div>
+        </div>
+        <div id="raDistChartWrap" style="flex:1;min-height:0;position:relative;">
+          <canvas id="raDistChartCanvas" style="width:100%;height:100%;"></canvas>
+        </div>
+      </div>
+      <!-- Map mode toggle + legend -->
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap;">
+        <div style="display:flex;gap:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;">
+          <button id="raMapBtn-annual" onclick="setRaMapMode('annual')"
+            style="padding:5px 12px;font-family:'Google Sans',sans-serif;font-size:10px;font-weight:700;border:none;cursor:pointer;background:var(--accent);color:#fff;transition:all 0.2s;">
+            Yearly Average
+          </button>
+          <button id="raMapBtn-trend" onclick="setRaMapMode('trend')"
+            style="padding:5px 12px;font-family:'Google Sans',sans-serif;font-size:10px;font-weight:700;border:none;cursor:pointer;background:var(--panel);color:var(--muted);transition:all 0.2s;">
+            Trend (mm/decade)
+          </button>
+        </div>
+        <div id="raChoroLegendAnnual" style="display:flex;align-items:center;gap:4px;font-size:9px;font-weight:700;color:var(--muted);flex:1;">
+          <span>0</span>
+          <div style="flex:1;height:7px;border-radius:3px;background:linear-gradient(to right,#f0f9ff,#bae6fd,#0284c7,#d97706,#ef4444,#7e22ce);"></div>
+          <span>&gt;4000mm</span>
+        </div>
+        <div id="raChoroLegendTrend" style="display:none;align-items:center;gap:4px;font-size:9px;font-weight:700;color:var(--muted);flex:1;">
+          <span>-60</span>
+          <div style="flex:1;height:7px;border-radius:3px;background:linear-gradient(to right,#ff5050,#f8fafc,#5080ff);"></div>
+          <span>+60mm/dec</span>
+        </div>
+      </div>
+      <!-- Choropleth map — flex:1 fills remaining panel height -->
+      <div id="raChoroMap" style="flex:1;min-height:0;width:100%;border-radius:8px;overflow:hidden;border:1px solid var(--border);cursor:pointer;position:relative;"></div>
+    </div>
+
+    <!-- ═══ RIGHT PANEL: All Assam ═══ -->
+    <div style="display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px;overflow:hidden;">
+      <!-- Header -->
+      <div style="flex-shrink:0;font-size:13px;font-weight:900;color:var(--text);letter-spacing:0.03em;">All Assam</div>
+      <!-- Assam chart -->
+      <div style="flex-shrink:0;height:230px;background:var(--panel2);border:1px solid var(--border);border-radius:8px;padding:10px;display:flex;flex-direction:column;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px;flex-shrink:0;">
+          <div id="raAssamChartTitle" style="font-size:10px;font-weight:800;color:var(--text);"></div>
+          <div id="raAssamStat" style="font-size:9px;font-weight:700;color:var(--muted);"></div>
+        </div>
+        <div id="raAssamChartWrap" style="flex:1;min-height:0;position:relative;">
+          <canvas id="raAssamChartCanvas" style="width:100%;height:100%;"></canvas>
+        </div>
+      </div>
+      <!-- Heatmap header + colour bar -->
+      <div style="flex-shrink:0;">
+        <div id="raHeatmapTitle" style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:5px;"></div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:9px;font-weight:700;color:var(--muted);">
+          <span>0</span>
+          <div style="flex:1;height:7px;border-radius:3px;background:linear-gradient(to right,#f0f9ff,#bae6fd,#0284c7,#d97706,#ef4444,#7e22ce);"></div>
+          <span>&gt;600mm</span>
+        </div>
+      </div>
+      <!-- Heatmap -->
+      <div style="flex:1;min-height:0;overflow:auto;border:1px solid var(--border);border-radius:8px;-webkit-overflow-scrolling:touch;">
+        <table id="raHeatmap" style="width:100%;border-collapse:collapse;font-size:9px;"></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════════
+     SECTION 8 — HTML: PDF BULLETIN TEMPLATE
 
 <!-- ════════════════════════════════════════════════════════════════════
      SECTION 8 — HTML: PDF BULLETIN TEMPLATE (hidden off-screen)
@@ -1637,6 +1780,11 @@ function toggleTheme() {
   const col = target === 'dark' ? '#1e3a4a' : '#ffffff';
   if (typeof dmLayerRain !== 'undefined' && dmLayerRain) dmLayerRain.setStyle({ color: col });
   if (typeof dmLayerTemp !== 'undefined' && dmLayerTemp) dmLayerTemp.setStyle({ color: col });
+  // Update rainfall choropleth map background (no tile layer)
+  if (raChoroMapObj) {
+    const cont = raChoroMapObj.getContainer();
+    if (cont) cont.style.background = target === 'dark' ? '#0f172a' : '#f8fafc';
+  }
 
   // Redraw district boundary overlay with new theme colour only
   if (typeof activeDistrictLayer !== 'undefined' && activeDistrictLayer) {
@@ -1647,11 +1795,16 @@ function toggleTheme() {
 }
 
 // ── SECTION B: DATA CONSTANTS & GLOBALS ─────────────────────────────
+// ── FEATURE FLAGS ─────────────────────────────────────────────────────
+// Set to false to completely hide Water Level (AWLR) data — confidential
+//const FEATURE_WATER_LEVEL = true;
+const FEATURE_WATER_LEVEL = true;
 const URLS = {
-  realtime: 'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/Realtime_Weather_Data.json',
-  gfs:      'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/assam_forecast_gfs.json',
-  wrf:      'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/wrf_district_24hr.json',
-  hybrid:   'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/hybrid_forecast_wrd.json'
+  realtime:   'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/Realtime_Weather_Data.json',
+  gfs:        'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/assam_forecast_gfs.json',
+  wrf:        'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/wrf_district_24hr.json',
+  hybrid:     'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/hybrid_forecast_wrd.json',
+  waterLevel: 'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/Realtime_WaterLevel_Data.json'
 };
 
 function utcTimeToIST(timeStr) {
@@ -1683,6 +1836,7 @@ function utcDatetimeToIST(str) {
 }
 
 let stationsData = [], gfsData = [], wrfData = [], hybridData = [];
+let waterLevelData = []; // CWC + HIU-WRD gauge readings (Realtime_WaterLevel_Data.json)
 let hybridMeta = { run:'—', today:'—', tomorrow:'—' };
 let selectedDistrict = '';
 let userLat = null, userLon = null;
@@ -1782,14 +1936,16 @@ async function loadAll(forceRefresh=false, retryCount=0) {
   }
   document.getElementById('loading-status').textContent = retryCount > 0 ? `⚠ Verifying data (${retryCount}/3)…` : 'Fetching data…';
   try {
-    const [rt, gfs, wrf, hyb] = await Promise.all([
+    const [rt, gfs, wrf, hyb, wl] = await Promise.all([
       fetchJSON(URLS.realtime, forceRefresh), fetchJSON(URLS.gfs, forceRefresh),
-      fetchJSON(URLS.wrf, forceRefresh), fetchJSON(URLS.hybrid, forceRefresh)
+      fetchJSON(URLS.wrf, forceRefresh), fetchJSON(URLS.hybrid, forceRefresh),
+      FEATURE_WATER_LEVEL ? fetchJSON(URLS.waterLevel, forceRefresh) : Promise.resolve(null)
     ]);
-    stationsData = rt?.data  || [];
-    gfsData      = gfs?.data || [];
-    wrfData      = wrf?.data || [];
-    hybridData   = hyb?.data || [];
+    stationsData   = rt?.data  || [];
+    gfsData        = gfs?.data || [];
+    wrfData        = wrf?.data || [];
+    hybridData     = hyb?.data || [];
+    waterLevelData = wl?.data  || [];
     if (hyb) hybridMeta = { run: hyb['Model Run']||'—', today: hyb['Valid (Today)']||'—', tomorrow: hyb['Valid (Tomorrow)']||'—' };
 
     if (!isDataValid()) {
@@ -2438,11 +2594,12 @@ function renderForecastTables() {
 const NE_CENTER = [26.2, 93.0]; const NE_ZOOM = 6.8;
 let mapInteractive = null; 
 let layerGroupPresent = null;
-let layerGroupAccum = null;
-let layerGroupTemp = null;
-let layerGroupHum = null;
-let layerGroupPress = null;
-let layerGroupWind = null;
+let layerGroupAccum   = null;
+let layerGroupTemp    = null;
+let layerGroupHum     = null;
+let layerGroupPress   = null;
+let layerGroupWind    = null;
+let layerGroupWaterLevel = null; // AWLR water level stations
 let layerGroupAllStations = null;
 let activeRadarLayer = null;
 let activeDistrictLayer = null;
@@ -2506,12 +2663,13 @@ function initInteractiveMap() {
   if (!mapInteractive) {
     mapInteractive = L.map('mapInteractive', { zoomControl:true, attributionControl:true }).setView(NE_CENTER, NE_ZOOM);
     
-    layerGroupPresent = L.layerGroup().addTo(mapInteractive);
-    layerGroupAccum = L.layerGroup();
-    layerGroupTemp = L.layerGroup();
-    layerGroupHum = L.layerGroup();
-    layerGroupPress = L.layerGroup();
-    layerGroupWind = L.layerGroup();
+    layerGroupPresent    = L.layerGroup().addTo(mapInteractive);
+    layerGroupAccum      = L.layerGroup();
+    layerGroupTemp       = L.layerGroup();
+    layerGroupHum        = L.layerGroup();
+    layerGroupPress      = L.layerGroup();
+    layerGroupWind       = L.layerGroup();
+    layerGroupWaterLevel = L.layerGroup();
     layerGroupAllStations = L.layerGroup();
 
     let savedBasemap = localStorage.getItem('aw_basemap') || 'default';
@@ -2528,6 +2686,7 @@ function initInteractiveMap() {
     layerGroupHum.clearLayers();
     layerGroupPress.clearLayers();
     layerGroupWind.clearLayers();
+    layerGroupWaterLevel.clearLayers();
     layerGroupAllStations.clearLayers();
     clearRadarLayers();
   }
@@ -2586,26 +2745,28 @@ function toggleInteractiveMapLayer() {
   const val = document.querySelector('input[name="mapLayerSelect"]:checked').value;
   
   const layers = {
-    'present': layerGroupPresent,
-    'accum': layerGroupAccum,
-    'temp': layerGroupTemp,
-    'humidity': layerGroupHum,
-    'pressure': layerGroupPress,
-    'wind': layerGroupWind
+    'present':    layerGroupPresent,
+    'accum':      layerGroupAccum,
+    'temp':       layerGroupTemp,
+    'humidity':   layerGroupHum,
+    'pressure':   layerGroupPress,
+    'wind':       layerGroupWind,
+    'waterlevel': layerGroupWaterLevel
   };
 
   Object.values(layers).forEach(layer => {
-    if (mapInteractive.hasLayer(layer)) mapInteractive.removeLayer(layer);
+    if (layer && mapInteractive.hasLayer(layer)) mapInteractive.removeLayer(layer);
   });
 
-  mapInteractive.addLayer(layers[val]);
+  if (layers[val]) mapInteractive.addLayer(layers[val]);
 
-  document.getElementById('legendPresentMap').style.display = val === 'present' ? 'flex' : 'none';
-  document.getElementById('legendAccumMap').style.display = val === 'accum' ? 'flex' : 'none';
-  document.getElementById('legendTempMap').style.display = val === 'temp' ? 'flex' : 'none';
-  document.getElementById('legendHumMap').style.display = val === 'humidity' ? 'flex' : 'none';
-  document.getElementById('legendPressMap').style.display = val === 'pressure' ? 'flex' : 'none';
-  document.getElementById('legendWindMap').style.display = val === 'wind' ? 'flex' : 'none';
+  document.getElementById('legendPresentMap').style.display        = val === 'present'    ? 'flex' : 'none';
+  document.getElementById('legendAccumMap').style.display          = val === 'accum'      ? 'flex' : 'none';
+  document.getElementById('legendTempMap').style.display           = val === 'temp'       ? 'flex' : 'none';
+  document.getElementById('legendHumMap').style.display            = val === 'humidity'   ? 'flex' : 'none';
+  document.getElementById('legendPressMap').style.display          = val === 'pressure'   ? 'flex' : 'none';
+  document.getElementById('legendWindMap').style.display           = val === 'wind'       ? 'flex' : 'none';
+  document.getElementById('legendWaterLevelMap').style.display     = val === 'waterlevel' ? 'flex' : 'none';
 }
 
 function setRadarStatus(msg, color) {
@@ -3017,11 +3178,105 @@ function renderMap() {
       }
     }
 
-    // 6. ALWAYS add to the "All Stations" generic layer
-    addStationMarkerLayerGroup(layerGroupAllStations, lat, lon, allStyle, popupBuilder('Station Status', 'Active', '', allStyle.color), false);
-  });
+    // ── 7. WATER LEVEL markers are rendered separately below (own data source) ──
+  }); // end stationsData.forEach
+
+  // ── 7. WATER LEVEL (CWC + HIU-WRD) — from dedicated waterLevelData ──────
+  // Source: Realtime_WaterLevel_Data.json  Fields used:
+  //   current_level, last_update, warning_level, danger_level,
+  //   high_flow_level, level_color, status, station_type,
+  //   name, river, basin, district, latitude, longitude
+  if (FEATURE_WATER_LEVEL) {
+    layerGroupWaterLevel.clearLayers();
+
+    // Helper: map level_color string → CSS colour
+    function wlColor(lc) {
+      switch ((lc || '').toLowerCase()) {
+        case 'red':    return '#dc2626';
+        case 'orange': return '#f97316';
+        case 'yellow': return '#eab308';
+        case 'green':  return '#16a34a';
+        default:       return '#0284c7'; // fallback blue for HIU gauges without colour
+      }
+    }
+
+    // Helper: format last_update → IST string
+    function wlFormatTime(ts) {
+      if (!ts) return '—';
+      try {
+        // last_update is local IST already (no Z suffix)
+        const d = new Date(ts.includes('T') ? ts : ts.replace(' ', 'T'));
+        if (isNaN(d)) return ts;
+        return d.toLocaleDateString('en-IN', { day: '2-digit', month: 'short' }) + ' ' +
+               d.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }) + ' IST';
+      } catch(_) { return ts; }
+    }
+
+    waterLevelData.forEach(w => {
+      const lat = parseFloat(w.latitude);
+      const lon = parseFloat(w.longitude);
+      if (isNaN(lat) || isNaN(lon)) return;
+
+      const wl = parseFloat(w.current_level);
+      if (isNaN(wl)) return; // skip if no valid reading
+
+      const markerColor = wlColor(w.level_color);
+      const stationName = w.name   || '—';
+      const districtName = w.district || '—';
+      const riverName    = w.river    || '—';
+      const basinName    = w.basin    || '—';
+      const statusText   = w.status   || '—';
+      const stType       = w.station_type || w.source || 'AWLR';
+      const obsTime      = wlFormatTime(w.last_update);
+
+      // Threshold rows (only shown when non-zero / non-null)
+      const warnLvl  = parseFloat(w.warning_level);
+      const dangLvl  = parseFloat(w.danger_level);
+      const highFlow = parseFloat(w.high_flow_level);
+
+      const thresholdHTML = [
+        (!isNaN(highFlow) && highFlow > 0) ? `<div>🔵 High Flow Level: <b>${highFlow.toFixed(2)} m</b></div>` : '',
+        (!isNaN(warnLvl)  && warnLvl  > 0) ? `<div>🟡 Warning Level: <b>${warnLvl.toFixed(2)} m</b></div>` : '',
+        (!isNaN(dangLvl)  && dangLvl  > 0) ? `<div>🔴 Danger Level: <b>${dangLvl.toFixed(2)} m</b></div>` : ''
+      ].join('');
+
+      // Diamond marker (rotate 45°)
+      const wlIcon = L.divIcon({
+        className: '',
+        html: `<div title="${stationName}: ${wl.toFixed(3)} m" style="
+          width:12px; height:12px;
+          background:${markerColor};
+          transform:rotate(45deg);
+          border:2px solid #fff;
+          box-shadow:0 1px 6px rgba(0,0,0,0.4);"></div>`,
+        iconSize:   [12, 12],
+        iconAnchor: [6,  6]
+      });
+
+      L.marker([lat, lon], { icon: wlIcon, zIndexOffset: 700 })
+        .bindPopup(`
+          <div style="font-family:'Google Sans',sans-serif;min-width:195px;">
+            <div style="font-weight:800;font-size:13px;color:${markerColor};margin-bottom:4px;">${stationName}</div>
+            <div style="font-size:11px;color:var(--muted);font-weight:700;margin-bottom:8px;">
+              ${districtName} &nbsp;·&nbsp; <span style="text-transform:uppercase;">${stType}</span>
+            </div>
+            <hr style="border:none;border-top:1px solid var(--border);margin:0 0 8px 0;">
+            <div style="font-size:12px;line-height:1.9;">
+              <div>💧 Water Level: <b style="color:${markerColor};font-size:14px;">${wl.toFixed(3)} m</b> above MSL</div>
+              <div>📊 Status: <b style="color:${markerColor};">${statusText}</b></div>
+              ${riverName !== '—' ? `<div>🏞 River: <b>${riverName}</b></div>` : ''}
+              ${basinName !== '—' ? `<div>🗺 Basin: <b>${basinName}</b></div>` : ''}
+              ${thresholdHTML}
+              <div>🕐 Observed: <b>${obsTime}</b></div>
+              <div style="font-size:9px;color:var(--muted);margin-top:4px;">Source: ${w.source || 'HIU-WRD'}</div>
+            </div>
+          </div>`)
+        .addTo(layerGroupWaterLevel);
+    }); // end waterLevelData.forEach
+  }   // end if (FEATURE_WATER_LEVEL)
 
   // Re-check All Stations layer state on refresh
+
   const cb = document.getElementById('allStationsCb');
   if (cb && cb.checked) {
     if (!mapInteractive.hasLayer(layerGroupAllStations)) mapInteractive.addLayer(layerGroupAllStations);
@@ -3075,7 +3330,25 @@ function showTab(name, el) {
     setStationMode(stationMode); 
   }
   
-  if (name === 'distmap') { setTimeout(() => renderDistMap(), 100); }
+  if (name === 'distmap')  { setTimeout(() => renderDistMap(), 100); }
+  if (name === 'rainfall') {
+    loadRaData().then(() => {
+      if (!raLoaded) {
+        raLoaded = true;
+        setRaMode('clim');
+      } else {
+        renderRaAll();
+      }
+      setTimeout(() => {
+        initRaChoro();
+        // If already init'd, re-fit bounds and invalidate size
+        if (raChoroMapObj) {
+          raChoroMapObj.invalidateSize();
+          if (raChoroLayer) raChoroMapObj.fitBounds(raChoroLayer.getBounds(), {padding:[2,2]});
+        }
+      }, 300);
+    });
+  }
 }
 
 const REFRESH_INTERVAL = 5 * 60; 
@@ -3630,6 +3903,12 @@ setVh();
 window.addEventListener('resize', setVh);
 window.addEventListener('orientationchange', () => setTimeout(setVh, 200));
 
+// ── Show/hide water level layer control based on feature flag ─────────
+if (FEATURE_WATER_LEVEL) {
+  const wlCtrl = document.getElementById('waterLevelLayerControl');
+  if (wlCtrl) wlCtrl.style.display = 'flex';
+}
+
 // ── Auto-refresh 3 seconds after every page load ─────────────────────
 // Bypasses cache and force-fetches fresh data on every load/reload.
 // Silent — no status message shown, just fires like an invisible Refresh click.
@@ -3792,6 +4071,409 @@ document.head.appendChild(dmStyle);
 // ══════════════════════════════════════════════════════════════════════
 // AUTOMATED PDF BULLETIN GENERATOR
 // ══════════════════════════════════════════════════════════════════════
+// ── SECTION I-B: HISTORICAL RAINFALL ANALYSIS ────────────────────────
+const RA_URL     = 'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/imerg_district_monthly.json';
+const RA_MONTHS  = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const RA_YEARS   = Array.from({length:26}, (_,i) => 2000+i);
+const CLIM_START = 2001, CLIM_END = 2024;
+
+let raData          = null;
+let raMode          = 'clim';
+let raMapMode       = 'annual';
+let raLoaded        = false;
+let raDistChartObj  = null;
+let raAssamChartObj = null;
+let raChoroMapObj   = null;
+let raChoroLayer    = null;
+
+// ── Load data ─────────────────────────────────────────────────────────
+async function loadRaData() {
+  if (raData) return true;
+  try {
+    const res = await fetch(RA_URL);
+    raData = await res.json();
+    populateRaControls();
+    return true;
+  } catch(e) { console.error('Rainfall data load failed:', e); return false; }
+}
+
+function populateRaControls() {
+  const dp = document.getElementById('raDistrict');
+  if (!dp) return;
+  const dists = Object.keys(raData).sort();
+  dp.innerHTML = dists.map(d => `<option value="${d}">${d}</option>`).join('');
+  const def = selectedDistrict && dists.find(d => normalise(d) === normalise(selectedDistrict)) || 'Kamrup Metro';
+  dp.value = def;
+}
+
+// ── Mode setters ──────────────────────────────────────────────────────
+function setRaMode(mode) {
+  raMode = mode;
+  ['monthly','trend','clim'].forEach(m => {
+    const b = document.getElementById(`raBtn-${m}`);
+    if (b) { b.style.background = m===mode?'var(--accent)':'var(--panel)'; b.style.color = m===mode?'#fff':'var(--muted)'; }
+  });
+  const sw = document.getElementById('raYearSeekerWrap');
+  if (sw) sw.style.display = mode==='monthly' ? 'flex' : 'none';
+  renderRaAll();
+}
+
+function setRaMapMode(mode) {
+  raMapMode = mode;
+  ['annual','trend'].forEach(m => {
+    const b = document.getElementById(`raMapBtn-${m}`);
+    if (b) { b.style.background = m===mode?'var(--accent)':'var(--panel)'; b.style.color = m===mode?'#fff':'var(--muted)'; }
+  });
+  const la = document.getElementById('raChoroLegendAnnual');
+  const lt = document.getElementById('raChoroLegendTrend');
+  if (la) la.style.display = mode==='annual' ? 'flex' : 'none';
+  if (lt) lt.style.display = mode==='trend'  ? 'flex' : 'none';
+  renderRaChoro();
+}
+
+// ── Main render ───────────────────────────────────────────────────────
+async function renderRaAll() {
+  if (!raData) { const ok = await loadRaData(); if (!ok) return; }
+  const district = document.getElementById('raDistrict')?.value;
+  const year     = parseInt(document.getElementById('raYearSlider')?.value || '2024');
+  if (!district || !raData[district]) return;
+  renderRaDistChart(district, year);
+  renderRaAssamChart(year);
+  renderRaChoro();
+  renderRaHeatmap(district, year);
+}
+
+// ── Climatology helpers ───────────────────────────────────────────────
+function computeClim(d) {
+  const s=Array(12).fill(0), c=Array(12).fill(0);
+  for (let y=CLIM_START; y<=CLIM_END; y++)
+    (raData[d]?.[String(y)]||[]).forEach((v,mi)=>{ if(v!=null){s[mi]+=v;c[mi]++;} });
+  return s.map((v,i)=>c[i]>0 ? Math.round(v/c[i]*10)/10 : null);
+}
+
+function computeClimStd(d, cm) {
+  const v=Array(12).fill(0), c=Array(12).fill(0);
+  for (let y=CLIM_START; y<=CLIM_END; y++)
+    (raData[d]?.[String(y)]||[]).forEach((val,mi)=>{ if(val!=null&&cm[mi]!=null){v[mi]+=(val-cm[mi])**2;c[mi]++;} });
+  return v.map((val,i)=>c[i]>1 ? Math.round(Math.sqrt(val/c[i])*10)/10 : 0);
+}
+
+function computeAssamMean() {
+  const dists=Object.keys(raData), s=Array(12).fill(0);
+  dists.forEach(d=>computeClim(d).forEach((v,mi)=>{ if(v!=null) s[mi]+=v; }));
+  return s.map(v=>Math.round(v/dists.length*10)/10);
+}
+
+function computeAssamAnnuals() {
+  const dists=Object.keys(raData);
+  return RA_YEARS.map(y=>{
+    let sum=0, cnt=0;
+    dists.forEach(d=>{ const vals=raData[d]?.[String(y)]||[]; if(vals.filter(v=>v!=null).length===12){sum+=vals.reduce((a,v)=>a+(v||0),0);cnt++;} });
+    return cnt>0 ? Math.round(sum/cnt) : null;
+  });
+}
+
+function computeDistrictTrend(d) {
+  const ann=RA_YEARS.map(y=>{ const v=raData[d]?.[String(y)]||[]; return v.filter(x=>x!=null).length===12?v.reduce((a,x)=>a+(x||0),0):null; });
+  const xys=ann.map((v,i)=>v!=null?[i,v]:null).filter(Boolean);
+  if(xys.length<5) return 0;
+  const n=xys.length, sx=xys.reduce((a,[x])=>a+x,0), sy=xys.reduce((a,[,y])=>a+y,0),
+        sxy=xys.reduce((a,[x,y])=>a+x*y,0), sx2=xys.reduce((a,[x])=>a+x*x,0);
+  return Math.round((n*sxy-sx*sy)/(n*sx2-sx**2)*10);
+}
+
+// ── Colour helpers ────────────────────────────────────────────────────
+function rainToHeatColor(mm) {
+  if(!mm||mm<=0) return '#f8fafc';
+  const s=[[0,[248,250,252]],[30,[186,230,253]],[100,[2,132,199]],[250,[217,119,6]],[450,[239,68,68]],[650,[126,34,206]],[900,[67,20,127]]];
+  for(let i=1;i<s.length;i++){const[v0,c0]=s[i-1],[v1,c1]=s[i];if(mm<=v1){const t=(mm-v0)/(v1-v0);return `rgb(${Math.round(c0[0]+t*(c1[0]-c0[0]))},${Math.round(c0[1]+t*(c1[1]-c0[1]))},${Math.round(c0[2]+t*(c1[2]-c0[2]))})`; }}
+  return 'rgb(67,20,127)';
+}
+
+function annualRainColor(mm) {
+  if(!mm||mm<=0) return '#f8fafc';
+  const s=[[0,[248,250,252]],[500,[186,230,253]],[1500,[2,132,199]],[2500,[217,119,6]],[3500,[239,68,68]],[5000,[126,34,206]]];
+  for(let i=1;i<s.length;i++){const[v0,c0]=s[i-1],[v1,c1]=s[i];if(mm<=v1){const t=(mm-v0)/(v1-v0);return `rgb(${Math.round(c0[0]+t*(c1[0]-c0[0]))},${Math.round(c0[1]+t*(c1[1]-c0[1]))},${Math.round(c0[2]+t*(c1[2]-c0[2]))})`; }}
+  return 'rgb(126,34,206)';
+}
+
+function trendColor(v) {
+  const c=Math.max(-60,Math.min(60,v||0)), t=c/60;
+  if(t<0){ const i=-t; return `rgb(255,${Math.round(255-i*200)},${Math.round(255-i*200)})`; }
+  if(t>0){ return `rgb(${Math.round(255-t*200)},${Math.round(255-t*140)},255)`; }
+  return '#f8fafc';
+}
+
+function textForBg(rgb) {
+  const m=rgb.match(/rgb\((\d+),(\d+),(\d+)\)/);
+  return !m || (0.299*+m[1]+0.587*+m[2]+0.114*+m[3])/255>0.5 ? '#1e293b' : '#ffffff';
+}
+
+function raMatchDistrict(geoName) {
+  if(!raData) return null;
+  const keys=Object.keys(raData);
+  if(keys.includes(geoName)) return geoName;
+  const n=normalise(geoName);
+  return keys.find(k=>normalise(k)===n) ||
+         keys.find(k=>normalise(k).includes(n.split(' ')[0]) || n.includes(normalise(k).split(' ')[0]));
+}
+
+// ── Chart helpers ─────────────────────────────────────────────────────
+function raIsDark()    { return document.documentElement.getAttribute('data-theme')==='dark'; }
+function raTextColor() { return raIsDark()?'#e2e8f0':'#1e293b'; }
+function raGridColor() { return raIsDark()?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.07)'; }
+
+function resetRaCanvas(wrapId) {
+  const isD = wrapId==='raDistChartWrap';
+  if(isD  && raDistChartObj)  { raDistChartObj.destroy();  raDistChartObj  = null; }
+  if(!isD && raAssamChartObj) { raAssamChartObj.destroy(); raAssamChartObj = null; }
+  const wrap = document.getElementById(wrapId);
+  if(!wrap) return null;
+  const id = isD ? 'raDistChartCanvas' : 'raAssamChartCanvas';
+  wrap.innerHTML = `<canvas id="${id}" style="width:100%;height:100%;"></canvas>`;
+  return document.getElementById(id);
+}
+
+function raChartOpts(yLabel) {
+  return {
+    responsive:true, maintainAspectRatio:false,
+    plugins:{
+      legend:{labels:{color:raTextColor(),font:{size:10,family:"'Google Sans',sans-serif"},boxWidth:12}},
+      tooltip:{callbacks:{label:ctx=>` ${ctx.dataset.label}: ${ctx.parsed.y!=null?Math.round(ctx.parsed.y)+' mm':'—'}`}}
+    },
+    scales:{
+      x:{ticks:{color:raTextColor(),font:{size:9}},grid:{color:raGridColor()}},
+      y:{title:{display:true,text:yLabel,color:raTextColor(),font:{size:9}},
+         ticks:{color:raTextColor(),font:{size:9}},grid:{color:raGridColor()},beginAtZero:true}
+    }
+  };
+}
+
+// ── Bar chart datasets builder (shared by district + Assam) ──────────
+function buildRaDatasets(monthly, clim, yearLabel, stdPlus, stdMinus) {
+  if(raMode==='monthly') return [
+    {label:`${yearLabel} (mm)`, data:monthly,
+     backgroundColor:monthly.map(v=>!v?'rgba(148,163,184,0.4)':v>500?'rgba(126,34,206,0.75)':v>300?'rgba(239,68,68,0.75)':v>150?'rgba(249,115,22,0.75)':v>60?'rgba(217,119,6,0.75)':'rgba(2,132,199,0.75)'),
+     borderRadius:3, order:2},
+    {label:'Climatology', data:clim, type:'line',
+     borderColor:raIsDark()?'#38c6f4':'#1e40af', backgroundColor:'transparent',
+     borderWidth:2, pointRadius:3, tension:0.3, order:1}
+  ];
+  if(raMode==='clim') return [
+    {label:'Mean (mm)', data:clim, backgroundColor:'rgba(2,132,199,0.7)', borderRadius:3, order:2},
+    {label:'+1σ', data:stdPlus, type:'line', borderColor:'rgba(239,68,68,0.6)',
+     backgroundColor:'rgba(239,68,68,0.1)', borderWidth:1.5, borderDash:[4,3], pointRadius:0, fill:'+1', order:1},
+    {label:'−1σ', data:stdMinus, type:'line', borderColor:'rgba(239,68,68,0.6)',
+     fill:false, borderWidth:1.5, borderDash:[4,3], pointRadius:0, order:1}
+  ];
+  return []; // trend handled separately
+}
+
+// ── DISTRICT: Bar Chart ───────────────────────────────────────────────
+function renderRaDistChart(district, year) {
+  const clim=computeClim(district);
+  let labels, datasets, yLabel, titleTxt, statTxt;
+
+  if(raMode==='monthly') {
+    const vals=raData[district]?.[String(year)]||Array(12).fill(null);
+    const ann=Math.round(vals.reduce((a,v)=>a+(v||0),0));
+    const cann=Math.round(clim.reduce((a,v)=>a+(v||0),0));
+    const pct=cann>0?Math.round((ann-cann)/cann*100):0;
+    titleTxt=`${district} — ${year}`; statTxt=`${ann}mm | vs normal: ${pct>0?'+':''}${pct}%`;
+    labels=RA_MONTHS; yLabel='mm';
+    datasets=buildRaDatasets(vals,clim,year);
+  } else if(raMode==='trend') {
+    const ann=RA_YEARS.map(y=>{ const v=raData[district]?.[String(y)]||[]; return v.filter(x=>x!=null).length===12?Math.round(v.reduce((a,x)=>a+(x||0),0)):null; });
+    const xys=ann.map((v,i)=>v!=null?[i,v]:null).filter(Boolean);
+    const n=xys.length, sx=xys.reduce((a,[x])=>a+x,0), sy=xys.reduce((a,[,y])=>a+y,0),
+          sxy=xys.reduce((a,[x,y])=>a+x*y,0), sx2=xys.reduce((a,[x])=>a+x*x,0);
+    const sl=(n*sxy-sx*sy)/(n*sx2-sx**2), ic=(sy-sl*sx)/n;
+    const tl=ann.map((_,i)=>ann[i]!=null?Math.round(ic+sl*i):null);
+    const mean=Math.round(sy/n), sl10=Math.round(sl*10);
+    titleTxt=`${district} — Yearly Trend`; statTxt=`Mean: ${mean}mm/yr | Trend: ${sl10>0?'+':''}${sl10}mm/dec`;
+    labels=RA_YEARS; yLabel='mm/yr';
+    datasets=[
+      {label:'Annual (mm)', data:ann, backgroundColor:ann.map(v=>!v?'rgba(148,163,184,0.3)':v>mean?'rgba(2,132,199,0.7)':'rgba(239,68,68,0.7)'), borderRadius:3, order:2},
+      {label:'Trend', data:tl, type:'line', borderColor:raIsDark()?'#f97316':'#b45309', backgroundColor:'transparent', borderWidth:2, borderDash:[5,3], pointRadius:0, order:1}
+    ];
+  } else {
+    const std=computeClimStd(district,clim);
+    const u=clim.map((v,i)=>v!=null?Math.round(v+std[i]):null);
+    const l=clim.map((v,i)=>v!=null?Math.round(Math.max(0,v-std[i])):null);
+    const ann=Math.round(clim.reduce((a,v)=>a+(v||0),0));
+    titleTxt=`${district} — Long-term Average`; statTxt=`Annual mean: ${ann}mm/yr`;
+    labels=RA_MONTHS; yLabel='mm';
+    datasets=buildRaDatasets(null,clim,null,u,l);
+  }
+
+  document.getElementById('raDistChartTitle').textContent=titleTxt;
+  document.getElementById('raDistStat').textContent=statTxt;
+  const canvas=resetRaCanvas('raDistChartWrap');
+  if(canvas) raDistChartObj=new Chart(canvas,{type:'bar',data:{labels,datasets},options:raChartOpts(yLabel)});
+}
+
+// ── ASSAM: Bar Chart ──────────────────────────────────────────────────
+function renderRaAssamChart(year) {
+  const assamClim=computeAssamMean();
+  let labels, datasets, yLabel, titleTxt, statTxt;
+
+  if(raMode==='monthly') {
+    const dists=Object.keys(raData);
+    const monthly=Array(12).fill(null).map((_,mi)=>{
+      const vals=dists.map(d=>raData[d]?.[String(year)]?.[mi]).filter(v=>v!=null);
+      return vals.length?Math.round(vals.reduce((a,v)=>a+v,0)/vals.length*10)/10:null;
+    });
+    const ann=Math.round(monthly.reduce((a,v)=>a+(v||0),0));
+    const cann=Math.round(assamClim.reduce((a,v)=>a+(v||0),0));
+    const pct=cann>0?Math.round((ann-cann)/cann*100):0;
+    titleTxt=`All Assam — ${year}`; statTxt=`Mean: ${ann}mm | vs normal: ${pct>0?'+':''}${pct}%`;
+    labels=RA_MONTHS; yLabel='mm';
+    datasets=buildRaDatasets(monthly,assamClim,year);
+  } else if(raMode==='trend') {
+    const ann=computeAssamAnnuals();
+    const xys=ann.map((v,i)=>v!=null?[i,v]:null).filter(Boolean);
+    const n=xys.length, sx=xys.reduce((a,[x])=>a+x,0), sy=xys.reduce((a,[,y])=>a+y,0),
+          sxy=xys.reduce((a,[x,y])=>a+x*y,0), sx2=xys.reduce((a,[x])=>a+x*x,0);
+    const sl=(n*sxy-sx*sy)/(n*sx2-sx**2), ic=(sy-sl*sx)/n;
+    const tl=ann.map((_,i)=>ann[i]!=null?Math.round(ic+sl*i):null);
+    const mean=Math.round(sy/n), sl10=Math.round(sl*10);
+    titleTxt='All Assam — Yearly Trend'; statTxt=`Mean: ${mean}mm/yr | Trend: ${sl10>0?'+':''}${sl10}mm/dec`;
+    labels=RA_YEARS; yLabel='mm/yr';
+    datasets=[
+      {label:'Annual Mean', data:ann, backgroundColor:ann.map(v=>!v?'rgba(148,163,184,0.3)':v>mean?'rgba(2,132,199,0.7)':'rgba(239,68,68,0.7)'), borderRadius:3, order:2},
+      {label:'Trend', data:tl, type:'line', borderColor:raIsDark()?'#f97316':'#b45309', backgroundColor:'transparent', borderWidth:2, borderDash:[5,3], pointRadius:0, order:1}
+    ];
+  } else {
+    const dists=Object.keys(raData);
+    const std=Array(12).fill(0).map((_,mi)=>{
+      const vals=[];
+      for(let y=CLIM_START;y<=CLIM_END;y++){
+        const dm=dists.map(d=>raData[d]?.[String(y)]?.[mi]).filter(v=>v!=null);
+        if(dm.length) vals.push(dm.reduce((a,v)=>a+v,0)/dm.length);
+      }
+      if(!vals.length) return 0;
+      const m=vals.reduce((a,v)=>a+v,0)/vals.length;
+      return Math.round(Math.sqrt(vals.reduce((a,v)=>a+(v-m)**2,0)/vals.length)*10)/10;
+    });
+    const u=assamClim.map((v,i)=>v!=null?Math.round(v+std[i]):null);
+    const l=assamClim.map((v,i)=>v!=null?Math.round(Math.max(0,v-std[i])):null);
+    const ann=Math.round(assamClim.reduce((a,v)=>a+(v||0),0));
+    titleTxt='All Assam — Long-term Average'; statTxt=`Annual mean: ${ann}mm/yr`;
+    labels=RA_MONTHS; yLabel='mm';
+    datasets=buildRaDatasets(null,assamClim,null,u,l);
+  }
+
+  document.getElementById('raAssamChartTitle').textContent=titleTxt;
+  document.getElementById('raAssamStat').textContent=statTxt;
+  const canvas=resetRaCanvas('raAssamChartWrap');
+  if(canvas) raAssamChartObj=new Chart(canvas,{type:'bar',data:{labels,datasets},options:raChartOpts(yLabel)});
+}
+
+// ── CHOROPLETH MAP ────────────────────────────────────────────────────
+async function initRaChoro() {
+  const el=document.getElementById('raChoroMap');
+  if(!el||raChoroMapObj) return;
+
+  if(!geojsonData) {
+    try { const r=await fetch(GEOJSON_URL); geojsonData=await r.json(); }
+    catch(e) { console.warn('GeoJSON failed:',e); return; }
+  }
+
+  raChoroMapObj=L.map('raChoroMap',{
+    zoomControl:true, attributionControl:false,
+    dragging:true, scrollWheelZoom:false,
+    doubleClickZoom:true, boxZoom:false, keyboard:false
+  });
+
+  // Background colour — no tile layer
+  const cont=raChoroMapObj.getContainer();
+  if(cont) cont.style.background=raIsDark()?'#0f172a':'#f8fafc';
+
+  // Wait for map to be fully ready then render + fit
+  raChoroMapObj.whenReady(() => {
+    renderRaChoro();
+    // Staggered invalidateSize calls to guarantee correct sizing
+    [100, 300, 600].forEach(ms =>
+      setTimeout(() => { if(raChoroMapObj) raChoroMapObj.invalidateSize(); }, ms)
+    );
+  });
+}
+
+function renderRaChoro() {
+  if(!raChoroMapObj||!geojsonData||!raData) return;
+  if(raChoroLayer){ raChoroMapObj.removeLayer(raChoroLayer); raChoroLayer=null; }
+
+  // Per-district values
+  const vals={};
+  Object.keys(raData).forEach(d=>{
+    vals[d] = raMapMode==='annual'
+      ? Math.round(computeClim(d).reduce((a,v)=>a+(v||0),0))
+      : computeDistrictTrend(d);
+  });
+
+  const selDist=document.getElementById('raDistrict')?.value;
+
+  raChoroLayer=L.geoJSON(geojsonData,{
+    style:feature=>{
+      const matched=raMatchDistrict(feature.properties.dtname);
+      const val=matched?vals[matched]:null;
+      const fill=raMapMode==='annual'?annualRainColor(val):trendColor(val||0);
+      const isSel=matched&&matched===selDist;
+      return{fillColor:fill,fillOpacity:0.88,color:isSel?'#38c6f4':'#ffffff',weight:isSel?3:1,opacity:1};
+    },
+    onEachFeature:(feature,layer)=>{
+      const gn=feature.properties.dtname, matched=raMatchDistrict(gn);
+      const val=matched?vals[matched]:null;
+      const lbl=val!=null?(raMapMode==='annual'?`${val}mm/yr`:`${val>0?'+':''}${val}mm/dec`):'—';
+      layer.bindTooltip(`<b>${gn}</b><br>${lbl}`,{sticky:true,direction:'top',className:'dm-tooltip'});
+      layer.on('click',()=>{
+        if(matched){
+          const dp=document.getElementById('raDistrict');
+          if(dp){ dp.value=matched; renderRaAll(); }
+        }
+      });
+      layer.on('mouseover',e=>e.target.setStyle({fillOpacity:1,weight:2}));
+      layer.on('mouseout',()=>raChoroLayer.resetStyle(layer));
+    }
+  }).addTo(raChoroMapObj);
+
+  raChoroMapObj.fitBounds(raChoroLayer.getBounds(), {padding:[2,2]});
+  // Ensure map fills container after layer renders
+  setTimeout(() => { if(raChoroMapObj) raChoroMapObj.invalidateSize(); }, 100);
+}
+
+// ── HEATMAP ───────────────────────────────────────────────────────────
+function renderRaHeatmap(highlightDistrict, year) {
+  const table=document.getElementById('raHeatmap');
+  if(!table||!raData) return;
+  const showYear=raMode==='monthly';
+  const titleEl=document.getElementById('raHeatmapTitle');
+  if(titleEl) titleEl.textContent=showYear?`All Districts — ${year} (mm)`:`All Districts — Long-term Average (mm)`;
+  const getData=showYear ? d=>raData[d]?.[String(year)]||Array(12).fill(null) : d=>computeClim(d);
+  const dists=Object.keys(raData).sort();
+
+  let html=`<thead><tr>
+    <th style="text-align:left;padding:3px 6px;font-size:8px;font-weight:700;color:var(--muted);white-space:nowrap;position:sticky;left:0;top:0;background:var(--panel);z-index:2;">District</th>
+    ${RA_MONTHS.map(m=>`<th style="padding:3px 4px;font-size:8px;font-weight:700;color:var(--muted);text-align:center;position:sticky;top:0;background:var(--panel);z-index:1;">${m}</th>`).join('')}
+    <th style="padding:3px 4px;font-size:8px;font-weight:700;color:var(--muted);text-align:center;position:sticky;top:0;background:var(--panel);z-index:1;">Total</th>
+  </tr></thead><tbody>`;
+
+  for(const d of dists){
+    const vals=getData(d);
+    const total=Math.round(vals.reduce((a,v)=>a+(v||0),0));
+    const isSel=d===highlightDistrict;
+    html+=`<tr style="${isSel?'outline:2px solid var(--accent);outline-offset:-1px;':''}">
+      <td style="padding:3px 6px;font-size:8px;font-weight:${isSel?800:600};color:${isSel?'var(--accent)':'var(--text)'};white-space:nowrap;position:sticky;left:0;background:var(--panel);z-index:1;">${d}</td>`;
+    for(const v of vals){const bg=rainToHeatColor(v),fg=textForBg(bg);html+=`<td style="padding:2px 3px;background:${bg};color:${fg};text-align:center;font-size:8px;font-weight:600;">${v!=null?Math.round(v):'—'}</td>`;}
+    const tbg=rainToHeatColor(total/5),tfg=textForBg(tbg);
+    html+=`<td style="padding:2px 4px;background:${tbg};color:${tfg};text-align:center;font-size:8px;font-weight:800;">${total}</td></tr>`;
+  }
+  table.innerHTML=html+'</tbody>';
+}
+
+// ── SECTION J: PDF BULLETIN ───────────────────────────────────────────
+// ── SECTION J: PDF BULLETIN ───────────────────────────────────────────
+
 // ── SECTION J: PDF BULLETIN ───────────────────────────────────────────
 async function generateBulletin() {
   const btn = document.getElementById('bulletinBtn') || document.getElementById('pdfBtn');
