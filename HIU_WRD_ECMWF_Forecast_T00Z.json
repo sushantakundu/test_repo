@@ -1,9 +1,9 @@
 {
   "metadata": {
     "institution": "HIU, WRD, Assam",
-    "init_time": "2026-07-26T00:00:00Z",
+    "init_time": "2026-07-28T00:00:00Z",
     "run_tag": "T00Z",
-    "generated_utc": "2026-07-26T16:34:26Z",
+    "generated_utc": "2026-07-28T09:08:47Z",
     "model": "Hurdle U-Net v3",
     "source": "ECMWF IFS ENS 00Z run",
     "n_districts": 112,
@@ -18,32 +18,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 32.8,
-          "rain_p75_mm": 38.1,
-          "rain_p90_mm": 44.7,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 15.0,
+          "rain_p75_mm": 23.3,
+          "rain_p90_mm": 33.8,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.5,
+          "rain_p75_mm": 17.2,
+          "rain_p90_mm": 22.7,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.9,
-          "rain_p75_mm": 23.0,
-          "rain_p90_mm": 31.8,
-          "prob_heavy_pct": 18,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.3,
-          "rain_p75_mm": 20.6,
-          "rain_p90_mm": 30.3,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 13.3,
+          "rain_p75_mm": 17.5,
+          "rain_p90_mm": 23.1,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -54,33 +54,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 29.6,
-          "rain_p75_mm": 40.9,
-          "rain_p90_mm": 56.0,
-          "prob_heavy_pct": 22,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.7,
+          "rain_p75_mm": 39.0,
+          "rain_p90_mm": 66.0,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 12,
+          "prob_extr_heavy_pct": 4,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 23.8,
-          "rain_p75_mm": 34.8,
-          "rain_p90_mm": 51.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.8,
+          "rain_p75_mm": 33.1,
+          "rain_p90_mm": 50.0,
           "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 16.5,
-          "rain_p75_mm": 28.0,
-          "rain_p90_mm": 48.8,
-          "prob_heavy_pct": 18,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.4,
+          "rain_p75_mm": 36.8,
+          "rain_p90_mm": 51.2,
+          "prob_heavy_pct": 14,
           "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -90,32 +90,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 36.4,
-          "rain_p75_mm": 41.2,
-          "rain_p90_mm": 46.0,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.2,
-          "rain_p75_mm": 20.4,
-          "rain_p90_mm": 25.8,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.0,
-          "rain_p75_mm": 19.7,
-          "rain_p90_mm": 27.6,
-          "prob_heavy_pct": 18,
+          "rain_median_mm": 15.5,
+          "rain_p75_mm": 20.0,
+          "rain_p90_mm": 27.1,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 9.9,
+          "rain_p75_mm": 12.9,
+          "rain_p90_mm": 16.7,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 9.9,
+          "rain_p75_mm": 12.3,
+          "rain_p90_mm": 14.8,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -126,30 +126,30 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 18.7,
-          "rain_p75_mm": 29.2,
-          "rain_p90_mm": 40.6,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.4,
-          "rain_p75_mm": 19.5,
-          "rain_p90_mm": 23.3,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.1,
+          "rain_p75_mm": 23.0,
+          "rain_p90_mm": 26.7,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.7,
-          "rain_p75_mm": 18.4,
-          "rain_p90_mm": 23.3,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 14.4,
+          "rain_p75_mm": 18.7,
+          "rain_p90_mm": 23.0,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 14.8,
+          "rain_p75_mm": 17.8,
+          "rain_p90_mm": 20.7,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -162,32 +162,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 53.1,
-          "rain_p75_mm": 71.9,
-          "rain_p90_mm": 90.2,
-          "prob_heavy_pct": 40,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 24.1,
-          "rain_p75_mm": 36.7,
-          "rain_p90_mm": 53.9,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.2,
+          "rain_p75_mm": 41.8,
+          "rain_p90_mm": 71.9,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 16.7,
-          "rain_p75_mm": 27.5,
-          "rain_p90_mm": 46.3,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.3,
+          "rain_p75_mm": 29.7,
+          "rain_p90_mm": 52.9,
           "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 27.0,
+          "rain_p75_mm": 38.5,
+          "rain_p90_mm": 57.9,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -198,33 +198,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 43.2,
-          "rain_p75_mm": 55.0,
-          "rain_p90_mm": 63.8,
-          "prob_heavy_pct": 34,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 31.1,
-          "rain_p75_mm": 36.5,
-          "rain_p90_mm": 41.7,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.9,
+          "rain_p75_mm": 25.5,
+          "rain_p90_mm": 33.7,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.9,
-          "rain_p75_mm": 22.8,
-          "rain_p90_mm": 35.4,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.9,
+          "rain_p75_mm": 31.4,
+          "rain_p90_mm": 44.1,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.9,
+          "rain_p75_mm": 31.5,
+          "rain_p90_mm": 39.4,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -234,32 +234,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 33.7,
-          "rain_p75_mm": 42.4,
-          "rain_p90_mm": 50.4,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.7,
+          "rain_p75_mm": 26.8,
+          "rain_p90_mm": 33.9,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 22.7,
-          "rain_p75_mm": 27.5,
-          "rain_p90_mm": 33.2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.9,
+          "rain_p75_mm": 25.1,
+          "rain_p90_mm": 31.7,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 15.5,
+          "rain_p75_mm": 20.4,
+          "rain_p90_mm": 25.0,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.3,
-          "rain_p75_mm": 22.6,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -270,31 +270,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 20.4,
-          "rain_p75_mm": 28.2,
-          "rain_p90_mm": 35.7,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.3,
-          "rain_p75_mm": 15.8,
-          "rain_p90_mm": 18.7,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.8,
+          "rain_p75_mm": 20.7,
+          "rain_p90_mm": 24.6,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.5,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.3,
           "rain_p75_mm": 15.1,
-          "rain_p90_mm": 19.3,
-          "prob_heavy_pct": 2,
+          "rain_p90_mm": 17.7,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 11.6,
+          "rain_p75_mm": 14.0,
+          "rain_p90_mm": 16.4,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -306,31 +306,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 49.6,
-          "rain_p75_mm": 66.8,
-          "rain_p90_mm": 90.3,
-          "prob_heavy_pct": 38,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 31.0,
+          "rain_p75_mm": 48.6,
+          "rain_p90_mm": 69.1,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 26.4,
-          "rain_p75_mm": 34.1,
-          "rain_p90_mm": 49.0,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.9,
+          "rain_p75_mm": 26.2,
+          "rain_p90_mm": 53.3,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.9,
-          "rain_p75_mm": 23.8,
-          "rain_p90_mm": 40.3,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.6,
+          "rain_p75_mm": 40.5,
+          "rain_p90_mm": 60.7,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -342,33 +342,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 36.0,
-          "rain_p75_mm": 44.4,
-          "rain_p90_mm": 51.3,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 16.9,
+          "rain_p75_mm": 28.8,
+          "rain_p90_mm": 51.8,
           "prob_heavy_pct": 18,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 21.4,
-          "rain_p75_mm": 38.3,
-          "rain_p90_mm": 64.7,
-          "prob_heavy_pct": 26,
-          "prob_very_heavy_pct": 16,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.7,
+          "rain_p75_mm": 27.0,
+          "rain_p90_mm": 42.1,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 8,
           "prob_extr_heavy_pct": 4,
-          "alert": "YELLOW"
+          "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 20.1,
-          "rain_p75_mm": 33.3,
-          "rain_p90_mm": 50.0,
-          "prob_heavy_pct": 16,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 21.2,
+          "rain_p75_mm": 32.5,
+          "rain_p90_mm": 45.4,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -378,32 +378,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 27.8,
-          "rain_p75_mm": 41.0,
-          "rain_p90_mm": 59.9,
-          "prob_heavy_pct": 16,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.4,
+          "rain_p75_mm": 37.0,
+          "rain_p90_mm": 62.2,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 24.7,
-          "rain_p75_mm": 32.1,
-          "rain_p90_mm": 41.8,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 14.4,
+          "rain_p75_mm": 24.4,
+          "rain_p90_mm": 35.0,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.9,
-          "rain_p75_mm": 11.0,
-          "rain_p90_mm": 15.8,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 27.1,
+          "rain_p75_mm": 34.2,
+          "rain_p90_mm": 49.6,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -414,33 +414,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 47.0,
-          "rain_p75_mm": 55.1,
-          "rain_p90_mm": 64.6,
-          "prob_heavy_pct": 36,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 22.9,
-          "rain_p75_mm": 32.6,
-          "rain_p90_mm": 48.6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.7,
+          "rain_p75_mm": 28.3,
+          "rain_p90_mm": 43.3,
           "prob_heavy_pct": 16,
-          "prob_very_heavy_pct": 8,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 20.3,
-          "rain_p75_mm": 32.9,
-          "rain_p90_mm": 51.1,
-          "prob_heavy_pct": 18,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.4,
+          "rain_p75_mm": 22.1,
+          "rain_p90_mm": 37.2,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 18.6,
+          "rain_p75_mm": 25.3,
+          "rain_p90_mm": 33.5,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -450,32 +450,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 52.5,
-          "rain_p75_mm": 70.6,
-          "rain_p90_mm": 94.6,
-          "prob_heavy_pct": 42,
-          "prob_very_heavy_pct": 10,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.2,
+          "rain_p75_mm": 43.1,
+          "rain_p90_mm": 66.8,
+          "prob_heavy_pct": 26,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 4,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 29.9,
-          "rain_p75_mm": 39.0,
-          "rain_p90_mm": 50.9,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.3,
+          "rain_p75_mm": 31.0,
+          "rain_p90_mm": 55.5,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.0,
-          "rain_p75_mm": 22.8,
-          "rain_p90_mm": 46.0,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 32.1,
+          "rain_p75_mm": 43.0,
+          "rain_p90_mm": 59.6,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -486,32 +486,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 36.3,
-          "rain_p75_mm": 46.6,
-          "rain_p90_mm": 57.1,
-          "prob_heavy_pct": 16,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.7,
+          "rain_p75_mm": 25.7,
+          "rain_p90_mm": 33.1,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 33.2,
-          "rain_p75_mm": 38.2,
-          "rain_p90_mm": 43.1,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.3,
+          "rain_p75_mm": 31.3,
+          "rain_p90_mm": 42.4,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 23.2,
+          "rain_p75_mm": 30.3,
+          "rain_p90_mm": 39.3,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.9,
-          "rain_p75_mm": 24.0,
-          "rain_p90_mm": 38.1,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -522,33 +522,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 46.0,
-          "rain_p75_mm": 60.1,
-          "rain_p90_mm": 70.0,
-          "prob_heavy_pct": 38,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 25.6,
-          "rain_p75_mm": 47.1,
-          "rain_p90_mm": 88.3,
-          "prob_heavy_pct": 24,
-          "prob_very_heavy_pct": 10,
-          "prob_extr_heavy_pct": 6,
-          "alert": "YELLOW"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 17.2,
-          "rain_p75_mm": 32.4,
-          "rain_p90_mm": 55.4,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
+          "rain_median_mm": 20.2,
+          "rain_p75_mm": 37.8,
+          "rain_p90_mm": 80.2,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.7,
+          "rain_p75_mm": 39.1,
+          "rain_p90_mm": 67.6,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 4,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.5,
+          "rain_p75_mm": 40.0,
+          "rain_p90_mm": 65.0,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -558,32 +558,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 28.7,
-          "rain_p75_mm": 41.5,
-          "rain_p90_mm": 56.7,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 35.7,
-          "rain_p75_mm": 43.4,
-          "rain_p90_mm": 51.2,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.9,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 39.5,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.3,
-          "rain_p75_mm": 19.7,
-          "rain_p90_mm": 29.7,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.9,
+          "rain_p75_mm": 35.0,
+          "rain_p90_mm": 51.3,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.7,
+          "rain_p75_mm": 34.8,
+          "rain_p90_mm": 46.3,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -594,31 +594,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 34.1,
-          "rain_p75_mm": 46.1,
-          "rain_p90_mm": 61.6,
-          "prob_heavy_pct": 26,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 39.0,
-          "rain_p75_mm": 44.9,
-          "rain_p90_mm": 49.4,
-          "prob_heavy_pct": 12,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.6,
+          "rain_p75_mm": 30.3,
+          "rain_p90_mm": 39.3,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.3,
-          "rain_p75_mm": 19.4,
-          "rain_p90_mm": 29.9,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.2,
+          "rain_p75_mm": 33.2,
+          "rain_p90_mm": 47.9,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 27.3,
+          "rain_p75_mm": 34.0,
+          "rain_p90_mm": 41.2,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -630,31 +630,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 30.7,
-          "rain_p75_mm": 37.0,
-          "rain_p90_mm": 42.6,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.8,
+          "rain_p75_mm": 23.0,
+          "rain_p90_mm": 29.7,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.2,
-          "rain_p75_mm": 20.8,
-          "rain_p90_mm": 28.2,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 8.3,
+          "rain_p75_mm": 12.5,
+          "rain_p90_mm": 17.0,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 13.8,
-          "rain_p90_mm": 19.6,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 8.2,
+          "rain_p75_mm": 10.8,
+          "rain_p90_mm": 12.8,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -666,32 +666,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 49.5,
-          "rain_p75_mm": 59.1,
-          "rain_p90_mm": 70.2,
-          "prob_heavy_pct": 36,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.6,
+          "rain_p75_mm": 35.6,
+          "rain_p90_mm": 60.3,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 12,
+          "prob_extr_heavy_pct": 4,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 21.5,
-          "rain_p75_mm": 30.9,
-          "rain_p90_mm": 39.5,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 11.4,
+          "rain_p75_mm": 20.7,
+          "rain_p90_mm": 35.3,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.4,
-          "rain_p75_mm": 23.2,
-          "rain_p90_mm": 36.8,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 15.7,
+          "rain_p75_mm": 23.8,
+          "rain_p90_mm": 33.4,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -702,30 +702,30 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.8,
-          "rain_p75_mm": 16.9,
-          "rain_p90_mm": 22.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.9,
-          "rain_p75_mm": 17.7,
-          "rain_p90_mm": 22.3,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.9,
-          "rain_p75_mm": 15.7,
-          "rain_p90_mm": 20.0,
+          "rain_median_mm": 18.0,
+          "rain_p75_mm": 22.7,
+          "rain_p90_mm": 27.6,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 11.7,
+          "rain_p75_mm": 14.9,
+          "rain_p90_mm": 19.7,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 10.9,
+          "rain_p75_mm": 13.2,
+          "rain_p90_mm": 15.1,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -738,31 +738,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 31.3,
-          "rain_p75_mm": 47.1,
-          "rain_p90_mm": 66.1,
-          "prob_heavy_pct": 24,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 25.0,
-          "rain_p75_mm": 35.8,
-          "rain_p90_mm": 50.8,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 34.8,
+          "rain_p90_mm": 56.1,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.1,
-          "rain_p75_mm": 14.8,
-          "rain_p90_mm": 24.5,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 16.6,
+          "rain_p75_mm": 28.5,
+          "rain_p90_mm": 42.6,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.6,
+          "rain_p75_mm": 37.2,
+          "rain_p90_mm": 49.6,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -774,33 +774,33 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 37.2,
-          "rain_p75_mm": 44.0,
-          "rain_p90_mm": 51.0,
-          "prob_heavy_pct": 32,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 17.5,
-          "rain_p75_mm": 24.1,
-          "rain_p90_mm": 32.0,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.3,
+          "rain_p75_mm": 29.2,
+          "rain_p90_mm": 36.9,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.4,
-          "rain_p75_mm": 21.8,
-          "rain_p90_mm": 31.0,
-          "prob_heavy_pct": 12,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 9.6,
+          "rain_p75_mm": 15.6,
+          "rain_p90_mm": 21.9,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 10.7,
+          "rain_p75_mm": 14.1,
+          "rain_p90_mm": 18.0,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -810,31 +810,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 32.9,
-          "rain_p75_mm": 40.3,
-          "rain_p90_mm": 47.8,
-          "prob_heavy_pct": 22,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 17.4,
-          "rain_p75_mm": 23.9,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.0,
+          "rain_p75_mm": 25.3,
+          "rain_p90_mm": 32.1,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.4,
-          "rain_p75_mm": 19.7,
-          "rain_p90_mm": 29.5,
-          "prob_heavy_pct": 10,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 11.7,
+          "rain_p75_mm": 18.8,
+          "rain_p90_mm": 26.3,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 11.4,
+          "rain_p75_mm": 16.2,
+          "rain_p90_mm": 22.9,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -846,31 +846,31 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 15.1,
-          "rain_p75_mm": 23.6,
-          "rain_p90_mm": 38.7,
-          "prob_heavy_pct": 18,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 14.7,
-          "rain_p75_mm": 20.8,
-          "rain_p90_mm": 28.2,
-          "prob_heavy_pct": 16,
-          "prob_very_heavy_pct": 6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 19.0,
+          "rain_p75_mm": 22.8,
+          "rain_p90_mm": 27.0,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.8,
-          "rain_p75_mm": 15.2,
-          "rain_p90_mm": 18.8,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 12.6,
+          "rain_p75_mm": 18.0,
+          "rain_p90_mm": 25.7,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 14.8,
+          "rain_p75_mm": 18.7,
+          "rain_p90_mm": 23.5,
+          "prob_heavy_pct": 14,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -882,32 +882,32 @@
       "state": "ARUNACHAL PRADESH",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 48.2,
-          "rain_p75_mm": 59.8,
-          "rain_p90_mm": 72.4,
-          "prob_heavy_pct": 34,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.5,
+          "rain_p75_mm": 38.0,
+          "rain_p90_mm": 57.3,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 23.1,
-          "rain_p75_mm": 34.3,
-          "rain_p90_mm": 44.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 11.4,
+          "rain_p75_mm": 21.1,
+          "rain_p90_mm": 35.5,
           "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 0,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.6,
-          "rain_p75_mm": 20.3,
-          "rain_p90_mm": 31.3,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 17.5,
+          "rain_p75_mm": 27.6,
+          "rain_p90_mm": 40.2,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -918,34 +918,34 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.5,
-          "rain_p75_mm": 14.6,
-          "rain_p90_mm": 31.6,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 18.8,
-          "rain_p75_mm": 32.3,
-          "rain_p90_mm": 53.5,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.3,
-          "rain_p75_mm": 9.7,
-          "rain_p90_mm": 15.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
+          "rain_median_mm": 23.1,
+          "rain_p75_mm": 38.6,
+          "rain_p90_mm": 60.8,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 26.1,
+          "rain_p75_mm": 51.3,
+          "rain_p90_mm": 79.9,
+          "prob_heavy_pct": 24,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
+          "alert": "YELLOW"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 39.4,
+          "rain_p75_mm": 54.0,
+          "rain_p90_mm": 66.3,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "YELLOW"
         }
       ]
     },
@@ -954,32 +954,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.4,
-          "rain_p75_mm": 13.3,
-          "rain_p90_mm": 24.5,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.2,
+          "rain_p75_mm": 32.7,
+          "rain_p90_mm": 51.5,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 18.8,
-          "rain_p75_mm": 32.7,
-          "rain_p90_mm": 53.9,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 28.7,
+          "rain_p75_mm": 42.8,
+          "rain_p90_mm": 57.9,
+          "prob_heavy_pct": 22,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
+          "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.4,
-          "rain_p75_mm": 14.2,
-          "rain_p90_mm": 22.0,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 38.5,
+          "rain_p75_mm": 47.6,
+          "rain_p90_mm": 56.3,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -990,31 +990,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 37.6,
-          "rain_p75_mm": 48.6,
-          "rain_p90_mm": 62.4,
-          "prob_heavy_pct": 18,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 49.0,
-          "rain_p75_mm": 55.2,
-          "rain_p90_mm": 60.8,
-          "prob_heavy_pct": 16,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.7,
+          "rain_p75_mm": 34.7,
+          "rain_p90_mm": 50.6,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.9,
-          "rain_p75_mm": 15.2,
-          "rain_p90_mm": 24.7,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.3,
+          "rain_p75_mm": 30.5,
+          "rain_p90_mm": 41.5,
           "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.6,
+          "rain_p75_mm": 44.8,
+          "rain_p90_mm": 57.2,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1026,31 +1026,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 4.9,
-          "rain_p75_mm": 10.3,
-          "rain_p90_mm": 17.8,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 19.1,
+          "rain_p75_mm": 33.6,
+          "rain_p90_mm": 46.8,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.8,
-          "rain_p75_mm": 26.2,
-          "rain_p90_mm": 57.9,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 26.6,
+          "rain_p75_mm": 38.7,
+          "rain_p90_mm": 49.0,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.8,
-          "rain_p75_mm": 13.8,
-          "rain_p90_mm": 23.5,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 39.6,
+          "rain_p75_mm": 49.6,
+          "rain_p90_mm": 60.3,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1062,31 +1062,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 13.6,
-          "rain_p75_mm": 27.8,
-          "rain_p90_mm": 48.8,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 4,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.7,
-          "rain_p75_mm": 19.2,
-          "rain_p90_mm": 32.2,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.1,
-          "rain_p75_mm": 15.7,
-          "rain_p90_mm": 26.2,
+          "rain_median_mm": 20.8,
+          "rain_p75_mm": 27.1,
+          "rain_p90_mm": 33.5,
           "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.8,
+          "rain_p75_mm": 26.4,
+          "rain_p90_mm": 33.9,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.9,
+          "rain_p75_mm": 32.3,
+          "rain_p90_mm": 38.0,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1098,32 +1098,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 45.0,
-          "rain_p75_mm": 59.7,
-          "rain_p90_mm": 74.2,
-          "prob_heavy_pct": 28,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 28.0,
-          "rain_p75_mm": 38.3,
-          "rain_p90_mm": 47.6,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 27.0,
+          "rain_p75_mm": 48.2,
+          "rain_p90_mm": 81.5,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.0,
-          "rain_p75_mm": 16.3,
-          "rain_p90_mm": 27.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.8,
+          "rain_p75_mm": 35.6,
+          "rain_p90_mm": 56.4,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 4,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 30.8,
+          "rain_p75_mm": 41.5,
+          "rain_p90_mm": 52.0,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1134,34 +1134,34 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.2,
-          "rain_p75_mm": 15.7,
-          "rain_p90_mm": 25.3,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 34.1,
+          "rain_p90_mm": 48.6,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.1,
-          "rain_p75_mm": 26.0,
-          "rain_p90_mm": 54.3,
-          "prob_heavy_pct": 16,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.6,
+          "rain_p75_mm": 47.7,
+          "rain_p90_mm": 77.6,
+          "prob_heavy_pct": 22,
           "prob_very_heavy_pct": 8,
           "prob_extr_heavy_pct": 4,
-          "alert": "GREEN"
+          "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.4,
-          "rain_p75_mm": 10.9,
-          "rain_p90_mm": 21.3,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 41.3,
+          "rain_p75_mm": 57.4,
+          "rain_p90_mm": 73.2,
+          "prob_heavy_pct": 26,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
+          "alert": "YELLOW"
         }
       ]
     },
@@ -1170,31 +1170,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 14.4,
-          "rain_p75_mm": 30.9,
-          "rain_p90_mm": 50.6,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 4,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
           "rain_median_mm": 20.4,
-          "rain_p75_mm": 31.9,
-          "rain_p90_mm": 43.1,
-          "prob_heavy_pct": 4,
+          "rain_p75_mm": 30.1,
+          "rain_p90_mm": 42.9,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 4.8,
-          "rain_p75_mm": 8.5,
-          "rain_p90_mm": 13.2,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 16.9,
+          "rain_p75_mm": 30.0,
+          "rain_p90_mm": 42.3,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.0,
+          "rain_p75_mm": 38.3,
+          "rain_p90_mm": 49.1,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1206,32 +1206,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 56.6,
-          "rain_p75_mm": 72.4,
-          "rain_p90_mm": 90.0,
-          "prob_heavy_pct": 44,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.7,
+          "rain_p75_mm": 43.5,
+          "rain_p90_mm": 69.5,
+          "prob_heavy_pct": 20,
           "prob_very_heavy_pct": 8,
           "prob_extr_heavy_pct": 2,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 30.4,
-          "rain_p75_mm": 40.6,
-          "rain_p90_mm": 51.1,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.9,
+          "rain_p75_mm": 34.4,
+          "rain_p90_mm": 65.1,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.9,
-          "rain_p75_mm": 19.6,
-          "rain_p90_mm": 36.7,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.4,
+          "rain_p75_mm": 45.1,
+          "rain_p90_mm": 54.2,
           "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1242,31 +1242,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 4.2,
-          "rain_p75_mm": 7.4,
-          "rain_p90_mm": 11.4,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 9.7,
+          "rain_p75_mm": 19.9,
+          "rain_p90_mm": 34.0,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 4,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.5,
+          "rain_p75_mm": 31.5,
+          "rain_p90_mm": 46.0,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 7.0,
-          "rain_p75_mm": 18.3,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.7,
-          "rain_p75_mm": 11.8,
-          "rain_p90_mm": 19.4,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 33.2,
+          "rain_p75_mm": 41.1,
+          "rain_p90_mm": 51.0,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1278,32 +1278,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 52.1,
-          "rain_p75_mm": 66.4,
-          "rain_p90_mm": 81.4,
-          "prob_heavy_pct": 42,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.9,
+          "rain_p75_mm": 46.0,
+          "rain_p90_mm": 77.4,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 27.4,
-          "rain_p75_mm": 38.3,
-          "rain_p90_mm": 51.2,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.7,
+          "rain_p75_mm": 35.1,
+          "rain_p90_mm": 81.5,
+          "prob_heavy_pct": 24,
+          "prob_very_heavy_pct": 12,
+          "prob_extr_heavy_pct": 6,
+          "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.3,
-          "rain_p75_mm": 16.3,
-          "rain_p90_mm": 26.0,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.0,
+          "rain_p75_mm": 44.4,
+          "rain_p90_mm": 52.1,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1314,33 +1314,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 19.0,
-          "rain_p90_mm": 33.2,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 12.7,
-          "rain_p75_mm": 20.6,
-          "rain_p90_mm": 36.2,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.9,
-          "rain_p75_mm": 12.3,
-          "rain_p90_mm": 20.4,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 20.4,
+          "rain_p75_mm": 26.8,
+          "rain_p90_mm": 35.5,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.4,
+          "rain_p75_mm": 30.4,
+          "rain_p90_mm": 42.8,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.8,
+          "rain_p75_mm": 35.3,
+          "rain_p90_mm": 47.1,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -1350,33 +1350,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 18.7,
-          "rain_p90_mm": 30.8,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.7,
+          "rain_p75_mm": 25.4,
+          "rain_p90_mm": 37.0,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.4,
-          "rain_p75_mm": 29.4,
-          "rain_p90_mm": 51.6,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.1,
+          "rain_p75_mm": 33.2,
+          "rain_p90_mm": 41.4,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.5,
-          "rain_p75_mm": 17.7,
-          "rain_p90_mm": 29.8,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 36.1,
+          "rain_p75_mm": 43.2,
+          "rain_p90_mm": 50.9,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -1386,33 +1386,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 33.6,
-          "rain_p75_mm": 48.3,
-          "rain_p90_mm": 73.1,
-          "prob_heavy_pct": 20,
-          "prob_very_heavy_pct": 10,
-          "prob_extr_heavy_pct": 2,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 38.7,
-          "rain_p75_mm": 46.8,
-          "rain_p90_mm": 54.6,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.7,
+          "rain_p75_mm": 36.4,
+          "rain_p90_mm": 48.7,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.0,
-          "rain_p75_mm": 17.0,
-          "rain_p90_mm": 30.1,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.0,
+          "rain_p75_mm": 36.6,
+          "rain_p90_mm": 51.1,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.1,
+          "rain_p75_mm": 44.4,
+          "rain_p90_mm": 55.4,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -1422,31 +1422,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.2,
-          "rain_p75_mm": 19.0,
-          "rain_p90_mm": 27.7,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.7,
-          "rain_p75_mm": 17.2,
-          "rain_p90_mm": 26.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.8,
-          "rain_p75_mm": 17.0,
-          "rain_p90_mm": 25.1,
-          "prob_heavy_pct": 2,
+          "rain_median_mm": 21.2,
+          "rain_p75_mm": 25.4,
+          "rain_p90_mm": 29.8,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.7,
+          "rain_p75_mm": 22.8,
+          "rain_p90_mm": 26.2,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.3,
+          "rain_p75_mm": 33.3,
+          "rain_p90_mm": 38.5,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1458,32 +1458,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 18.3,
-          "rain_p75_mm": 34.3,
-          "rain_p90_mm": 62.2,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.8,
+          "rain_p75_mm": 32.3,
+          "rain_p90_mm": 40.2,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 19.1,
-          "rain_p75_mm": 28.8,
-          "rain_p90_mm": 37.8,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.3,
+          "rain_p75_mm": 35.0,
+          "rain_p90_mm": 49.7,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.8,
-          "rain_p75_mm": 12.5,
-          "rain_p90_mm": 18.4,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.3,
+          "rain_p75_mm": 33.8,
+          "rain_p90_mm": 50.4,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1494,32 +1494,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 44.1,
-          "rain_p75_mm": 64.7,
-          "rain_p90_mm": 85.0,
-          "prob_heavy_pct": 36,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 37.8,
-          "rain_p75_mm": 43.2,
-          "rain_p90_mm": 50.3,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.8,
+          "rain_p75_mm": 35.1,
+          "rain_p90_mm": 49.9,
+          "prob_heavy_pct": 14,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.4,
-          "rain_p75_mm": 20.8,
-          "rain_p90_mm": 36.3,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.6,
+          "rain_p75_mm": 47.2,
+          "rain_p90_mm": 72.3,
+          "prob_heavy_pct": 22,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 2,
+          "alert": "YELLOW"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 36.1,
+          "rain_p75_mm": 44.0,
+          "rain_p90_mm": 52.1,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1530,31 +1530,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.4,
-          "rain_p75_mm": 22.9,
-          "rain_p90_mm": 45.2,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.8,
-          "rain_p75_mm": 27.9,
-          "rain_p90_mm": 41.6,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.9,
+          "rain_p75_mm": 27.2,
+          "rain_p90_mm": 37.6,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.3,
-          "rain_p75_mm": 12.3,
-          "rain_p90_mm": 18.1,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.8,
+          "rain_p75_mm": 32.4,
+          "rain_p90_mm": 46.0,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 30.5,
+          "rain_p75_mm": 37.9,
+          "rain_p90_mm": 47.0,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1566,33 +1566,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.6,
-          "rain_p75_mm": 24.3,
-          "rain_p90_mm": 42.6,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 20.1,
-          "rain_p75_mm": 34.6,
-          "rain_p90_mm": 54.5,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.8,
-          "rain_p75_mm": 17.1,
-          "rain_p90_mm": 27.7,
+          "rain_median_mm": 22.0,
+          "rain_p75_mm": 31.9,
+          "rain_p90_mm": 42.6,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 27.0,
+          "rain_p75_mm": 37.2,
+          "rain_p90_mm": 47.8,
           "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.4,
+          "rain_p75_mm": 43.3,
+          "rain_p90_mm": 51.8,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -1602,32 +1602,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 22.7,
-          "rain_p75_mm": 39.7,
-          "rain_p90_mm": 62.1,
-          "prob_heavy_pct": 20,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 29.3,
-          "rain_p75_mm": 36.9,
-          "rain_p90_mm": 47.2,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.6,
+          "rain_p75_mm": 35.9,
+          "rain_p90_mm": 47.5,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.7,
-          "rain_p75_mm": 17.5,
-          "rain_p90_mm": 29.3,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.6,
+          "rain_p75_mm": 35.5,
+          "rain_p90_mm": 48.9,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 31.0,
+          "rain_p75_mm": 43.5,
+          "rain_p90_mm": 57.4,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
@@ -1638,33 +1638,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.0,
-          "rain_p75_mm": 15.6,
-          "rain_p90_mm": 22.4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.9,
+          "rain_p75_mm": 22.6,
+          "rain_p90_mm": 28.2,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 10.3,
-          "rain_p75_mm": 16.0,
-          "rain_p90_mm": 24.3,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.5,
+          "rain_p75_mm": 19.9,
+          "rain_p90_mm": 25.1,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.4,
-          "rain_p75_mm": 15.8,
-          "rain_p90_mm": 24.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.3,
+          "rain_p75_mm": 28.6,
+          "rain_p90_mm": 35.1,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -1674,34 +1674,34 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.5,
-          "rain_p75_mm": 10.0,
-          "rain_p90_mm": 15.2,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 23.2,
-          "rain_p90_mm": 60.5,
-          "prob_heavy_pct": 14,
-          "prob_very_heavy_pct": 12,
-          "prob_extr_heavy_pct": 6,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.4,
-          "rain_p75_mm": 11.5,
-          "rain_p90_mm": 19.5,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "rain_median_mm": 15.9,
+          "rain_p75_mm": 29.1,
+          "rain_p90_mm": 48.5,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 4,
           "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.3,
+          "rain_p75_mm": 37.5,
+          "rain_p90_mm": 62.4,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 4,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 37.6,
+          "rain_p75_mm": 49.8,
+          "rain_p90_mm": 58.9,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
+          "alert": "YELLOW"
         }
       ]
     },
@@ -1710,32 +1710,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 55.0,
-          "rain_p75_mm": 67.7,
-          "rain_p90_mm": 78.2,
-          "prob_heavy_pct": 44,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.1,
+          "rain_p75_mm": 36.3,
+          "rain_p90_mm": 50.4,
+          "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 45.1,
-          "rain_p75_mm": 49.8,
-          "rain_p90_mm": 54.8,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 34.3,
+          "rain_p90_mm": 51.8,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.5,
-          "rain_p75_mm": 18.9,
-          "rain_p90_mm": 33.5,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 38.7,
+          "rain_p75_mm": 44.6,
+          "rain_p90_mm": 49.8,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1746,31 +1746,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 55.3,
-          "rain_p75_mm": 67.5,
-          "rain_p90_mm": 79.5,
-          "prob_heavy_pct": 44,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.7,
+          "rain_p75_mm": 38.3,
+          "rain_p90_mm": 53.0,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
+          "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 42.7,
-          "rain_p75_mm": 47.3,
-          "rain_p90_mm": 51.3,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.2,
+          "rain_p75_mm": 36.0,
+          "rain_p90_mm": 46.8,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.9,
-          "rain_p75_mm": 17.9,
-          "rain_p90_mm": 26.4,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 37.5,
+          "rain_p75_mm": 44.0,
+          "rain_p90_mm": 49.2,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1782,31 +1782,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 14.9,
-          "rain_p75_mm": 26.9,
-          "rain_p90_mm": 43.6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.7,
+          "rain_p75_mm": 34.4,
+          "rain_p90_mm": 47.5,
           "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 18.0,
-          "rain_p75_mm": 26.5,
-          "rain_p90_mm": 37.3,
-          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.0,
-          "rain_p75_mm": 8.7,
-          "rain_p90_mm": 12.8,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 16.5,
+          "rain_p75_mm": 25.6,
+          "rain_p90_mm": 36.4,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.2,
+          "rain_p75_mm": 34.1,
+          "rain_p90_mm": 43.6,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1818,32 +1818,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 21.3,
-          "rain_p75_mm": 33.3,
-          "rain_p90_mm": 53.5,
-          "prob_heavy_pct": 12,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.6,
+          "rain_p75_mm": 37.2,
+          "rain_p90_mm": 52.4,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 26.4,
-          "rain_p75_mm": 33.9,
-          "rain_p90_mm": 41.3,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.1,
+          "rain_p75_mm": 28.0,
+          "rain_p90_mm": 38.9,
           "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.1,
-          "rain_p75_mm": 12.2,
-          "rain_p90_mm": 19.8,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 27.6,
+          "rain_p75_mm": 37.4,
+          "rain_p90_mm": 49.4,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1854,31 +1854,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 7.6,
-          "rain_p75_mm": 16.4,
-          "rain_p90_mm": 28.8,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.6,
+          "rain_p75_mm": 34.0,
+          "rain_p90_mm": 50.7,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 21.4,
-          "rain_p75_mm": 32.3,
-          "rain_p90_mm": 54.1,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 26.9,
+          "rain_p75_mm": 43.0,
+          "rain_p90_mm": 60.6,
           "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.6,
-          "rain_p75_mm": 11.6,
-          "rain_p90_mm": 16.5,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 38.0,
+          "rain_p75_mm": 47.2,
+          "rain_p90_mm": 55.5,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1890,32 +1890,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 54.6,
-          "rain_p75_mm": 68.7,
-          "rain_p90_mm": 88.6,
-          "prob_heavy_pct": 44,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 31.9,
-          "rain_p75_mm": 38.9,
-          "rain_p90_mm": 47.0,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 28.2,
+          "rain_p75_mm": 45.8,
+          "rain_p90_mm": 70.4,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 18.1,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 39.8,
+          "rain_p90_mm": 54.3,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 36.4,
+          "rain_p75_mm": 49.1,
+          "rain_p90_mm": 57.3,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -1926,33 +1926,33 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 27.5,
-          "rain_p75_mm": 39.0,
-          "rain_p90_mm": 51.7,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 37.2,
-          "rain_p75_mm": 45.0,
-          "rain_p90_mm": 53.7,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.5,
-          "rain_p75_mm": 13.9,
-          "rain_p90_mm": 24.1,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 24.8,
+          "rain_p75_mm": 34.2,
+          "rain_p90_mm": 46.0,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.4,
+          "rain_p75_mm": 32.0,
+          "rain_p90_mm": 49.1,
+          "prob_heavy_pct": 16,
           "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.1,
+          "rain_p75_mm": 39.3,
+          "rain_p90_mm": 50.9,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -1962,31 +1962,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.2,
-          "rain_p75_mm": 9.6,
-          "rain_p90_mm": 13.5,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 6.8,
+          "rain_p75_mm": 11.7,
+          "rain_p90_mm": 17.5,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.1,
-          "rain_p75_mm": 12.7,
-          "rain_p90_mm": 18.4,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 14.0,
+          "rain_p75_mm": 21.3,
+          "rain_p90_mm": 31.5,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.0,
-          "rain_p75_mm": 11.5,
-          "rain_p90_mm": 19.6,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.9,
+          "rain_p75_mm": 30.8,
+          "rain_p90_mm": 37.4,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -1998,31 +1998,31 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 51.5,
-          "rain_p75_mm": 64.5,
-          "rain_p90_mm": 79.3,
-          "prob_heavy_pct": 42,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.9,
+          "rain_p75_mm": 41.4,
+          "rain_p90_mm": 69.1,
+          "prob_heavy_pct": 20,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 4,
           "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 25.7,
-          "rain_p75_mm": 41.5,
-          "rain_p90_mm": 60.9,
-          "prob_heavy_pct": 18,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 14.9,
+          "rain_p75_mm": 33.4,
+          "rain_p90_mm": 65.9,
+          "prob_heavy_pct": 22,
+          "prob_very_heavy_pct": 12,
+          "prob_extr_heavy_pct": 4,
+          "alert": "YELLOW"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.6,
-          "rain_p75_mm": 23.2,
-          "rain_p90_mm": 36.8,
-          "prob_heavy_pct": 12,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.6,
+          "rain_p75_mm": 37.9,
+          "rain_p90_mm": 46.5,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2034,34 +2034,34 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 15.3,
-          "rain_p75_mm": 38.0,
-          "rain_p90_mm": 72.5,
-          "prob_heavy_pct": 22,
-          "prob_very_heavy_pct": 8,
-          "prob_extr_heavy_pct": 4,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 23.1,
-          "rain_p75_mm": 37.7,
-          "rain_p90_mm": 53.6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.6,
+          "rain_p75_mm": 36.2,
+          "rain_p90_mm": 56.8,
           "prob_heavy_pct": 12,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.3,
-          "rain_p75_mm": 9.3,
-          "rain_p90_mm": 13.5,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 16.0,
+          "rain_p75_mm": 35.1,
+          "rain_p90_mm": 59.1,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.4,
+          "rain_p75_mm": 42.2,
+          "rain_p90_mm": 60.6,
+          "prob_heavy_pct": 22,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 0,
+          "alert": "YELLOW"
         }
       ]
     },
@@ -2070,32 +2070,32 @@
       "state": "ASSAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.3,
-          "rain_p75_mm": 17.3,
-          "rain_p90_mm": 28.3,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.4,
-          "rain_p75_mm": 18.9,
-          "rain_p90_mm": 32.8,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.1,
+          "rain_p75_mm": 27.5,
+          "rain_p90_mm": 35.3,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.4,
-          "rain_p75_mm": 11.3,
-          "rain_p90_mm": 16.6,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.5,
+          "rain_p75_mm": 30.5,
+          "rain_p90_mm": 42.5,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 21.5,
+          "rain_p75_mm": 28.4,
+          "rain_p90_mm": 37.3,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -2106,30 +2106,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.9,
-          "rain_p75_mm": 10.8,
-          "rain_p90_mm": 14.9,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.1,
+          "rain_p75_mm": 28.6,
+          "rain_p90_mm": 35.6,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.9,
-          "rain_p75_mm": 19.8,
-          "rain_p90_mm": 32.6,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.3,
+          "rain_p75_mm": 29.1,
+          "rain_p90_mm": 33.0,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.0,
-          "rain_p75_mm": 21.9,
-          "rain_p90_mm": 31.5,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.6,
+          "rain_p75_mm": 28.2,
+          "rain_p90_mm": 35.4,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2142,30 +2142,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 8.4,
-          "rain_p75_mm": 14.6,
-          "rain_p90_mm": 22.4,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 14.1,
-          "rain_p75_mm": 20.0,
-          "rain_p90_mm": 25.7,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 27.8,
+          "rain_p75_mm": 34.6,
+          "rain_p90_mm": 41.0,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 19.1,
-          "rain_p75_mm": 24.1,
-          "rain_p90_mm": 28.9,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.1,
+          "rain_p75_mm": 25.1,
+          "rain_p90_mm": 27.8,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 19.4,
+          "rain_p75_mm": 26.3,
+          "rain_p90_mm": 33.9,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2178,31 +2178,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.5,
-          "rain_p75_mm": 10.0,
-          "rain_p90_mm": 14.1,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.6,
+          "rain_p75_mm": 28.2,
+          "rain_p90_mm": 34.9,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.4,
-          "rain_p75_mm": 16.6,
-          "rain_p90_mm": 23.8,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.1,
+          "rain_p75_mm": 26.0,
+          "rain_p90_mm": 30.8,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.1,
-          "rain_p75_mm": 21.9,
-          "rain_p90_mm": 32.7,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.1,
+          "rain_p75_mm": 27.2,
+          "rain_p90_mm": 33.0,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2214,30 +2214,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.1,
-          "rain_p75_mm": 11.7,
-          "rain_p90_mm": 19.3,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.2,
-          "rain_p75_mm": 28.4,
-          "rain_p90_mm": 48.0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.7,
+          "rain_p75_mm": 28.1,
+          "rain_p90_mm": 48.3,
           "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.6,
-          "rain_p75_mm": 19.9,
-          "rain_p90_mm": 40.5,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.0,
+          "rain_p75_mm": 34.3,
+          "rain_p90_mm": 40.1,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 27.3,
+          "rain_p75_mm": 36.0,
+          "rain_p90_mm": 49.3,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2250,31 +2250,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.7,
-          "rain_p75_mm": 12.0,
-          "rain_p90_mm": 20.3,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.4,
-          "rain_p75_mm": 24.7,
-          "rain_p90_mm": 40.3,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.0,
-          "rain_p75_mm": 19.2,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 0,
+          "rain_median_mm": 17.6,
+          "rain_p75_mm": 25.1,
+          "rain_p90_mm": 39.5,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.3,
+          "rain_p75_mm": 32.3,
+          "rain_p90_mm": 39.7,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.9,
+          "rain_p75_mm": 34.9,
+          "rain_p90_mm": 44.3,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2286,30 +2286,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 15.9,
-          "rain_p75_mm": 31.1,
-          "rain_p90_mm": 58.4,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.1,
-          "rain_p75_mm": 25.4,
-          "rain_p90_mm": 42.9,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.0,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 39.3,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.0,
-          "rain_p75_mm": 18.9,
-          "rain_p90_mm": 24.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.0,
+          "rain_p75_mm": 29.4,
+          "rain_p90_mm": 37.5,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.8,
+          "rain_p75_mm": 33.3,
+          "rain_p90_mm": 40.4,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2322,30 +2322,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.6,
-          "rain_p75_mm": 11.1,
-          "rain_p90_mm": 22.9,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 21.6,
+          "rain_p75_mm": 35.2,
+          "rain_p90_mm": 42.4,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 12.6,
-          "rain_p75_mm": 19.9,
-          "rain_p90_mm": 27.7,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.2,
+          "rain_p75_mm": 29.9,
+          "rain_p90_mm": 34.7,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.3,
-          "rain_p75_mm": 21.1,
-          "rain_p90_mm": 27.0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.9,
+          "rain_p75_mm": 29.4,
+          "rain_p90_mm": 38.8,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2358,32 +2358,32 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.1,
-          "rain_p75_mm": 19.8,
-          "rain_p90_mm": 43.0,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 25.8,
-          "rain_p75_mm": 35.4,
-          "rain_p90_mm": 47.0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 31.9,
+          "rain_p75_mm": 39.1,
+          "rain_p90_mm": 49.0,
           "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 20.6,
-          "rain_p75_mm": 27.8,
-          "rain_p90_mm": 38.5,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 33.7,
+          "rain_p75_mm": 38.1,
+          "rain_p90_mm": 43.0,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.2,
+          "rain_p75_mm": 37.6,
+          "rain_p90_mm": 47.8,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -2394,31 +2394,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.2,
-          "rain_p75_mm": 11.5,
-          "rain_p90_mm": 20.3,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 14.9,
-          "rain_p75_mm": 23.7,
-          "rain_p90_mm": 38.5,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.2,
+          "rain_p75_mm": 26.7,
+          "rain_p90_mm": 39.6,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.4,
-          "rain_p75_mm": 17.9,
-          "rain_p90_mm": 31.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.8,
+          "rain_p75_mm": 31.1,
+          "rain_p90_mm": 38.3,
           "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.3,
+          "rain_p75_mm": 35.6,
+          "rain_p90_mm": 47.1,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2430,30 +2430,30 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.1,
-          "rain_p75_mm": 19.0,
-          "rain_p90_mm": 33.6,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.3,
-          "rain_p75_mm": 26.0,
-          "rain_p90_mm": 40.5,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.9,
-          "rain_p75_mm": 20.9,
-          "rain_p90_mm": 28.1,
+          "rain_median_mm": 21.4,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 40.5,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.7,
+          "rain_p75_mm": 30.7,
+          "rain_p90_mm": 38.4,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.4,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 36.3,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2466,32 +2466,32 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.1,
-          "rain_p75_mm": 19.4,
-          "rain_p90_mm": 37.2,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.5,
-          "rain_p75_mm": 20.0,
-          "rain_p90_mm": 29.0,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.0,
-          "rain_p75_mm": 17.7,
-          "rain_p90_mm": 28.3,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "rain_median_mm": 25.8,
+          "rain_p75_mm": 32.4,
+          "rain_p90_mm": 39.7,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.5,
+          "rain_p75_mm": 25.9,
+          "rain_p90_mm": 30.3,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.6,
+          "rain_p75_mm": 33.7,
+          "rain_p90_mm": 38.0,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -2502,31 +2502,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.2,
-          "rain_p75_mm": 10.2,
-          "rain_p90_mm": 15.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.5,
-          "rain_p75_mm": 22.1,
-          "rain_p90_mm": 29.8,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.3,
-          "rain_p75_mm": 14.0,
-          "rain_p90_mm": 23.7,
-          "prob_heavy_pct": 2,
+          "rain_median_mm": 17.4,
+          "rain_p75_mm": 26.3,
+          "rain_p90_mm": 35.9,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.5,
+          "rain_p75_mm": 28.1,
+          "rain_p90_mm": 37.4,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.8,
+          "rain_p75_mm": 34.8,
+          "rain_p90_mm": 46.3,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2538,31 +2538,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 18.3,
-          "rain_p90_mm": 30.1,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.4,
-          "rain_p75_mm": 26.5,
-          "rain_p90_mm": 39.1,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.4,
-          "rain_p75_mm": 16.3,
-          "rain_p90_mm": 23.8,
-          "prob_heavy_pct": 2,
+          "rain_median_mm": 18.2,
+          "rain_p75_mm": 25.9,
+          "rain_p90_mm": 36.4,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.1,
+          "rain_p75_mm": 32.1,
+          "rain_p90_mm": 40.7,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.5,
+          "rain_p75_mm": 34.4,
+          "rain_p90_mm": 44.8,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2574,31 +2574,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 21.3,
-          "rain_p90_mm": 42.8,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 22.9,
-          "rain_p75_mm": 30.2,
-          "rain_p90_mm": 40.7,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 33.6,
+          "rain_p75_mm": 41.1,
+          "rain_p90_mm": 47.3,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 25.2,
-          "rain_p75_mm": 31.4,
-          "rain_p90_mm": 38.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 30.0,
+          "rain_p75_mm": 32.5,
+          "rain_p90_mm": 35.5,
           "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.8,
+          "rain_p75_mm": 31.6,
+          "rain_p90_mm": 41.2,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2610,31 +2610,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.2,
-          "rain_p75_mm": 12.2,
-          "rain_p90_mm": 26.6,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.6,
-          "rain_p75_mm": 24.6,
-          "rain_p90_mm": 41.0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.0,
+          "rain_p75_mm": 34.0,
+          "rain_p90_mm": 48.5,
           "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.2,
-          "rain_p75_mm": 22.3,
-          "rain_p90_mm": 33.1,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.4,
+          "rain_p75_mm": 31.7,
+          "rain_p90_mm": 38.8,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.4,
+          "rain_p75_mm": 32.2,
+          "rain_p90_mm": 42.1,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2646,31 +2646,31 @@
       "state": "MANIPUR",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.7,
-          "rain_p75_mm": 11.2,
-          "rain_p90_mm": 17.5,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.6,
+          "rain_p75_mm": 27.9,
+          "rain_p90_mm": 40.3,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 14.8,
-          "rain_p75_mm": 26.5,
-          "rain_p90_mm": 37.3,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.6,
+          "rain_p75_mm": 33.7,
+          "rain_p90_mm": 44.3,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.5,
-          "rain_p75_mm": 17.4,
-          "rain_p90_mm": 28.7,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 26.5,
+          "rain_p75_mm": 34.8,
+          "rain_p90_mm": 46.4,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2682,33 +2682,33 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.6,
-          "rain_p75_mm": 19.8,
-          "rain_p90_mm": 34.1,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 13.3,
+          "rain_p75_mm": 22.3,
+          "rain_p90_mm": 47.9,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 14.5,
-          "rain_p75_mm": 23.5,
-          "rain_p90_mm": 42.4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.5,
+          "rain_p75_mm": 33.2,
+          "rain_p90_mm": 50.2,
           "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.2,
-          "rain_p75_mm": 20.5,
-          "rain_p90_mm": 31.5,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.3,
+          "rain_p75_mm": 40.9,
+          "rain_p90_mm": 47.7,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -2718,31 +2718,31 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 19.8,
-          "rain_p90_mm": 34.6,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 17.9,
-          "rain_p90_mm": 36.6,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.3,
-          "rain_p75_mm": 12.5,
-          "rain_p90_mm": 20.7,
+          "rain_median_mm": 22.4,
+          "rain_p75_mm": 30.1,
+          "rain_p90_mm": 37.0,
           "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.7,
+          "rain_p75_mm": 29.0,
+          "rain_p90_mm": 42.5,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.6,
+          "rain_p75_mm": 31.0,
+          "rain_p90_mm": 37.3,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2754,30 +2754,30 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 8.7,
-          "rain_p75_mm": 16.7,
-          "rain_p90_mm": 26.9,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 15.8,
+          "rain_p75_mm": 22.4,
+          "rain_p90_mm": 29.6,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.6,
-          "rain_p75_mm": 18.1,
-          "rain_p90_mm": 28.9,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.9,
+          "rain_p75_mm": 25.6,
+          "rain_p90_mm": 31.8,
           "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.4,
-          "rain_p75_mm": 16.1,
-          "rain_p90_mm": 24.6,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 25.3,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 35.5,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -2790,33 +2790,33 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.0,
-          "rain_p75_mm": 20.5,
-          "rain_p90_mm": 38.3,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.8,
-          "rain_p75_mm": 26.5,
-          "rain_p90_mm": 40.5,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 16.4,
+          "rain_p75_mm": 23.8,
+          "rain_p90_mm": 34.4,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.8,
-          "rain_p75_mm": 19.3,
-          "rain_p90_mm": 29.4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 24.5,
+          "rain_p75_mm": 33.3,
+          "rain_p90_mm": 44.0,
           "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 35.8,
+          "rain_p75_mm": 42.4,
+          "rain_p90_mm": 48.0,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -2826,32 +2826,32 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 22.9,
-          "rain_p90_mm": 41.1,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 19.2,
           "rain_p75_mm": 26.7,
-          "rain_p90_mm": 40.8,
-          "prob_heavy_pct": 8,
+          "rain_p90_mm": 33.9,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.6,
-          "rain_p75_mm": 15.8,
-          "rain_p90_mm": 24.1,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.1,
+          "rain_p75_mm": 32.2,
+          "rain_p90_mm": 45.6,
           "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 30.3,
+          "rain_p75_mm": 36.8,
+          "rain_p90_mm": 42.8,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -2862,33 +2862,33 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.9,
-          "rain_p75_mm": 13.6,
-          "rain_p90_mm": 19.5,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 8.9,
+          "rain_p75_mm": 18.6,
+          "rain_p90_mm": 44.5,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.8,
+          "rain_p75_mm": 24.7,
+          "rain_p90_mm": 38.5,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 29.3,
+          "rain_p90_mm": 36.7,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.3,
-          "rain_p75_mm": 21.5,
-          "rain_p90_mm": 40.4,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.0,
-          "rain_p75_mm": 13.7,
-          "rain_p90_mm": 21.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -2898,31 +2898,31 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 4.6,
-          "rain_p75_mm": 8.3,
-          "rain_p90_mm": 11.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 5.2,
-          "rain_p75_mm": 10.8,
-          "rain_p90_mm": 16.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 5.9,
-          "rain_p75_mm": 10.5,
-          "rain_p90_mm": 16.0,
+          "rain_median_mm": 4.5,
+          "rain_p75_mm": 9.4,
+          "rain_p90_mm": 15.4,
           "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 10.8,
+          "rain_p75_mm": 15.9,
+          "rain_p90_mm": 26.1,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 20.7,
+          "rain_p75_mm": 25.1,
+          "rain_p90_mm": 30.2,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -2934,33 +2934,33 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 7.7,
-          "rain_p75_mm": 17.7,
-          "rain_p90_mm": 32.1,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 16.0,
+          "rain_p75_mm": 24.1,
+          "rain_p90_mm": 33.2,
           "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.7,
+          "rain_p75_mm": 34.1,
+          "rain_p90_mm": 47.5,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.1,
-          "rain_p75_mm": 23.1,
-          "rain_p90_mm": 34.8,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.2,
+          "rain_p75_mm": 38.0,
+          "rain_p90_mm": 50.8,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.0,
-          "rain_p75_mm": 14.9,
-          "rain_p90_mm": 27.5,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -2970,31 +2970,31 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 6.3,
-          "rain_p75_mm": 11.5,
-          "rain_p90_mm": 19.2,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.6,
-          "rain_p75_mm": 18.9,
-          "rain_p90_mm": 29.8,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.3,
-          "rain_p75_mm": 14.6,
-          "rain_p90_mm": 23.7,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 7.7,
+          "rain_p75_mm": 14.4,
+          "rain_p90_mm": 26.7,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.9,
+          "rain_p75_mm": 27.3,
+          "rain_p90_mm": 37.8,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.6,
+          "rain_p75_mm": 31.0,
+          "rain_p90_mm": 38.3,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3006,31 +3006,31 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 7.4,
-          "rain_p75_mm": 15.2,
-          "rain_p90_mm": 24.0,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.7,
+          "rain_p75_mm": 23.9,
+          "rain_p90_mm": 29.6,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 8.3,
-          "rain_p75_mm": 16.9,
-          "rain_p90_mm": 25.9,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.4,
+          "rain_p75_mm": 27.1,
+          "rain_p90_mm": 37.7,
           "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.8,
-          "rain_p75_mm": 12.4,
-          "rain_p90_mm": 19.4,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 22.6,
+          "rain_p75_mm": 27.2,
+          "rain_p90_mm": 31.8,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3042,33 +3042,33 @@
       "state": "MEGHALAYA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.9,
-          "rain_p75_mm": 25.1,
-          "rain_p90_mm": 38.6,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 12.5,
-          "rain_p75_mm": 22.2,
-          "rain_p90_mm": 34.1,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.3,
-          "rain_p75_mm": 18.9,
-          "rain_p90_mm": 29.7,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 18.0,
+          "rain_p75_mm": 26.4,
+          "rain_p90_mm": 34.4,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 23.3,
+          "rain_p75_mm": 31.6,
+          "rain_p90_mm": 41.5,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 32.0,
+          "rain_p75_mm": 39.4,
+          "rain_p90_mm": 48.2,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3078,30 +3078,30 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.5,
-          "rain_p75_mm": 16.9,
-          "rain_p90_mm": 23.6,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 24.1,
+          "rain_p75_mm": 29.2,
+          "rain_p90_mm": 35.1,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.1,
-          "rain_p75_mm": 14.6,
-          "rain_p90_mm": 18.7,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 19.5,
+          "rain_p75_mm": 22.7,
+          "rain_p90_mm": 27.4,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 14.5,
-          "rain_p75_mm": 22.3,
-          "rain_p90_mm": 30.5,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 24.6,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 34.8,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -3114,31 +3114,31 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 8.6,
-          "rain_p75_mm": 11.5,
-          "rain_p90_mm": 14.6,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 22.2,
+          "rain_p75_mm": 26.8,
+          "rain_p90_mm": 31.3,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 11.3,
-          "rain_p75_mm": 15.0,
-          "rain_p90_mm": 21.8,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.7,
+          "rain_p75_mm": 21.4,
+          "rain_p90_mm": 25.3,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 15.0,
-          "rain_p75_mm": 21.3,
-          "rain_p90_mm": 28.3,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 23.5,
+          "rain_p75_mm": 28.5,
+          "rain_p90_mm": 33.6,
+          "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3150,31 +3150,31 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 13.2,
-          "rain_p75_mm": 19.3,
-          "rain_p90_mm": 27.8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.7,
+          "rain_p75_mm": 30.4,
+          "rain_p90_mm": 35.8,
           "prob_heavy_pct": 2,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 12.7,
-          "rain_p75_mm": 17.0,
-          "rain_p90_mm": 24.0,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.4,
+          "rain_p75_mm": 25.2,
+          "rain_p90_mm": 29.3,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.2,
-          "rain_p75_mm": 20.0,
-          "rain_p90_mm": 26.9,
-          "prob_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.5,
+          "rain_p75_mm": 34.8,
+          "rain_p90_mm": 40.7,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3186,33 +3186,33 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 16.3,
-          "rain_p75_mm": 21.8,
-          "rain_p90_mm": 27.3,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.5,
+          "rain_p75_mm": 27.1,
+          "rain_p90_mm": 40.1,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.8,
+          "rain_p75_mm": 21.1,
+          "rain_p90_mm": 25.6,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.9,
-          "rain_p75_mm": 24.5,
-          "rain_p90_mm": 37.7,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 15.8,
+          "rain_p75_mm": 31.0,
+          "rain_p90_mm": 49.1,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 24.3,
-          "rain_p75_mm": 33.2,
-          "rain_p90_mm": 40.6,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3222,33 +3222,33 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.9,
-          "rain_p75_mm": 18.3,
-          "rain_p90_mm": 23.8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.3,
+          "rain_p75_mm": 24.3,
+          "rain_p90_mm": 34.5,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.6,
+          "rain_p75_mm": 19.4,
+          "rain_p90_mm": 23.3,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 8.0,
-          "rain_p75_mm": 15.3,
-          "rain_p90_mm": 27.3,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 20.5,
-          "rain_p75_mm": 29.8,
-          "rain_p90_mm": 38.8,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 15.9,
+          "rain_p75_mm": 27.5,
+          "rain_p90_mm": 47.9,
+          "prob_heavy_pct": 14,
+          "prob_very_heavy_pct": 10,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -3258,32 +3258,32 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.1,
-          "rain_p75_mm": 15.9,
-          "rain_p90_mm": 19.8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.2,
+          "rain_p75_mm": 24.1,
+          "rain_p90_mm": 29.9,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 8.8,
-          "rain_p75_mm": 13.8,
-          "rain_p90_mm": 20.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.9,
+          "rain_p75_mm": 18.5,
+          "rain_p90_mm": 21.5,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 16.1,
-          "rain_p75_mm": 24.4,
-          "rain_p90_mm": 33.0,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 17.1,
+          "rain_p75_mm": 23.3,
+          "rain_p90_mm": 30.1,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3294,32 +3294,32 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 17.4,
-          "rain_p75_mm": 22.6,
-          "rain_p90_mm": 28.0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.8,
+          "rain_p75_mm": 30.1,
+          "rain_p90_mm": 43.4,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 18.8,
+          "rain_p75_mm": 23.8,
+          "rain_p90_mm": 27.3,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.3,
-          "rain_p75_mm": 28.0,
-          "rain_p90_mm": 42.0,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 26.8,
-          "rain_p75_mm": 33.6,
-          "rain_p90_mm": 40.0,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 16.8,
+          "rain_p75_mm": 26.5,
+          "rain_p90_mm": 41.1,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3330,32 +3330,32 @@
       "state": "MIZORAM",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.2,
-          "rain_p75_mm": 13.6,
-          "rain_p90_mm": 17.7,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 20.6,
+          "rain_p75_mm": 25.3,
+          "rain_p90_mm": 31.0,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 10.7,
-          "rain_p75_mm": 15.8,
-          "rain_p90_mm": 24.0,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 17.2,
+          "rain_p75_mm": 21.0,
+          "rain_p90_mm": 24.8,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 17.5,
-          "rain_p75_mm": 27.0,
-          "rain_p90_mm": 35.1,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 16.7,
+          "rain_p75_mm": 25.5,
+          "rain_p90_mm": 36.2,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3366,33 +3366,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 15.1,
-          "rain_p75_mm": 29.2,
-          "rain_p90_mm": 51.7,
-          "prob_heavy_pct": 12,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 20.1,
-          "rain_p75_mm": 27.8,
-          "rain_p90_mm": 39.0,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.4,
+          "rain_p75_mm": 31.9,
+          "rain_p90_mm": 52.2,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.5,
-          "rain_p75_mm": 17.9,
-          "rain_p90_mm": 36.7,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.3,
+          "rain_p75_mm": 39.2,
+          "rain_p90_mm": 56.7,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 31.8,
+          "rain_p75_mm": 45.3,
+          "rain_p90_mm": 53.5,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -3402,30 +3402,30 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.7,
-          "rain_p75_mm": 9.8,
-          "rain_p90_mm": 14.7,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 12.8,
-          "rain_p75_mm": 21.7,
-          "rain_p90_mm": 31.6,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.3,
-          "rain_p75_mm": 10.1,
-          "rain_p90_mm": 14.6,
+          "rain_median_mm": 14.6,
+          "rain_p75_mm": 26.0,
+          "rain_p90_mm": 41.2,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.6,
+          "rain_p75_mm": 34.9,
+          "rain_p90_mm": 49.4,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.1,
+          "rain_p75_mm": 33.9,
+          "rain_p90_mm": 39.3,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -3438,33 +3438,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 11.1,
-          "rain_p75_mm": 21.6,
-          "rain_p90_mm": 39.9,
-          "prob_heavy_pct": 16,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 17.5,
-          "rain_p75_mm": 26.7,
-          "rain_p90_mm": 39.7,
-          "prob_heavy_pct": 4,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 23.0,
+          "rain_p75_mm": 33.3,
+          "rain_p90_mm": 43.5,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.3,
-          "rain_p75_mm": 14.2,
-          "rain_p90_mm": 27.0,
-          "prob_heavy_pct": 8,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.1,
+          "rain_p75_mm": 35.1,
+          "rain_p90_mm": 49.5,
+          "prob_heavy_pct": 10,
           "prob_very_heavy_pct": 4,
           "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 31.1,
+          "rain_p75_mm": 37.9,
+          "rain_p90_mm": 47.1,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3474,33 +3474,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 30.7,
-          "rain_p75_mm": 46.0,
-          "rain_p90_mm": 63.6,
-          "prob_heavy_pct": 22,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 26.3,
-          "rain_p75_mm": 37.2,
-          "rain_p90_mm": 48.6,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 27.3,
+          "rain_p75_mm": 39.7,
+          "rain_p90_mm": 58.7,
+          "prob_heavy_pct": 12,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.5,
-          "rain_p75_mm": 14.4,
-          "rain_p90_mm": 30.7,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.4,
+          "rain_p75_mm": 36.3,
+          "rain_p90_mm": 56.3,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.1,
+          "rain_p75_mm": 43.7,
+          "rain_p90_mm": 53.4,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3510,33 +3510,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 27.7,
-          "rain_p75_mm": 46.9,
-          "rain_p90_mm": 77.9,
-          "prob_heavy_pct": 24,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 28.8,
-          "rain_p75_mm": 38.8,
-          "rain_p90_mm": 51.5,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.2,
+          "rain_p75_mm": 37.8,
+          "rain_p90_mm": 53.9,
           "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 0,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 18.0,
-          "rain_p90_mm": 34.2,
-          "prob_heavy_pct": 6,
-          "prob_very_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 26.7,
+          "rain_p75_mm": 45.1,
+          "rain_p90_mm": 63.2,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 6,
           "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 35.8,
+          "rain_p75_mm": 43.5,
+          "rain_p90_mm": 53.2,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3546,32 +3546,32 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 28.4,
-          "rain_p75_mm": 41.4,
-          "rain_p90_mm": 58.1,
-          "prob_heavy_pct": 20,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 24.0,
-          "rain_p75_mm": 33.4,
-          "rain_p90_mm": 45.4,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 25.4,
+          "rain_p75_mm": 42.2,
+          "rain_p90_mm": 61.9,
+          "prob_heavy_pct": 16,
+          "prob_very_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.3,
-          "rain_p75_mm": 15.1,
-          "rain_p90_mm": 23.7,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 16.8,
+          "rain_p75_mm": 30.2,
+          "rain_p90_mm": 43.0,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 6,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 31.7,
+          "rain_p75_mm": 38.8,
+          "rain_p90_mm": 52.7,
+          "prob_heavy_pct": 10,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3582,33 +3582,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.9,
-          "rain_p75_mm": 20.5,
-          "rain_p90_mm": 37.3,
-          "prob_heavy_pct": 8,
-          "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 2,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 17.4,
-          "rain_p75_mm": 25.6,
-          "rain_p90_mm": 34.9,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 16.8,
+          "rain_p75_mm": 27.3,
+          "rain_p90_mm": 37.2,
           "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 0,
+          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.9,
-          "rain_p75_mm": 15.1,
-          "rain_p90_mm": 29.8,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 21.4,
+          "rain_p75_mm": 32.2,
+          "rain_p90_mm": 49.9,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 30.7,
+          "rain_p75_mm": 40.7,
+          "rain_p90_mm": 49.9,
           "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 4,
-          "prob_extr_heavy_pct": 4,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -3618,30 +3618,30 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 5.8,
-          "rain_p75_mm": 9.4,
-          "rain_p90_mm": 13.6,
-          "prob_heavy_pct": 0,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 17.6,
+          "rain_p75_mm": 26.0,
+          "rain_p90_mm": 39.0,
+          "prob_heavy_pct": 6,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 13.7,
-          "rain_p75_mm": 24.0,
-          "rain_p90_mm": 33.3,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 22.0,
+          "rain_p75_mm": 33.6,
+          "rain_p90_mm": 47.7,
+          "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.9,
-          "rain_p75_mm": 11.9,
-          "rain_p90_mm": 17.6,
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 28.2,
+          "rain_p75_mm": 34.9,
+          "rain_p90_mm": 39.2,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
@@ -3654,32 +3654,32 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.5,
-          "rain_p75_mm": 16.7,
-          "rain_p90_mm": 26.1,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 18.3,
+          "rain_p75_mm": 28.8,
+          "rain_p90_mm": 41.5,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.5,
+          "rain_p75_mm": 28.2,
+          "rain_p90_mm": 39.1,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 29.5,
+          "rain_p75_mm": 34.9,
+          "rain_p90_mm": 42.5,
           "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 15.5,
-          "rain_p75_mm": 21.6,
-          "rain_p90_mm": 31.8,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 6.5,
-          "rain_p75_mm": 9.7,
-          "rain_p90_mm": 14.4,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 2,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3690,33 +3690,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 23.5,
-          "rain_p75_mm": 45.3,
-          "rain_p90_mm": 87.2,
-          "prob_heavy_pct": 22,
-          "prob_very_heavy_pct": 12,
-          "prob_extr_heavy_pct": 0,
-          "alert": "YELLOW"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 26.4,
-          "rain_p75_mm": 39.1,
-          "rain_p90_mm": 56.4,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 2,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 27.1,
+          "rain_p75_mm": 36.8,
+          "rain_p90_mm": 48.6,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.9,
-          "rain_p75_mm": 18.6,
-          "rain_p90_mm": 44.7,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 6,
-          "prob_extr_heavy_pct": 4,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 25.4,
+          "rain_p75_mm": 44.6,
+          "rain_p90_mm": 71.0,
+          "prob_heavy_pct": 18,
+          "prob_very_heavy_pct": 8,
+          "prob_extr_heavy_pct": 2,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 34.9,
+          "rain_p75_mm": 42.7,
+          "rain_p90_mm": 53.4,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3726,33 +3726,33 @@
       "state": "NAGALAND",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.8,
-          "rain_p75_mm": 17.4,
-          "rain_p90_mm": 30.8,
-          "prob_heavy_pct": 10,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 16.1,
-          "rain_p75_mm": 23.7,
-          "rain_p90_mm": 34.9,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.1,
-          "rain_p75_mm": 12.3,
-          "rain_p90_mm": 22.9,
+          "rain_median_mm": 21.3,
+          "rain_p75_mm": 33.7,
+          "rain_p90_mm": 44.5,
+          "prob_heavy_pct": 8,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 20.9,
+          "rain_p75_mm": 35.4,
+          "rain_p90_mm": 48.3,
           "prob_heavy_pct": 8,
           "prob_very_heavy_pct": 2,
-          "prob_extr_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 31.5,
+          "rain_p75_mm": 38.0,
+          "rain_p90_mm": 43.9,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
       ]
@@ -3762,31 +3762,31 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.0,
-          "rain_p75_mm": 13.7,
-          "rain_p90_mm": 17.7,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.6,
-          "rain_p75_mm": 11.2,
-          "rain_p90_mm": 18.3,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 12.6,
-          "rain_p75_mm": 20.7,
-          "rain_p90_mm": 31.2,
-          "prob_heavy_pct": 2,
+          "rain_median_mm": 12.5,
+          "rain_p75_mm": 16.9,
+          "rain_p90_mm": 22.1,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 10.1,
+          "rain_p75_mm": 12.5,
+          "rain_p90_mm": 16.0,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 13.3,
+          "rain_p75_mm": 16.9,
+          "rain_p90_mm": 20.8,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3798,33 +3798,33 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 7.9,
-          "rain_p75_mm": 12.3,
-          "rain_p90_mm": 17.5,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 5.4,
-          "rain_p75_mm": 9.5,
-          "rain_p90_mm": 13.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 10.3,
-          "rain_p75_mm": 18.3,
-          "rain_p90_mm": 30.0,
+          "rain_median_mm": 7.5,
+          "rain_p75_mm": 13.6,
+          "rain_p90_mm": 22.7,
           "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 6.9,
+          "rain_p75_mm": 10.1,
+          "rain_p90_mm": 13.1,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 12.4,
+          "rain_p75_mm": 18.9,
+          "rain_p90_mm": 31.1,
+          "prob_heavy_pct": 4,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -3834,31 +3834,31 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 10.3,
-          "rain_p75_mm": 15.3,
-          "rain_p90_mm": 19.9,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.7,
-          "rain_p75_mm": 11.6,
-          "rain_p90_mm": 17.7,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 9.2,
-          "rain_p75_mm": 15.5,
-          "rain_p90_mm": 24.4,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 10.0,
+          "rain_p75_mm": 13.8,
+          "rain_p90_mm": 18.3,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 9.7,
+          "rain_p75_mm": 11.9,
+          "rain_p90_mm": 14.6,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 11.1,
+          "rain_p75_mm": 14.0,
+          "rain_p90_mm": 18.4,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3870,32 +3870,32 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.2,
-          "rain_p75_mm": 16.6,
-          "rain_p90_mm": 20.6,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 9.5,
-          "rain_p75_mm": 13.6,
-          "rain_p90_mm": 18.2,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.6,
-          "rain_p75_mm": 20.3,
-          "rain_p90_mm": 32.1,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "rain_median_mm": 17.1,
+          "rain_p75_mm": 21.0,
+          "rain_p90_mm": 26.1,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.7,
+          "rain_p75_mm": 18.8,
+          "rain_p90_mm": 21.3,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 19.5,
+          "rain_p75_mm": 23.0,
+          "rain_p90_mm": 27.6,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
@@ -3906,31 +3906,31 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 8.2,
-          "rain_p75_mm": 14.1,
-          "rain_p90_mm": 19.9,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.1,
-          "rain_p75_mm": 9.4,
-          "rain_p90_mm": 15.7,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 8.9,
-          "rain_p75_mm": 17.4,
-          "rain_p90_mm": 28.3,
+          "rain_median_mm": 7.6,
+          "rain_p75_mm": 12.7,
+          "rain_p90_mm": 19.3,
           "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 7.1,
+          "rain_p75_mm": 11.4,
+          "rain_p90_mm": 15.9,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 13.3,
+          "rain_p75_mm": 19.8,
+          "rain_p90_mm": 28.8,
+          "prob_heavy_pct": 4,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -3942,33 +3942,33 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 9.0,
-          "rain_p75_mm": 13.3,
-          "rain_p90_mm": 18.9,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.4,
-          "rain_p75_mm": 11.8,
-          "rain_p90_mm": 18.6,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 13.9,
-          "rain_p75_mm": 21.1,
-          "rain_p90_mm": 30.1,
-          "prob_heavy_pct": 4,
+          "rain_median_mm": 7.5,
+          "rain_p75_mm": 12.9,
+          "rain_p90_mm": 22.9,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 7.4,
+          "rain_p75_mm": 11.5,
+          "rain_p90_mm": 16.5,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 14.5,
+          "rain_p75_mm": 27.8,
+          "rain_p90_mm": 46.4,
+          "prob_heavy_pct": 6,
+          "prob_very_heavy_pct": 2,
+          "prob_extr_heavy_pct": 2,
           "alert": "GREEN"
         }
       ]
@@ -3978,31 +3978,31 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 12.8,
-          "rain_p75_mm": 17.4,
-          "rain_p90_mm": 23.5,
-          "prob_heavy_pct": 2,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 10.2,
-          "rain_p75_mm": 14.0,
-          "rain_p90_mm": 16.8,
+          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
+          "rain_median_mm": 14.1,
+          "rain_p75_mm": 17.0,
+          "rain_p90_mm": 21.9,
           "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         },
         {
-          "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 11.5,
-          "rain_p75_mm": 18.8,
-          "rain_p90_mm": 27.6,
-          "prob_heavy_pct": 6,
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 15.2,
+          "rain_p75_mm": 18.1,
+          "rain_p90_mm": 21.5,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 19.4,
+          "rain_p75_mm": 22.3,
+          "rain_p90_mm": 25.1,
+          "prob_heavy_pct": 0,
           "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
@@ -4014,32 +4014,32 @@
       "state": "TRIPURA",
       "days": [
         {
-          "valid_day": "00Z 26 Jul 2026 to 00Z 27 Jul 2026",
-          "rain_median_mm": 8.8,
-          "rain_p75_mm": 14.7,
-          "rain_p90_mm": 21.5,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
-          "valid_day": "00Z 27 Jul 2026 to 00Z 28 Jul 2026",
-          "rain_median_mm": 6.5,
-          "rain_p75_mm": 10.4,
-          "rain_p90_mm": 16.0,
-          "prob_heavy_pct": 0,
-          "prob_very_heavy_pct": 0,
-          "prob_extr_heavy_pct": 0,
-          "alert": "GREEN"
-        },
-        {
           "valid_day": "00Z 28 Jul 2026 to 00Z 29 Jul 2026",
-          "rain_median_mm": 7.7,
-          "rain_p75_mm": 13.3,
-          "rain_p90_mm": 22.0,
-          "prob_heavy_pct": 4,
-          "prob_very_heavy_pct": 2,
+          "rain_median_mm": 7.6,
+          "rain_p75_mm": 11.8,
+          "rain_p90_mm": 18.2,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 29 Jul 2026 to 00Z 30 Jul 2026",
+          "rain_median_mm": 7.6,
+          "rain_p75_mm": 11.1,
+          "rain_p90_mm": 14.5,
+          "prob_heavy_pct": 0,
+          "prob_very_heavy_pct": 0,
+          "prob_extr_heavy_pct": 0,
+          "alert": "GREEN"
+        },
+        {
+          "valid_day": "00Z 30 Jul 2026 to 00Z 31 Jul 2026",
+          "rain_median_mm": 11.2,
+          "rain_p75_mm": 14.4,
+          "rain_p90_mm": 19.1,
+          "prob_heavy_pct": 2,
+          "prob_very_heavy_pct": 0,
           "prob_extr_heavy_pct": 0,
           "alert": "GREEN"
         }
