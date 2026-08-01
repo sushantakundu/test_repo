@@ -1208,20 +1208,43 @@
           transform:translateX(-50%); z-index:1000;
           display:none; flex-direction:column; gap:5px;
           border-radius:8px; padding:8px 14px;
-          width:55%; min-width:260px; max-width:560px;
+          width:60%; min-width:280px; max-width:600px;
           transition:all 0.3s ease;">
-        <!-- Row 1: label left + frame label right -->
-        <div style="display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:9px;font-weight:800;color:var(--muted);
-                       letter-spacing:0.06em;text-transform:uppercase;">
-            IMERG Accumulation
-          </span>
+
+        <!-- Row 1: mode toggle + frame label + source indicator -->
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+          <!-- Cumulative / Daily toggle -->
+          <div style="display:flex;gap:2px;flex-shrink:0;">
+            <button id="imergBtnCumulative"
+              onclick="switchImergMode('cumulative')"
+              style="font-size:9px;font-weight:800;padding:3px 8px;border:none;
+                     border-radius:4px 0 0 4px;cursor:pointer;
+                     background:var(--accent);color:white;transition:all 0.2s;">
+              Cumulative
+            </button>
+            <button id="imergBtnDaily"
+              onclick="switchImergMode('daily')"
+              style="font-size:9px;font-weight:800;padding:3px 8px;border:none;
+                     border-radius:0 4px 4px 0;cursor:pointer;
+                     background:var(--surface2);color:var(--muted);transition:all 0.2s;">
+              Daily
+            </button>
+          </div>
+          <!-- Frame label -->
           <span id="imergTimeLabel"
-                style="font-size:11px;font-weight:800;color:var(--text);white-space:nowrap;">
+            style="font-size:10px;font-weight:800;color:var(--text);
+                   white-space:nowrap;flex:1;text-align:center;
+                   overflow:hidden;text-overflow:ellipsis;">
             Last 6 Hours
           </span>
+          <!-- Source indicator -->
+          <span id="imergSourceIndicator"
+            style="font-size:9px;font-weight:700;color:var(--muted);
+                   white-space:nowrap;flex-shrink:0;">
+          </span>
         </div>
-        <!-- Row 2: play + slider wrapper + window label -->
+
+        <!-- Row 2: play/pause + slider + window label -->
         <div style="display:flex;align-items:center;gap:8px;">
           <button id="imergPlayBtn" onclick="toggleImergAnimation()"
             style="background:var(--accent);border:none;color:white;
@@ -1231,67 +1254,15 @@
                    justify-content:center;transition:all 0.2s;">
             ▶ Play
           </button>
-          <!-- Slider + day tick strip wrapped together -->
           <div style="flex:1;display:flex;flex-direction:column;gap:2px;">
-            <!-- The range slider -->
             <input type="range" id="imergScrubber"
-              min="0" max="27" value="0"
+              min="0" max="29" value="0"
               oninput="scrubImerg(this.value)"
-              style="width:100%;accent-color:var(--accent);cursor:pointer;height:4px;margin:0;">
-            <!-- Day tick marks strip — 7 labels aligned to slider thumb positions.
-                 Each label is absolutely positioned using calc() to account for
-                 the browser's ~8px thumb-inset on each end of the track.
-                 Formula: calc( (frameIndex/27) * (100% - 16px) + 8px )        -->
-            <div style="position:relative;height:14px;width:100%;">
-              <!-- Day 1: frame 0 → 0% -->
-              <span data-imerg-tick="1" style="position:absolute;
-                left:calc(0/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--accent);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(0)">D1</span>
-              <!-- Day 2: frame 4 → ~14.8% -->
-              <span data-imerg-tick="2" style="position:absolute;
-                left:calc(4/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(4)">D2</span>
-              <!-- Day 3: frame 8 → ~29.6% -->
-              <span data-imerg-tick="3" style="position:absolute;
-                left:calc(8/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(8)">D3</span>
-              <!-- Day 4: frame 12 → ~44.4% -->
-              <span data-imerg-tick="4" style="position:absolute;
-                left:calc(12/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(12)">D4</span>
-              <!-- Day 5: frame 16 → ~59.3% -->
-              <span data-imerg-tick="5" style="position:absolute;
-                left:calc(16/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(16)">D5</span>
-              <!-- Day 6: frame 20 → ~74.1% -->
-              <span data-imerg-tick="6" style="position:absolute;
-                left:calc(20/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(20)">D6</span>
-              <!-- Day 7: frame 24 → ~88.9% -->
-              <span data-imerg-tick="7" style="position:absolute;
-                left:calc(24/27 * (100% - 16px) + 8px);
-                transform:translateX(-50%);
-                font-size:8px;font-weight:800;color:var(--muted);
-                white-space:nowrap;cursor:pointer;user-select:none;"
-                onclick="scrubImerg(24)">D7</span>
+              style="width:100%;accent-color:var(--accent);
+                     cursor:pointer;height:4px;margin:0;">
+            <!-- Date tick strip — populated dynamically by buildImergTicks() -->
+            <div id="imergTickStrip"
+              style="position:relative;height:14px;width:100%;">
             </div>
           </div>
           <span id="imergWindowLabel"
@@ -1300,6 +1271,7 @@
             6h
           </span>
         </div>
+
         <!-- Row 3: threshold note + updated-at timestamp -->
         <div style="display:flex;justify-content:space-between;
                     font-size:9px;color:var(--muted);font-weight:700;">
@@ -1414,42 +1386,87 @@
         </div>
 
         <!-- IMERG 7-day accumulation legend — shown only when imerg7day layer active -->
-        <div id="legendImergMap" style="display:none;flex-direction:column;gap:4px;">
-          <span style="font-size:9px;font-weight:800;color:var(--muted);
-                       text-transform:uppercase;letter-spacing:0.06em;">
-            IMERG Accumulated Rainfall
-          </span>
-          <div style="display:flex;align-items:center;gap:3px;flex-wrap:wrap;">
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;color:var(--muted);">
-              Transp.
+        <!-- IMERG Daily legend (24h, max 150mm) — shown in Daily mode -->
+        <div id="legendImergDaily" style="display:none;flex-direction:column;gap:3px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:9px;font-weight:800;color:var(--muted);
+                         text-transform:uppercase;letter-spacing:0.06em;">
+              IMERG 24h Rainfall
             </span>
-            <span style="font-size:9px;color:var(--muted);">→</span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#c6e0f5;border-radius:2px;flex-shrink:0;"></span>1mm
+            <span id="imergThreshDaily"
+                  style="font-size:9px;font-weight:700;color:var(--muted);">
+              Transp. &lt; 2mm
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
+          </div>
+          <div style="display:flex;align-items:center;gap:2px;flex-wrap:nowrap;">
+            <span style="font-size:8px;color:var(--muted);font-weight:700;white-space:nowrap;">→</span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#d6eaf8;border-radius:2px;flex-shrink:0;"></span>2
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
               <span style="display:inline-block;width:10px;height:10px;background:#85c1e9;border-radius:2px;flex-shrink:0;"></span>5
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
               <span style="display:inline-block;width:10px;height:10px;background:#3498db;border-radius:2px;flex-shrink:0;"></span>10
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#1a6fad;border-radius:2px;flex-shrink:0;"></span>25
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#1a5276;border-radius:2px;flex-shrink:0;"></span>25
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#27ae60;border-radius:2px;flex-shrink:0;"></span>50
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#f9e79f;border-radius:2px;flex-shrink:0;"></span>50
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#f1c40f;border-radius:2px;flex-shrink:0;"></span>100
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#f39c12;border-radius:2px;flex-shrink:0;"></span>75
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#e67e22;border-radius:2px;flex-shrink:0;"></span>200
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#e74c3c;border-radius:2px;flex-shrink:0;"></span>100
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#e74c3c;border-radius:2px;flex-shrink:0;"></span>350
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#9b59b6;border-radius:2px;flex-shrink:0;"></span>125
             </span>
-            <span style="display:inline-flex;align-items:center;gap:2px;font-size:9px;font-weight:700;">
-              <span style="display:inline-block;width:10px;height:10px;background:#6c3483;border-radius:2px;flex-shrink:0;"></span>&gt;500mm
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#6c3483;border-radius:2px;flex-shrink:0;"></span>&ge;150mm
+            </span>
+          </div>
+        </div>
+
+        <!-- IMERG Cumulative legend (multi-day, max 500mm) — shown in Cumulative mode -->
+        <div id="legendImergCumulative" style="display:none;flex-direction:column;gap:3px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:9px;font-weight:800;color:var(--muted);
+                         text-transform:uppercase;letter-spacing:0.06em;">
+              IMERG Cumulative Rainfall
+            </span>
+            <span id="imergThreshCum"
+                  style="font-size:9px;font-weight:700;color:var(--muted);">
+              Transp. &lt; 2mm
+            </span>
+          </div>
+          <div style="display:flex;align-items:center;gap:2px;flex-wrap:nowrap;">
+            <span style="font-size:8px;color:var(--muted);font-weight:700;white-space:nowrap;">→</span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#d6eaf8;border-radius:2px;flex-shrink:0;"></span>2
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#85c1e9;border-radius:2px;flex-shrink:0;"></span>50
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#3498db;border-radius:2px;flex-shrink:0;"></span>100
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#1a5276;border-radius:2px;flex-shrink:0;"></span>150
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#f9e79f;border-radius:2px;flex-shrink:0;"></span>200
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#e67e22;border-radius:2px;flex-shrink:0;"></span>300
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#e74c3c;border-radius:2px;flex-shrink:0;"></span>400
+            </span>
+            <span style="display:inline-flex;align-items:center;gap:1px;font-size:8px;font-weight:700;">
+              <span style="display:inline-block;width:10px;height:10px;background:#6c3483;border-radius:2px;flex-shrink:0;"></span>&ge;500mm
             </span>
           </div>
         </div>
@@ -2004,7 +2021,7 @@ function toggleTheme() {
 // ── FEATURE FLAGS ─────────────────────────────────────────────────────
 // Set to false to completely hide Water Level (AWLR) data — confidential
 //const FEATURE_WATER_LEVEL = true;
-const FEATURE_WATER_LEVEL = false;
+const FEATURE_WATER_LEVEL = true;
 const URLS = {
   realtime:   'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/Realtime_Weather_Data.json',
   gfs:        'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/assam_forecast_gfs.json',
@@ -2979,7 +2996,8 @@ function toggleInteractiveMapLayer() {
   document.getElementById('legendPressMap').style.display          = val === 'pressure'   ? 'flex' : 'none';
   document.getElementById('legendWindMap').style.display           = val === 'wind'       ? 'flex' : 'none';
   document.getElementById('legendWaterLevelMap').style.display     = val === 'waterlevel' ? 'flex' : 'none';
-  document.getElementById('legendImergMap').style.display          = val === 'imerg7day'  ? 'flex' : 'none';
+  document.getElementById('legendImergDaily').style.display      = (val === 'imerg7day' && imergMode === 'daily')      ? 'flex' : 'none';
+  document.getElementById('legendImergCumulative').style.display = (val === 'imerg7day' && imergMode === 'cumulative') ? 'flex' : 'none';
 
   // ── Activate IMERG overlay and timeline panel ──
   if (val === 'imerg7day') activateImergOverlay();
@@ -4874,21 +4892,24 @@ const generatePDF = generateBulletin;
 //  Loads lazily on first activation; deactivates on layer switch.
 // ════════════════════════════════════════════════════════════════════
 
-const IMERG_META_URL   = 'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/imerg_accum_metadata.json';
-const IMERG_SPRITE_URL = 'https://raw.githubusercontent.com/sushantakundu/test_repo/main/imerg_accum_spritesheet.png';
+const IMERG_META_URL      = 'https://raw.githubusercontent.com/sushantakundu/test_repo/refs/heads/main/imerg_accum_metadata.json';
+const IMERG_SPRITE_CUM    = 'https://raw.githubusercontent.com/sushantakundu/test_repo/main/imerg_accum_spritesheet_cumulative.png';
+const IMERG_SPRITE_DAILY  = 'https://raw.githubusercontent.com/sushantakundu/test_repo/main/imerg_accum_spritesheet_daily.png';
 
-let imergMeta         = null;   // parsed metadata JSON
-let imergSprite       = null;   // HTMLImageElement — loaded once, cached
-let imergCanvas       = null;   // offscreen canvas for frame extraction
-let imergOverlay      = null;   // Leaflet imageOverlay
-let imergCurrentFrame = 0;
-let imergAnimating    = false;
-let imergAnimInterval = null;
-const IMERG_ANIM_MS   = 900;    // ms per frame during playback
+let imergMeta          = null;   // parsed metadata JSON
+let imergSpriteCum     = null;   // Cumulative sprite sheet image
+let imergSpriteDaily   = null;   // Daily sprite sheet image
+let imergCanvas        = null;   // offscreen canvas for frame extraction
+let imergOverlay       = null;   // Leaflet imageOverlay
+let imergCurrentFrame  = 0;
+let imergMode          = 'cumulative';  // 'cumulative' or 'daily'
+let imergAnimating     = false;
+let imergAnimInterval  = null;
+const IMERG_ANIM_MS    = 900;    // ms per frame during playback
 
-// ── Load metadata + sprite sheet (once) ─────────────────────────────
+// ── Load metadata + both sprite sheets (once) ───────────────────────
 async function loadImergData() {
-  if (imergMeta && imergSprite) return true;   // already loaded
+  if (imergMeta && imergSpriteCum && imergSpriteDaily) return true;
 
   const lbl = document.getElementById('imergTimeLabel');
   if (lbl) lbl.textContent = '⏳ Loading…';
@@ -4899,34 +4920,39 @@ async function loadImergData() {
     if (!res.ok) throw new Error('Metadata fetch failed: ' + res.status);
     imergMeta = await res.json();
 
-    // 2. Load sprite sheet PNG
-    imergSprite = await new Promise((resolve, reject) => {
+    // 2. Load both sprite sheets in parallel
+    const loadImg = (url) => new Promise((resolve, reject) => {
       const img = new Image();
       img.crossOrigin = 'anonymous';
       img.onload  = () => resolve(img);
-      img.onerror = () => reject(new Error('Sprite sheet image failed to load'));
-      img.src = IMERG_SPRITE_URL + '?t=' + Date.now();
+      img.onerror = () => reject(new Error('Failed: ' + url));
+      img.src = url + '?t=' + Date.now();
     });
+    [imergSpriteCum, imergSpriteDaily] = await Promise.all([
+      loadImg(IMERG_SPRITE_CUM),
+      loadImg(IMERG_SPRITE_DAILY)
+    ]);
 
     // 3. Offscreen canvas — one frame dimensions
     imergCanvas        = document.createElement('canvas');
     imergCanvas.width  = imergMeta.frame_width_px;
     imergCanvas.height = imergMeta.frame_height_px;
 
-    // 4. Sync scrubber range from metadata
+    // 4. Sync scrubber range
     const scrubber = document.getElementById('imergScrubber');
-    if (scrubber) {
-      scrubber.max   = imergMeta.n_frames - 1;
-      scrubber.value = 0;
-    }
+    if (scrubber) { scrubber.max = imergMeta.n_frames - 1; scrubber.value = 0; }
 
-    // 5. Show data end-time in IST
+    // 5. Build date-based tick marks from metadata
+    buildImergTicks();
+
+    // 6. Show data end-time in IST
     const dtEl = document.getElementById('imergDataTime');
     if (dtEl && imergMeta.end_time_utc) {
       const d = new Date(imergMeta.end_time_utc);
       d.setMinutes(d.getMinutes() + 330);
       const iso = d.toISOString();
-      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      const months = ['Jan','Feb','Mar','Apr','May','Jun',
+                      'Jul','Aug','Sep','Oct','Nov','Dec'];
       dtEl.textContent = 'Updated at: '
         + iso.slice(8,10) + ' ' + months[+iso.slice(5,7)-1]
         + ' ' + iso.slice(11,16) + ' IST';
@@ -4935,78 +4961,168 @@ async function loadImergData() {
     return true;
 
   } catch(e) {
-    console.error('IMERG data load failed:', e);
+    console.error('IMERG load failed:', e);
     const lbl2 = document.getElementById('imergTimeLabel');
     if (lbl2) lbl2.textContent = '✗ Load failed';
     return false;
   }
 }
 
-// ── Draw one frame from sprite → push to Leaflet overlay ────────────
+// ── Draw one frame from active sprite → push to Leaflet overlay ──────
 function showImergFrame(index) {
-  if (!imergMeta || !imergSprite || !imergCanvas) return;
+  if (!imergMeta || !imergSpriteCum || !imergSpriteDaily || !imergCanvas) return;
 
   const n = imergMeta.n_frames;
   if (index < 0) index = 0;
   if (index >= n) index = n - 1;
   imergCurrentFrame = index;
 
-  const fw  = imergMeta.frame_width_px;
-  const fh  = imergMeta.frame_height_px;
-  const ctx = imergCanvas.getContext('2d');
+  const fw      = imergMeta.frame_width_px;
+  const fh      = imergMeta.frame_height_px;
+  const ctx     = imergCanvas.getContext('2d');
+  const sprite  = imergMode === 'cumulative' ? imergSpriteCum : imergSpriteDaily;
 
-  // Clear to fully transparent
   ctx.clearRect(0, 0, fw, fh);
+  ctx.drawImage(sprite, 0, index * fh, fw, fh, 0, 0, fw, fh);
 
-  // Draw target frame from sprite sheet (vertical stack, frame i at row i*fh)
-  ctx.drawImage(
-    imergSprite,
-    0, index * fh,   // source: sx, sy
-    fw, fh,           // source: sw, sh
-    0, 0,             // dest: dx, dy
-    fw, fh            // dest: dw, dh
-  );
-
-  // Push as data URL to Leaflet overlay
   if (imergOverlay) {
     imergOverlay.setUrl(imergCanvas.toDataURL('image/png'));
-    // Re-apply smoothing on every frame (setUrl resets img src, clearing filters)
     if (imergOverlay._image) {
       imergOverlay._image.style.imageRendering = 'auto';
       imergOverlay._image.style.filter = 'blur(0.6px)';
     }
   }
 
-  // Update UI labels
-  const frame   = imergMeta.frames[index];
-  const lblEl   = document.getElementById('imergTimeLabel');
-  const wLblEl  = document.getElementById('imergWindowLabel');
-  const tNoteEl = document.getElementById('imergThreshNote');
-  if (lblEl   && frame) lblEl.textContent   = frame.label;
-  if (wLblEl  && frame) wLblEl.textContent  = frame.accum_hours + 'h';
-  if (tNoteEl && frame) tNoteEl.textContent
-    = 'Transparent < ' + frame.transparency_threshold_mm + ' mm';
+  // Update frame label from metadata
+  const frame    = imergMeta.frames[index];
+  const lblEl    = document.getElementById('imergTimeLabel');
+  const tNoteEl  = document.getElementById('imergThreshNote');
+  const indEl    = document.getElementById('imergSourceIndicator');
+  const wLblEl   = document.getElementById('imergWindowLabel');
 
-  // Highlight the active day tick label
-  // Day boundaries: D1=0–3, D2=4–7, D3=8–11, D4=12–15, D5=16–19, D6=20–23, D7=24–27
-  const activeDayNum = Math.floor(index / 4) + 1;  // 1–7
-  const tickPanel = document.getElementById('imergTimelinePanel');
-  if (tickPanel) {
-    tickPanel.querySelectorAll('[id^="imergDay"], [data-imerg-tick]').forEach(el => {
-      el.style.color = 'var(--muted)';
-      el.style.fontWeight = '800';
-    });
-    // Also target by day number via data attribute set below
-    const activeTick = tickPanel.querySelector('[data-imerg-tick="' + activeDayNum + '"]');
-    if (activeTick) {
-      activeTick.style.color = 'var(--accent)';
-      activeTick.style.fontWeight = '900';
-    }
+  if (frame && lblEl) {
+    lblEl.textContent = imergMode === 'cumulative'
+      ? frame.label_cumulative
+      : frame.label_daily;
+  }
+  if (frame && wLblEl) {
+    // Show "partial" for frame 0, or the date label for other frames
+    wLblEl.textContent = frame.is_partial ? 'today' : (frame.date_label || '');
+  }
+  if (frame && tNoteEl) {
+    const thresh = imergMode === 'cumulative'
+      ? frame.thresh_cumulative_mm
+      : frame.thresh_daily_mm;
+    tNoteEl.textContent = thresh != null ? 'Transp. < ' + thresh + 'mm' : '';
   }
 
-  // Sync slider position
+  // Update dynamic threshold in the active legend
+  const cumThreshEl   = document.getElementById('imergThreshCum');
+  const dailyThreshEl = document.getElementById('imergThreshDaily');
+  if (frame) {
+    if (cumThreshEl)   cumThreshEl.textContent   = 'Transp. < ' + (frame.thresh_cumulative_mm || 2) + 'mm';
+    if (dailyThreshEl) dailyThreshEl.textContent = 'Transp. < ' + (frame.thresh_daily_mm || 2) + 'mm';
+  }
+  if (frame && indEl) {
+    indEl.textContent = (frame.indicator || '') + ' '
+      + (frame.data_source === 'late'  ? 'Late Run'
+       : frame.data_source === 'early' ? 'Early Run'
+       : 'Mixed (' + frame.late_run_pct + '% Late)');
+  }
+
+  // Highlight active date tick
+  const tickContainer = document.getElementById('imergTickStrip');
+  if (tickContainer) {
+    tickContainer.querySelectorAll('[data-imerg-tick]').forEach(el => {
+      const isActive = parseInt(el.dataset.imergTick) === index;
+      el.style.color      = isActive ? 'var(--accent)' : 'var(--muted)';
+      el.style.fontWeight = isActive ? '900' : '700';
+    });
+  }
+
+  // Sync slider
   const scrubber = document.getElementById('imergScrubber');
   if (scrubber) scrubber.value = index;
+}
+
+// ── Build date-based tick marks dynamically from metadata ────────────
+function buildImergTicks() {
+  const container = document.getElementById('imergTickStrip');
+  if (!container || !imergMeta) return;
+  container.innerHTML = '';
+
+  const frames = imergMeta.frames;
+  const n      = frames.length;
+  const maxIdx = n - 1;   // denominator for left% calc
+
+  // ── Strategy: one tick per unique calendar date, at the FIRST frame
+  //    where that date appears in date_label.
+  //
+  //    Frame structure:
+  //      0–11  : 6h windows (last 72h) — date_label changes every 4 frames
+  //      12–38 : 24h windows (Days 4–30) — date_label changes every frame
+  //
+  //    We collect unique dates in order of first appearance, then filter
+  //    to avoid crowding: keep every tick if ≤ 10 unique dates, otherwise
+  //    keep only dates that are ≥ 7 days apart (weekly ticks for the
+  //    older portion) while always keeping the 3 most-recent dates.
+  // ─────────────────────────────────────────────────────────────────────
+
+  // Step 1 — collect first frame index per unique date_label
+  const dateFirstFrame = new Map();   // date_label → first frame index
+  frames.forEach((f, i) => {
+    const lbl = f.date_label || '';
+    if (lbl && !dateFirstFrame.has(lbl)) dateFirstFrame.set(lbl, i);
+  });
+
+  // Convert to array: [{label, frameIdx}] in order of appearance (newest first)
+  const dateEntries = Array.from(dateFirstFrame.entries())
+    .map(([label, frameIdx]) => ({ label, frameIdx }));
+
+  // Step 2 — select which dates to tick
+  // With 30 frames, always show first 3 unique dates (most recent)
+  // then every 7 frames (weekly) into the older portion
+  const selected = [];
+  let lastShownIdx = -999;
+
+  dateEntries.forEach(({ label, frameIdx }, pos) => {
+    if (pos < 3) {
+      // Always show 3 most-recent dates
+      selected.push({ label, frameIdx });
+      lastShownIdx = frameIdx;
+    } else {
+      // Weekly spacing: 7 frames = 7 days in the daily section
+      if (frameIdx - lastShownIdx >= 7) {
+        selected.push({ label, frameIdx });
+        lastShownIdx = frameIdx;
+      }
+    }
+  });
+
+  // Always include the very last frame (oldest date) if not already included
+  const lastEntry = dateEntries[dateEntries.length - 1];
+  if (lastEntry && !selected.find(s => s.frameIdx === lastEntry.frameIdx)) {
+    selected.push(lastEntry);
+  }
+
+  // Step 3 — render tick spans
+  selected.forEach(({ label, frameIdx }) => {
+    const pct  = frameIdx / maxIdx;   // 0 → 1
+    const left = `calc(${pct.toFixed(4)} * (100% - 16px) + 8px)`;
+
+    const span = document.createElement('span');
+    span.dataset.imergTick = frameIdx;
+    span.textContent       = label;
+    span.style.cssText     = `
+      position:absolute; left:${left};
+      transform:translateX(-50%);
+      font-size:8px; font-weight:700; color:var(--muted);
+      white-space:nowrap; cursor:pointer; user-select:none;
+      transition:color 0.15s;
+    `;
+    span.onclick = () => scrubImerg(frameIdx);
+    container.appendChild(span);
+  });
 }
 
 // ── Activate IMERG overlay on map ───────────────────────────────────
@@ -5045,11 +5161,13 @@ async function activateImergOverlay() {
   // Draw frame 0 (last 6 hours) immediately
   showImergFrame(0);
 
-  // Show timeline panel + legend
+  // Show timeline panel + correct legend based on current mode
   const panel = document.getElementById('imergTimelinePanel');
   if (panel) panel.style.display = 'flex';
-  const leg = document.getElementById('legendImergMap');
-  if (leg) leg.style.display = 'flex';
+  const legCum   = document.getElementById('legendImergCumulative');
+  const legDaily = document.getElementById('legendImergDaily');
+  if (legCum)   legCum.style.display   = imergMode === 'cumulative' ? 'flex' : 'none';
+  if (legDaily) legDaily.style.display = imergMode === 'daily'      ? 'flex' : 'none';
 
   // Show disclaimer banner with auto-close
   showImergDisclaimer();
@@ -5064,8 +5182,10 @@ function deactivateImergOverlay() {
   }
   const panel = document.getElementById('imergTimelinePanel');
   if (panel) panel.style.display = 'none';
-  const leg = document.getElementById('legendImergMap');
-  if (leg) leg.style.display = 'none';
+  const legCum   = document.getElementById('legendImergCumulative');
+  const legDaily = document.getElementById('legendImergDaily');
+  if (legCum)   legCum.style.display   = 'none';
+  if (legDaily) legDaily.style.display = 'none';
 }
 
 // ── IMERG Disclaimer banner — show / auto-close / manual close ───────
@@ -5113,11 +5233,34 @@ function closeImergDisclaimer() {
 function scrubImerg(value) {
   stopImergAnimation();
   const idx = parseInt(value);
-  // Sync slider position (needed when called from day-tick onclick,
-  // since setting .value programmatically doesn't fire oninput)
   const scrubber = document.getElementById('imergScrubber');
   if (scrubber) scrubber.value = idx;
   showImergFrame(idx);
+}
+
+// ── Switch between Cumulative and Daily mode ─────────────────────────
+function switchImergMode(mode) {
+  if (mode === imergMode) return;
+  imergMode = mode;
+
+  // Update toggle button styles
+  const btnCum   = document.getElementById('imergBtnCumulative');
+  const btnDaily = document.getElementById('imergBtnDaily');
+  if (btnCum && btnDaily) {
+    const activeStyle   = 'background:var(--accent);color:white;';
+    const inactiveStyle = 'background:var(--surface2);color:var(--muted);';
+    btnCum.style.cssText   += mode === 'cumulative' ? activeStyle : inactiveStyle;
+    btnDaily.style.cssText += mode === 'daily'      ? activeStyle : inactiveStyle;
+  }
+
+  // Switch visible legend
+  const legCum   = document.getElementById('legendImergCumulative');
+  const legDaily = document.getElementById('legendImergDaily');
+  if (legCum)   legCum.style.display   = mode === 'cumulative' ? 'flex' : 'none';
+  if (legDaily) legDaily.style.display = mode === 'daily'      ? 'flex' : 'none';
+
+  // Redraw current frame from the new sprite sheet
+  showImergFrame(imergCurrentFrame);
 }
 
 // ── Play / Pause toggle ──────────────────────────────────────────────
