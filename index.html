@@ -1213,21 +1213,22 @@
 
         <!-- Row 1: mode toggle + frame label + source indicator -->
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-          <!-- Cumulative / Daily toggle -->
-          <div style="display:flex;gap:2px;flex-shrink:0;">
-            <button id="imergBtnCumulative"
-              onclick="switchImergMode('cumulative')"
-              style="font-size:9px;font-weight:800;padding:3px 8px;border:none;
-                     border-radius:4px 0 0 4px;cursor:pointer;
-                     background:var(--accent);color:white;transition:all 0.2s;">
-              Cumulative
-            </button>
+          <!-- Daily / Cumulative toggle — Daily is default active -->
+          <div style="display:flex;gap:0px;flex-shrink:0;
+                      border:1.5px solid var(--accent);border-radius:6px;overflow:hidden;">
             <button id="imergBtnDaily"
               onclick="switchImergMode('daily')"
-              style="font-size:9px;font-weight:800;padding:3px 8px;border:none;
-                     border-radius:0 4px 4px 0;cursor:pointer;
-                     background:var(--surface2);color:var(--muted);transition:all 0.2s;">
+              style="font-size:9px;font-weight:900;padding:4px 10px;border:none;
+                     cursor:pointer;letter-spacing:0.03em;
+                     background:var(--accent);color:white;transition:all 0.2s;">
               Daily
+            </button>
+            <button id="imergBtnCumulative"
+              onclick="switchImergMode('cumulative')"
+              style="font-size:9px;font-weight:900;padding:4px 10px;border:none;
+                     cursor:pointer;letter-spacing:0.03em;
+                     background:transparent;color:var(--accent);transition:all 0.2s;">
+              Cumulative
             </button>
           </div>
           <!-- Frame label -->
@@ -4902,7 +4903,7 @@ let imergSpriteDaily   = null;   // Daily sprite sheet image
 let imergCanvas        = null;   // offscreen canvas for frame extraction
 let imergOverlay       = null;   // Leaflet imageOverlay
 let imergCurrentFrame  = 0;
-let imergMode          = 'cumulative';  // 'cumulative' or 'daily'
+let imergMode          = 'daily';       // 'cumulative' or 'daily' — Daily is default
 let imergAnimating     = false;
 let imergAnimInterval  = null;
 const IMERG_ANIM_MS    = 900;    // ms per frame during playback
@@ -5244,13 +5245,22 @@ function switchImergMode(mode) {
   imergMode = mode;
 
   // Update toggle button styles
-  const btnCum   = document.getElementById('imergBtnCumulative');
+  // Active  : filled accent background + white text
+  // Inactive: transparent background + accent text
   const btnDaily = document.getElementById('imergBtnDaily');
-  if (btnCum && btnDaily) {
-    const activeStyle   = 'background:var(--accent);color:white;';
-    const inactiveStyle = 'background:var(--surface2);color:var(--muted);';
-    btnCum.style.cssText   += mode === 'cumulative' ? activeStyle : inactiveStyle;
-    btnDaily.style.cssText += mode === 'daily'      ? activeStyle : inactiveStyle;
+  const btnCum   = document.getElementById('imergBtnCumulative');
+  if (btnDaily && btnCum) {
+    if (mode === 'daily') {
+      btnDaily.style.background = 'var(--accent)';
+      btnDaily.style.color      = 'white';
+      btnCum.style.background   = 'transparent';
+      btnCum.style.color        = 'var(--accent)';
+    } else {
+      btnCum.style.background   = 'var(--accent)';
+      btnCum.style.color        = 'white';
+      btnDaily.style.background = 'transparent';
+      btnDaily.style.color      = 'var(--accent)';
+    }
   }
 
   // Switch visible legend
