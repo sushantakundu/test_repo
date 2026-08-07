@@ -1,0 +1,1065 @@
+{
+    "Source": "WRF NESAC",
+    "Domain": "North East India + Bhutan",
+    "Model Run": "06 Aug 05:30 IST",
+    "Valid (Today)": "06 Aug 05:30 – 07 Aug 05:30",
+    "Valid (Tomorrow)": "07 Aug 05:30 – 08 Aug 05:30",
+    "data": [
+        {
+            "district": "ANJAW",
+            "district_id": "anjaw",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 7.1,
+            "Rain Tomorrow": 14.77
+        },
+        {
+            "district": "CHANGLANG",
+            "district_id": "changlang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 17.99,
+            "Rain Tomorrow": 13.71
+        },
+        {
+            "district": "DIBANG VALLEY",
+            "district_id": "dibang_valley",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 7.53,
+            "Rain Tomorrow": 10.28
+        },
+        {
+            "district": "EAST KAMENG",
+            "district_id": "east_kameng",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 9.07,
+            "Rain Tomorrow": 7.62
+        },
+        {
+            "district": "EAST SIANG",
+            "district_id": "east_siang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 0.0,
+            "Rain Tomorrow": 1.1
+        },
+        {
+            "district": "KAMLE",
+            "district_id": "kamle",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 2.58,
+            "Rain Tomorrow": 4.24
+        },
+        {
+            "district": "KRA DAADI",
+            "district_id": "kra_daadi",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 7.43,
+            "Rain Tomorrow": 9.5
+        },
+        {
+            "district": "KURUNG KUMEY",
+            "district_id": "kurung_kumey",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 7.4,
+            "Rain Tomorrow": 15.33
+        },
+        {
+            "district": "LEPA RADA",
+            "district_id": "lepa_rada",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 1.25,
+            "Rain Tomorrow": 1.76
+        },
+        {
+            "district": "LOHIT",
+            "district_id": "lohit",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 4.19,
+            "Rain Tomorrow": 8.62
+        },
+        {
+            "district": "LONGDING",
+            "district_id": "longding",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 0.71,
+            "Rain Tomorrow": 2.1
+        },
+        {
+            "district": "LOWER DIBANG VALLEY",
+            "district_id": "lower_dibang_valley",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 4.95,
+            "Rain Tomorrow": 7.01
+        },
+        {
+            "district": "LOWER SIANG",
+            "district_id": "lower_siang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 0.58,
+            "Rain Tomorrow": 4.01
+        },
+        {
+            "district": "LOWER SUBANSIRI",
+            "district_id": "lower_subansiri",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 4.57,
+            "Rain Tomorrow": 2.68
+        },
+        {
+            "district": "NAMSAI",
+            "district_id": "namsai",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 0.68,
+            "Rain Tomorrow": 0.4
+        },
+        {
+            "district": "PAKKE KESSANG",
+            "district_id": "pakke_kessang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 18.04,
+            "Rain Tomorrow": 23.91
+        },
+        {
+            "district": "PAPUMPARE",
+            "district_id": "papumpare",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 14.91,
+            "Rain Tomorrow": 12.84
+        },
+        {
+            "district": "SHI YOMI",
+            "district_id": "shi_yomi",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 7.69,
+            "Rain Tomorrow": 11.2
+        },
+        {
+            "district": "SIANG",
+            "district_id": "siang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 3.23,
+            "Rain Tomorrow": 7.75
+        },
+        {
+            "district": "TAWANG",
+            "district_id": "tawang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 5.71,
+            "Rain Tomorrow": 6.47
+        },
+        {
+            "district": "TIRAP",
+            "district_id": "tirap",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 2.16,
+            "Rain Tomorrow": 6.23
+        },
+        {
+            "district": "UPPER SIANG",
+            "district_id": "upper_siang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 2.46,
+            "Rain Tomorrow": 6.88
+        },
+        {
+            "district": "UPPER SUBANSIRI",
+            "district_id": "upper_subansiri",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 6.38,
+            "Rain Tomorrow": 6.59
+        },
+        {
+            "district": "WEST KAMENG",
+            "district_id": "west_kameng",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 5.25,
+            "Rain Tomorrow": 5.49
+        },
+        {
+            "district": "WEST SIANG",
+            "district_id": "west_siang",
+            "state": "ARUNACHAL PRADESH",
+            "state_id": "arunachal_pradesh",
+            "Rain Today": 22.8,
+            "Rain Tomorrow": 10.45
+        },
+        {
+            "district": "BAKSA",
+            "district_id": "baksa",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.0,
+            "Rain Tomorrow": 1.96
+        },
+        {
+            "district": "BARPETA",
+            "district_id": "barpeta",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 3.6,
+            "Rain Tomorrow": 6.21
+        },
+        {
+            "district": "BISWANATH",
+            "district_id": "biswanath",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 1.34,
+            "Rain Tomorrow": 2.77
+        },
+        {
+            "district": "BONGAIGAON",
+            "district_id": "bongaigaon",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.66,
+            "Rain Tomorrow": 8.91
+        },
+        {
+            "district": "CACHAR",
+            "district_id": "cachar",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 10.73,
+            "Rain Tomorrow": 8.79
+        },
+        {
+            "district": "CHARAIDEO",
+            "district_id": "charaideo",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.0,
+            "Rain Tomorrow": 2.61
+        },
+        {
+            "district": "CHIRANG",
+            "district_id": "chirang",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 2.26,
+            "Rain Tomorrow": 4.33
+        },
+        {
+            "district": "DARRANG",
+            "district_id": "darrang",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 14.61,
+            "Rain Tomorrow": 7.21
+        },
+        {
+            "district": "DHEMAJI",
+            "district_id": "dhemaji",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.39,
+            "Rain Tomorrow": 3.09
+        },
+        {
+            "district": "DHUBRI",
+            "district_id": "dhubri",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 3.96,
+            "Rain Tomorrow": 5.37
+        },
+        {
+            "district": "DIBRUGARH",
+            "district_id": "dibrugarh",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 1.66,
+            "Rain Tomorrow": 5.06
+        },
+        {
+            "district": "DIMA HASAO",
+            "district_id": "dima_hasao",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 1.95,
+            "Rain Tomorrow": 1.99
+        },
+        {
+            "district": "GOALPARA",
+            "district_id": "goalpara",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 5.27,
+            "Rain Tomorrow": 10.39
+        },
+        {
+            "district": "GOLAGHAT",
+            "district_id": "golaghat",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 10.43,
+            "Rain Tomorrow": 28.42
+        },
+        {
+            "district": "HAILAKANDI",
+            "district_id": "hailakandi",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 10.57,
+            "Rain Tomorrow": 8.25
+        },
+        {
+            "district": "HOJAI",
+            "district_id": "hojai",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 2.05,
+            "Rain Tomorrow": 5.12
+        },
+        {
+            "district": "JORHAT",
+            "district_id": "jorhat",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 7.63,
+            "Rain Tomorrow": 21.59
+        },
+        {
+            "district": "KAMRUP METRO",
+            "district_id": "kamrup_metro",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 2.33,
+            "Rain Tomorrow": 28.74
+        },
+        {
+            "district": "KAMRUP RURAL",
+            "district_id": "kamrup_rural",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 19.83,
+            "Rain Tomorrow": 31.8
+        },
+        {
+            "district": "KARBI ANGLONG",
+            "district_id": "karbi_anglong",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 12.19,
+            "Rain Tomorrow": 10.02
+        },
+        {
+            "district": "KARIMGANJ",
+            "district_id": "karimganj",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 17.27,
+            "Rain Tomorrow": 19.45
+        },
+        {
+            "district": "KOKRAJHAR",
+            "district_id": "kokrajhar",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 4.11,
+            "Rain Tomorrow": 4.04
+        },
+        {
+            "district": "LAKHIMPUR",
+            "district_id": "lakhimpur",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 8.7,
+            "Rain Tomorrow": 2.35
+        },
+        {
+            "district": "MAJULI",
+            "district_id": "majuli",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 20.19,
+            "Rain Tomorrow": 8.15
+        },
+        {
+            "district": "MARIGAON",
+            "district_id": "marigaon",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 6.36,
+            "Rain Tomorrow": 14.17
+        },
+        {
+            "district": "NAGAON",
+            "district_id": "nagaon",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 1.46,
+            "Rain Tomorrow": 5.37
+        },
+        {
+            "district": "NALBARI",
+            "district_id": "nalbari",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 3.57,
+            "Rain Tomorrow": 22.21
+        },
+        {
+            "district": "SIBSAGAR",
+            "district_id": "sibsagar",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 6.47,
+            "Rain Tomorrow": 4.24
+        },
+        {
+            "district": "SONITPUR",
+            "district_id": "sonitpur",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.5,
+            "Rain Tomorrow": 2.6
+        },
+        {
+            "district": "SOUTH SALMARA MANCACHAR",
+            "district_id": "south_salmara_mancachar",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 4.37,
+            "Rain Tomorrow": 1.49
+        },
+        {
+            "district": "TINSUKIA",
+            "district_id": "tinsukia",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 0.0,
+            "Rain Tomorrow": 0.57
+        },
+        {
+            "district": "UDALGURI",
+            "district_id": "udalguri",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 1.39,
+            "Rain Tomorrow": 2.09
+        },
+        {
+            "district": "WEST KARBI ANGLONG",
+            "district_id": "west_karbi_anglong",
+            "state": "ASSAM",
+            "state_id": "assam",
+            "Rain Today": 3.95,
+            "Rain Tomorrow": 35.44
+        },
+        {
+            "district": "BUMTHANG",
+            "district_id": "bumthang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 5.51,
+            "Rain Tomorrow": 3.64
+        },
+        {
+            "district": "CHHUKHA",
+            "district_id": "chhukha",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 13.07,
+            "Rain Tomorrow": 10.38
+        },
+        {
+            "district": "DAGANA",
+            "district_id": "dagana",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 1.74,
+            "Rain Tomorrow": 0.57
+        },
+        {
+            "district": "GASA",
+            "district_id": "gasa",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 0.71,
+            "Rain Tomorrow": 1.47
+        },
+        {
+            "district": "HAA",
+            "district_id": "haa",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 3.68,
+            "Rain Tomorrow": 3.39
+        },
+        {
+            "district": "LHUENTSE",
+            "district_id": "lhuentse",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 0.79,
+            "Rain Tomorrow": 2.64
+        },
+        {
+            "district": "MONGAR",
+            "district_id": "mongar",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 5.34,
+            "Rain Tomorrow": 3.55
+        },
+        {
+            "district": "PARO",
+            "district_id": "paro",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 6.02,
+            "Rain Tomorrow": 6.81
+        },
+        {
+            "district": "PEMAGATSHEL",
+            "district_id": "pemagatshel",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 0.7,
+            "Rain Tomorrow": 2.1
+        },
+        {
+            "district": "PUNAKHA",
+            "district_id": "punakha",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 2.15,
+            "Rain Tomorrow": 1.46
+        },
+        {
+            "district": "SAMDRUP JONGKHAR",
+            "district_id": "samdrup_jongkhar",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 20.78,
+            "Rain Tomorrow": 22.28
+        },
+        {
+            "district": "SAMTSE",
+            "district_id": "samtse",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 18.66,
+            "Rain Tomorrow": 8.53
+        },
+        {
+            "district": "SARPANG",
+            "district_id": "sarpang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 19.6,
+            "Rain Tomorrow": 14.37
+        },
+        {
+            "district": "THIMPHU",
+            "district_id": "thimphu",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 1.62,
+            "Rain Tomorrow": 4.75
+        },
+        {
+            "district": "TRASHIGANG",
+            "district_id": "trashigang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 1.82,
+            "Rain Tomorrow": 3.44
+        },
+        {
+            "district": "TRASHIYANGTSE",
+            "district_id": "trashiyangtse",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 3.88,
+            "Rain Tomorrow": 4.18
+        },
+        {
+            "district": "TRONGSA",
+            "district_id": "trongsa",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 0.47,
+            "Rain Tomorrow": 0.73
+        },
+        {
+            "district": "TSIRANG",
+            "district_id": "tsirang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 11.19,
+            "Rain Tomorrow": 9.76
+        },
+        {
+            "district": "WANGDUE PHODRANG",
+            "district_id": "wangdue_phodrang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 5.14,
+            "Rain Tomorrow": 5.66
+        },
+        {
+            "district": "ZHEMGANG",
+            "district_id": "zhemgang",
+            "state": "BHUTAN",
+            "state_id": "bhutan",
+            "Rain Today": 4.86,
+            "Rain Tomorrow": 4.85
+        },
+        {
+            "district": "BISHNUPUR",
+            "district_id": "bishnupur",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 3.52,
+            "Rain Tomorrow": 31.12
+        },
+        {
+            "district": "CHANDEL",
+            "district_id": "chandel",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 8.33,
+            "Rain Tomorrow": 12.15
+        },
+        {
+            "district": "CHURACHANDPUR",
+            "district_id": "churachandpur",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 7.86,
+            "Rain Tomorrow": 43.14
+        },
+        {
+            "district": "IMPHAL EAST",
+            "district_id": "imphal_east",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 4.02,
+            "Rain Tomorrow": 1.67
+        },
+        {
+            "district": "IMPHAL WEST",
+            "district_id": "imphal_west",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 4.75,
+            "Rain Tomorrow": 1.37
+        },
+        {
+            "district": "JIRIBAM",
+            "district_id": "jiribam",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 33.01,
+            "Rain Tomorrow": 12.09
+        },
+        {
+            "district": "KAKCHING",
+            "district_id": "kakching",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 2.79,
+            "Rain Tomorrow": 7.81
+        },
+        {
+            "district": "KAMJONG",
+            "district_id": "kamjong",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 2.31,
+            "Rain Tomorrow": 6.47
+        },
+        {
+            "district": "KANGPOKPI",
+            "district_id": "kangpokpi",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 3.35,
+            "Rain Tomorrow": 4.54
+        },
+        {
+            "district": "NONEI",
+            "district_id": "nonei",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 13.83,
+            "Rain Tomorrow": 70.33
+        },
+        {
+            "district": "PHERZAWL",
+            "district_id": "pherzawl",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 39.68,
+            "Rain Tomorrow": 25.34
+        },
+        {
+            "district": "SENAPATI",
+            "district_id": "senapati",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 16.38,
+            "Rain Tomorrow": 36.53
+        },
+        {
+            "district": "TAMENGLONG",
+            "district_id": "tamenglong",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 18.94,
+            "Rain Tomorrow": 23.1
+        },
+        {
+            "district": "TENGNOUPAL",
+            "district_id": "tengnoupal",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 4.97,
+            "Rain Tomorrow": 5.33
+        },
+        {
+            "district": "THOUBAL",
+            "district_id": "thoubal",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 1.8,
+            "Rain Tomorrow": 2.6
+        },
+        {
+            "district": "UKHRUL",
+            "district_id": "ukhrul",
+            "state": "MANIPUR",
+            "state_id": "manipur",
+            "Rain Today": 3.53,
+            "Rain Tomorrow": 3.16
+        },
+        {
+            "district": "EAST GARO HILLS",
+            "district_id": "east_garo_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 9.37,
+            "Rain Tomorrow": 8.34
+        },
+        {
+            "district": "EAST JAINTIA HILLS",
+            "district_id": "east_jaintia_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 8.65,
+            "Rain Tomorrow": 1.6
+        },
+        {
+            "district": "EAST KHASI HILLS",
+            "district_id": "east_khasi_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 10.93,
+            "Rain Tomorrow": 7.23
+        },
+        {
+            "district": "NORTH GARO HILLS",
+            "district_id": "north_garo_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 2.67,
+            "Rain Tomorrow": 6.28
+        },
+        {
+            "district": "RI-BHOI",
+            "district_id": "ri_bhoi",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 19.09,
+            "Rain Tomorrow": 43.01
+        },
+        {
+            "district": "SOUTH GARO HILLS",
+            "district_id": "south_garo_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 15.09,
+            "Rain Tomorrow": 8.14
+        },
+        {
+            "district": "SOUTH WEST GARO HILLS",
+            "district_id": "south_west_garo_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 29.64,
+            "Rain Tomorrow": 4.37
+        },
+        {
+            "district": "SOUTH WEST KHASI HILLS",
+            "district_id": "south_west_khasi_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 41.12,
+            "Rain Tomorrow": 3.61
+        },
+        {
+            "district": "WEST GARO HILLS",
+            "district_id": "west_garo_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 21.18,
+            "Rain Tomorrow": 3.55
+        },
+        {
+            "district": "WEST JAINTIA HILLS",
+            "district_id": "west_jaintia_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 5.22,
+            "Rain Tomorrow": 5.15
+        },
+        {
+            "district": "WEST KHASI HILLS",
+            "district_id": "west_khasi_hills",
+            "state": "MEGHALAYA",
+            "state_id": "meghalaya",
+            "Rain Today": 40.51,
+            "Rain Tomorrow": 26.24
+        },
+        {
+            "district": "AIZAWL",
+            "district_id": "aizawl",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 31.97,
+            "Rain Tomorrow": 11.63
+        },
+        {
+            "district": "CHAMPHAI",
+            "district_id": "champhai",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 19.42,
+            "Rain Tomorrow": 19.31
+        },
+        {
+            "district": "KOLASIB",
+            "district_id": "kolasib",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 13.41,
+            "Rain Tomorrow": 11.07
+        },
+        {
+            "district": "LAWNGTLAI",
+            "district_id": "lawngtlai",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 24.83,
+            "Rain Tomorrow": 2.49
+        },
+        {
+            "district": "LUNGLEI",
+            "district_id": "lunglei",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 36.33,
+            "Rain Tomorrow": 2.2
+        },
+        {
+            "district": "MAMIT",
+            "district_id": "mamit",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 22.86,
+            "Rain Tomorrow": 1.66
+        },
+        {
+            "district": "SAIHA",
+            "district_id": "saiha",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 20.5,
+            "Rain Tomorrow": 3.37
+        },
+        {
+            "district": "SERCHHIP",
+            "district_id": "serchhip",
+            "state": "MIZORAM",
+            "state_id": "mizoram",
+            "Rain Today": 45.68,
+            "Rain Tomorrow": 4.62
+        },
+        {
+            "district": "DIMAPUR",
+            "district_id": "dimapur",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 0.97,
+            "Rain Tomorrow": 11.18
+        },
+        {
+            "district": "KIPHIRE",
+            "district_id": "kiphire",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 5.42,
+            "Rain Tomorrow": 1.03
+        },
+        {
+            "district": "KOHIMA",
+            "district_id": "kohima",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 6.62,
+            "Rain Tomorrow": 10.1
+        },
+        {
+            "district": "LONGLENG",
+            "district_id": "longleng",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 3.23,
+            "Rain Tomorrow": 7.18
+        },
+        {
+            "district": "MOKOKCHUNG",
+            "district_id": "mokokchung",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 7.85,
+            "Rain Tomorrow": 17.1
+        },
+        {
+            "district": "MON",
+            "district_id": "mon",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 12.36,
+            "Rain Tomorrow": 7.73
+        },
+        {
+            "district": "PAREN",
+            "district_id": "paren",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 12.75,
+            "Rain Tomorrow": 39.56
+        },
+        {
+            "district": "PHEK",
+            "district_id": "phek",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 12.16,
+            "Rain Tomorrow": 11.18
+        },
+        {
+            "district": "TUENSANG",
+            "district_id": "tuensang",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 31.08,
+            "Rain Tomorrow": 40.45
+        },
+        {
+            "district": "WOKHA",
+            "district_id": "wokha",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 29.94,
+            "Rain Tomorrow": 31.13
+        },
+        {
+            "district": "ZUNHEBOTO",
+            "district_id": "zunheboto",
+            "state": "NAGALAND",
+            "state_id": "nagaland",
+            "Rain Today": 67.7,
+            "Rain Tomorrow": 43.78
+        },
+        {
+            "district": "DHALAI",
+            "district_id": "dhalai",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 84.89,
+            "Rain Tomorrow": 3.07
+        },
+        {
+            "district": "GOMATI",
+            "district_id": "gomati",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 25.54,
+            "Rain Tomorrow": 4.17
+        },
+        {
+            "district": "KHOWAI",
+            "district_id": "khowai",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 72.48,
+            "Rain Tomorrow": 4.77
+        },
+        {
+            "district": "NORTH TRIPURA",
+            "district_id": "north_tripura",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 31.16,
+            "Rain Tomorrow": 5.1
+        },
+        {
+            "district": "SEPAHIJALA",
+            "district_id": "sepahijala",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 12.44,
+            "Rain Tomorrow": 1.53
+        },
+        {
+            "district": "SOUTH TRIPURA",
+            "district_id": "south_tripura",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 30.09,
+            "Rain Tomorrow": 5.88
+        },
+        {
+            "district": "UNOKOTI",
+            "district_id": "unokoti",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 13.52,
+            "Rain Tomorrow": 2.09
+        },
+        {
+            "district": "WEST TRIPURA",
+            "district_id": "west_tripura",
+            "state": "TRIPURA",
+            "state_id": "tripura",
+            "Rain Today": 35.21,
+            "Rain Tomorrow": 1.85
+        }
+    ]
+}
