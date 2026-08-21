@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-08-21T09:55:47Z",
-  "end_time_utc": "2026-08-21T04:30:00Z",
-  "run_tag": "20260821_0430Z",
+  "generated_utc": "2026-08-21T10:56:41Z",
+  "end_time_utc": "2026-08-21T05:30:00Z",
+  "run_tag": "20260821_0530Z",
   "frame_width_px": 900,
   "frame_height_px": 750,
   "n_frames": 30,
@@ -42,20 +42,20 @@
       "index": 0,
       "is_partial": true,
       "imd_day_start_utc": "2026-08-21T03:00:00Z",
-      "imd_day_end_utc": "2026-08-21T04:30:00Z",
-      "label_daily": "21 Aug  (08:30 IST 21 Aug \u2013 10:00 IST 21 Aug)",
+      "imd_day_end_utc": "2026-08-21T05:30:00Z",
+      "label_daily": "21 Aug  (08:30 IST 21 Aug \u2013 11:00 IST 21 Aug)",
       "label_cumulative": "Today so far",
       "date_label": "21 Aug",
-      "slots_in_day_slice": 4,
-      "slots_in_cum_window": 4,
+      "slots_in_day_slice": 6,
+      "slots_in_cum_window": 6,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 2,
       "thresh_daily_mm": 2,
       "data_source": "early",
       "late_run_pct": 0,
       "indicator": "\ud83d\udfe0",
-      "max_daily_mm": 19.795000076293945,
-      "max_cum_mm": 19.795000076293945
+      "max_daily_mm": 22.75,
+      "max_cum_mm": 22.75
     },
     {
       "index": 1,
@@ -66,15 +66,15 @@
       "label_cumulative": "Last 1 day  (since 20 Aug)",
       "date_label": "20 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 52,
+      "slots_in_cum_window": 54,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 5,
       "thresh_daily_mm": 2,
       "data_source": "mixed",
-      "late_run_pct": 61,
+      "late_run_pct": 62,
       "indicator": "\ud83d\udfe1",
-      "max_daily_mm": 125.47000122070312,
-      "max_cum_mm": 125.53499603271484
+      "max_daily_mm": 125.55000305175781,
+      "max_cum_mm": 125.61499786376953
     },
     {
       "index": 2,
@@ -85,7 +85,7 @@
       "label_cumulative": "Last 2 days  (since 19 Aug)",
       "date_label": "19 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 100,
+      "slots_in_cum_window": 102,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 5,
       "thresh_daily_mm": 2,
@@ -93,7 +93,7 @@
       "late_run_pct": 80,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 107.57000732421875,
-      "max_cum_mm": 144.0600128173828
+      "max_cum_mm": 144.13999938964844
     },
     {
       "index": 3,
@@ -104,7 +104,7 @@
       "label_cumulative": "Last 3 days  (since 18 Aug)",
       "date_label": "18 Aug",
       "slots_in_day_slice": 47,
-      "slots_in_cum_window": 147,
+      "slots_in_cum_window": 149,
       "coverage_pct": 97.9,
       "thresh_cumulative_mm": 5,
       "thresh_daily_mm": 2,
@@ -112,7 +112,7 @@
       "late_run_pct": 86,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 108.69499206542969,
-      "max_cum_mm": 148.6649932861328
+      "max_cum_mm": 148.74501037597656
     },
     {
       "index": 4,
@@ -123,7 +123,7 @@
       "label_cumulative": "Last 4 days  (since 17 Aug)",
       "date_label": "17 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 195,
+      "slots_in_cum_window": 197,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 10,
       "thresh_daily_mm": 2,
@@ -131,7 +131,7 @@
       "late_run_pct": 89,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 79.82999420166016,
-      "max_cum_mm": 150.50498962402344
+      "max_cum_mm": 154.45997619628906
     },
     {
       "index": 5,
@@ -142,7 +142,7 @@
       "label_cumulative": "Last 5 days  (since 16 Aug)",
       "date_label": "16 Aug",
       "slots_in_day_slice": 47,
-      "slots_in_cum_window": 242,
+      "slots_in_cum_window": 244,
       "coverage_pct": 97.9,
       "thresh_cumulative_mm": 10,
       "thresh_daily_mm": 2,
@@ -150,7 +150,7 @@
       "late_run_pct": 91,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 96.53499603271484,
-      "max_cum_mm": 181.6649932861328
+      "max_cum_mm": 184.90003967285156
     },
     {
       "index": 6,
@@ -161,7 +161,7 @@
       "label_cumulative": "Last 6 days  (since 15 Aug)",
       "date_label": "15 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 290,
+      "slots_in_cum_window": 292,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 10,
       "thresh_daily_mm": 2,
@@ -169,7 +169,7 @@
       "late_run_pct": 93,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 140.87001037597656,
-      "max_cum_mm": 220.78504943847656
+      "max_cum_mm": 239.88504028320312
     },
     {
       "index": 7,
@@ -180,7 +180,7 @@
       "label_cumulative": "Last 7 days  (since 14 Aug)",
       "date_label": "14 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 338,
+      "slots_in_cum_window": 340,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 10,
       "thresh_daily_mm": 2,
@@ -188,7 +188,7 @@
       "late_run_pct": 94,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 91.13500213623047,
-      "max_cum_mm": 279.5549621582031
+      "max_cum_mm": 285.8749694824219
     },
     {
       "index": 8,
@@ -199,7 +199,7 @@
       "label_cumulative": "Last 8 days  (since 13 Aug)",
       "date_label": "13 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 386,
+      "slots_in_cum_window": 388,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -207,7 +207,7 @@
       "late_run_pct": 94,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 240.3300018310547,
-      "max_cum_mm": 374.95489501953125
+      "max_cum_mm": 376.1548767089844
     },
     {
       "index": 9,
@@ -218,7 +218,7 @@
       "label_cumulative": "Last 9 days  (since 12 Aug)",
       "date_label": "12 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 434,
+      "slots_in_cum_window": 436,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -226,7 +226,7 @@
       "late_run_pct": 95,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 92.81500244140625,
-      "max_cum_mm": 399.6748046875
+      "max_cum_mm": 400.8747863769531
     },
     {
       "index": 10,
@@ -237,7 +237,7 @@
       "label_cumulative": "Last 10 days  (since 11 Aug)",
       "date_label": "11 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 482,
+      "slots_in_cum_window": 484,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -245,7 +245,7 @@
       "late_run_pct": 95,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 167.2349853515625,
-      "max_cum_mm": 512.9595336914062
+      "max_cum_mm": 514.1595458984375
     },
     {
       "index": 11,
@@ -256,7 +256,7 @@
       "label_cumulative": "Last 11 days  (since 10 Aug)",
       "date_label": "10 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 530,
+      "slots_in_cum_window": 532,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -264,7 +264,7 @@
       "late_run_pct": 96,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 95.07499694824219,
-      "max_cum_mm": 530.3546752929688
+      "max_cum_mm": 531.8945922851562
     },
     {
       "index": 12,
@@ -275,7 +275,7 @@
       "label_cumulative": "Last 12 days  (since 09 Aug)",
       "date_label": "09 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 578,
+      "slots_in_cum_window": 580,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -283,7 +283,7 @@
       "late_run_pct": 96,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 137.4499969482422,
-      "max_cum_mm": 536.98974609375
+      "max_cum_mm": 538.5296630859375
     },
     {
       "index": 13,
@@ -294,7 +294,7 @@
       "label_cumulative": "Last 13 days  (since 08 Aug)",
       "date_label": "08 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 626,
+      "slots_in_cum_window": 628,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -302,7 +302,7 @@
       "late_run_pct": 96,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 140.05499267578125,
-      "max_cum_mm": 579.940185546875
+      "max_cum_mm": 581.1401977539062
     },
     {
       "index": 14,
@@ -313,7 +313,7 @@
       "label_cumulative": "Last 14 days  (since 07 Aug)",
       "date_label": "07 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 674,
+      "slots_in_cum_window": 676,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 20,
       "thresh_daily_mm": 2,
@@ -321,7 +321,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 146.45497131347656,
-      "max_cum_mm": 587.8302001953125
+      "max_cum_mm": 589.0302124023438
     },
     {
       "index": 15,
@@ -332,7 +332,7 @@
       "label_cumulative": "Last 15 days  (since 06 Aug)",
       "date_label": "06 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 722,
+      "slots_in_cum_window": 724,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -340,7 +340,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 148.98500061035156,
-      "max_cum_mm": 699.534912109375
+      "max_cum_mm": 705.8549194335938
     },
     {
       "index": 16,
@@ -351,7 +351,7 @@
       "label_cumulative": "Last 16 days  (since 05 Aug)",
       "date_label": "05 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 770,
+      "slots_in_cum_window": 772,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -359,7 +359,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 198.32998657226562,
-      "max_cum_mm": 705.7947998046875
+      "max_cum_mm": 712.1148071289062
     },
     {
       "index": 17,
@@ -370,7 +370,7 @@
       "label_cumulative": "Last 17 days  (since 04 Aug)",
       "date_label": "04 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 818,
+      "slots_in_cum_window": 820,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -378,7 +378,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 185.44500732421875,
-      "max_cum_mm": 710.3297729492188
+      "max_cum_mm": 716.6497802734375
     },
     {
       "index": 18,
@@ -389,7 +389,7 @@
       "label_cumulative": "Last 18 days  (since 03 Aug)",
       "date_label": "03 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 866,
+      "slots_in_cum_window": 868,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -397,7 +397,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 125.46000671386719,
-      "max_cum_mm": 737.3447875976562
+      "max_cum_mm": 743.664794921875
     },
     {
       "index": 19,
@@ -408,7 +408,7 @@
       "label_cumulative": "Last 19 days  (since 02 Aug)",
       "date_label": "02 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 914,
+      "slots_in_cum_window": 916,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -416,7 +416,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 116.65497589111328,
-      "max_cum_mm": 786.9950561523438
+      "max_cum_mm": 793.3150634765625
     },
     {
       "index": 20,
@@ -427,7 +427,7 @@
       "label_cumulative": "Last 20 days  (since 01 Aug)",
       "date_label": "01 Aug",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 962,
+      "slots_in_cum_window": 964,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -435,7 +435,7 @@
       "late_run_pct": 97,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 85.70500183105469,
-      "max_cum_mm": 823.73974609375
+      "max_cum_mm": 830.0597534179688
     },
     {
       "index": 21,
@@ -446,7 +446,7 @@
       "label_cumulative": "Last 21 days  (since 31 Jul)",
       "date_label": "31 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1010,
+      "slots_in_cum_window": 1012,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -454,7 +454,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 96.41999816894531,
-      "max_cum_mm": 858.0354614257812
+      "max_cum_mm": 859.2354736328125
     },
     {
       "index": 22,
@@ -465,7 +465,7 @@
       "label_cumulative": "Last 22 days  (since 30 Jul)",
       "date_label": "30 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1058,
+      "slots_in_cum_window": 1060,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -473,7 +473,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 114.96501159667969,
-      "max_cum_mm": 927.480224609375
+      "max_cum_mm": 928.6802368164062
     },
     {
       "index": 23,
@@ -484,7 +484,7 @@
       "label_cumulative": "Last 23 days  (since 29 Jul)",
       "date_label": "29 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1106,
+      "slots_in_cum_window": 1108,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -492,7 +492,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 141.9650115966797,
-      "max_cum_mm": 975.1500244140625
+      "max_cum_mm": 981.4700317382812
     },
     {
       "index": 24,
@@ -503,7 +503,7 @@
       "label_cumulative": "Last 24 days  (since 28 Jul)",
       "date_label": "28 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1154,
+      "slots_in_cum_window": 1156,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -511,7 +511,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 122.5,
-      "max_cum_mm": 1010.375
+      "max_cum_mm": 1016.6950073242188
     },
     {
       "index": 25,
@@ -522,7 +522,7 @@
       "label_cumulative": "Last 25 days  (since 27 Jul)",
       "date_label": "27 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1202,
+      "slots_in_cum_window": 1204,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -530,7 +530,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 106.83500671386719,
-      "max_cum_mm": 1071.16552734375
+      "max_cum_mm": 1077.485595703125
     },
     {
       "index": 26,
@@ -541,7 +541,7 @@
       "label_cumulative": "Last 26 days  (since 26 Jul)",
       "date_label": "26 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1250,
+      "slots_in_cum_window": 1252,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -549,7 +549,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 114.07499694824219,
-      "max_cum_mm": 1084.8006591796875
+      "max_cum_mm": 1091.1207275390625
     },
     {
       "index": 27,
@@ -560,7 +560,7 @@
       "label_cumulative": "Last 27 days  (since 25 Jul)",
       "date_label": "25 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1298,
+      "slots_in_cum_window": 1300,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -568,7 +568,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 121.8949966430664,
-      "max_cum_mm": 1105.9156494140625
+      "max_cum_mm": 1112.2357177734375
     },
     {
       "index": 28,
@@ -579,7 +579,7 @@
       "label_cumulative": "Last 28 days  (since 24 Jul)",
       "date_label": "24 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1346,
+      "slots_in_cum_window": 1348,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -587,7 +587,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 65.09999084472656,
-      "max_cum_mm": 1116.5506591796875
+      "max_cum_mm": 1122.8707275390625
     },
     {
       "index": 29,
@@ -598,7 +598,7 @@
       "label_cumulative": "Last 29 days  (since 23 Jul)",
       "date_label": "23 Jul",
       "slots_in_day_slice": 48,
-      "slots_in_cum_window": 1394,
+      "slots_in_cum_window": 1396,
       "coverage_pct": 100.0,
       "thresh_cumulative_mm": 35,
       "thresh_daily_mm": 2,
@@ -606,7 +606,7 @@
       "late_run_pct": 98,
       "indicator": "\ud83d\udfe1",
       "max_daily_mm": 113.27999114990234,
-      "max_cum_mm": 1130.0906982421875
+      "max_cum_mm": 1136.4107666015625
     }
   ]
 }
