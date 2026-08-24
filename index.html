@@ -1237,27 +1237,21 @@
                    overflow:hidden;text-overflow:ellipsis;">
             Last 6 Hours
           </span>
-          <!-- Source indicator -->
-          <span id="imergSourceIndicator"
-            style="font-size:9px;font-weight:700;color:var(--muted);
-                   white-space:nowrap;flex-shrink:0;">
-          </span>
         </div>
 
-        <!-- Row 2: play/pause + slider + window label -->
-        <div style="display:flex;align-items:center;gap:8px;">
-          <button id="imergPlayBtn" onclick="toggleImergAnimation()"
-            style="background:var(--accent);border:none;color:white;
-                   border-radius:6px;padding:4px 10px;cursor:pointer;
-                   font-size:10px;font-weight:800;min-width:58px;
-                   display:flex;align-items:center;gap:4px;
-                   justify-content:center;transition:all 0.2s;">
-            ▶ Play
+        <!-- Row 2: prev/next day step + slider + window label -->
+        <div style="display:flex;align-items:center;gap:6px;">
+          <button id="imergPrevDayBtn" onclick="imergPrevDay()" title="Previous day"
+            style="background:transparent;border:1px solid var(--border);color:var(--text);
+                   border-radius:6px;width:24px;height:24px;padding:0;cursor:pointer;
+                   font-size:12px;font-weight:900;display:flex;align-items:center;
+                   justify-content:center;flex-shrink:0;transition:all 0.2s;">
+            ‹
           </button>
           <div style="flex:1;display:flex;flex-direction:column;gap:2px;">
             <input type="range" id="imergScrubber"
-              min="0" max="29" value="0"
-              oninput="scrubImerg(this.value)"
+              min="0" max="29" value="29"
+              oninput="scrubImerg(imergFrameForSlider(this.value))"
               style="width:100%;accent-color:var(--accent);
                      cursor:pointer;height:4px;margin:0;">
             <!-- Date tick strip — populated dynamically by buildImergTicks() -->
@@ -1265,6 +1259,13 @@
               style="position:relative;height:14px;width:100%;">
             </div>
           </div>
+          <button id="imergNextDayBtn" onclick="imergNextDay()" title="Next day"
+            style="background:transparent;border:1px solid var(--border);color:var(--text);
+                   border-radius:6px;width:24px;height:24px;padding:0;cursor:pointer;
+                   font-size:12px;font-weight:900;display:flex;align-items:center;
+                   justify-content:center;flex-shrink:0;transition:all 0.2s;">
+            ›
+          </button>
           <span id="imergWindowLabel"
             style="font-size:10px;color:var(--muted);font-weight:700;
                    min-width:32px;text-align:right;white-space:nowrap;">
@@ -1607,11 +1608,11 @@
         Monthly View
       </button>
       <button id="raBtn-trend" onclick="setRaMode('trend')"
-        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--panel);color:var(--muted);transition:all 0.2s;">
+        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--accent);color:#fff;transition:all 0.2s;">
         Yearly Trend
       </button>
       <button id="raBtn-clim" onclick="setRaMode('clim')"
-        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--accent);color:#fff;transition:all 0.2s;">
+        style="padding:6px 14px;font-family:'Google Sans',sans-serif;font-size:11px;font-weight:700;border:none;cursor:pointer;background:var(--panel);color:var(--muted);transition:all 0.2s;">
         Long-term Average
       </button>
     </div>
@@ -3559,6 +3560,13 @@ function showTab(name, el) {
   el.classList.add('active'); document.getElementById('page-'+name).classList.add('active');
   localStorage.setItem('aw_active_tab', name);
 
+  if (name === 'dashboard') {
+    // dashMap is created once on page load regardless of the active tab.
+    // If it was born while this tab was hidden, Leaflet captured a 0-size
+    // viewport and the tiles/markers render broken until told to re-measure.
+    setTimeout(() => { if (dashMap) dashMap.invalidateSize(); }, 150);
+  }
+
   if (name === 'map') { 
     setTimeout(() => { if (mapInteractive) mapInteractive.invalidateSize(); }, 150); 
     setStationMode(stationMode); 
@@ -3566,15 +3574,15 @@ function showTab(name, el) {
   
   if (name === 'distmap')  { setTimeout(() => renderDistMap(), 100); }
   if (name === 'rainfall') {
-    loadRaData().then(() => {
+    loadRaData().then(async () => {
+      try { await initRaChoro(); } catch(e) { console.warn('Rainfall map init failed:', e); }
       if (!raLoaded) {
         raLoaded = true;
-        setRaMode('clim');
+        setRaMode('trend');
       } else {
         renderRaAll();
       }
       setTimeout(() => {
-        initRaChoro();
         // If already init'd, re-fit bounds and invalidate size
         if (raChoroMapObj) {
           raChoroMapObj.invalidateSize();
@@ -4312,7 +4320,7 @@ const RA_YEARS   = Array.from({length:26}, (_,i) => 2000+i);
 const CLIM_START = 2001, CLIM_END = 2024;
 
 let raData          = null;
-let raMode          = 'clim';
+let raMode          = 'trend';
 let raMapMode       = 'annual';
 let raLoaded        = false;
 let raDistChartObj  = null;
@@ -4940,7 +4948,7 @@ async function loadImergData() {
 
     // 4. Sync scrubber range
     const scrubber = document.getElementById('imergScrubber');
-    if (scrubber) { scrubber.max = imergMeta.n_frames - 1; scrubber.value = 0; }
+    if (scrubber) { scrubber.max = imergMeta.n_frames - 1; scrubber.value = imergMeta.n_frames - 1; }
 
     // 5. Build date-based tick marks from metadata
     buildImergTicks();
@@ -4969,6 +4977,15 @@ async function loadImergData() {
 }
 
 // ── Draw one frame from active sprite → push to Leaflet overlay ──────
+// Slider position and frame index run in opposite directions —
+// today (frame 0) sits at the right (max slider value), oldest
+// frame sits at the left (slider value 0). This mapping is its
+// own inverse, so the same function converts either direction.
+function imergFrameForSlider(v) {
+  if (!imergMeta) return 0;
+  return (imergMeta.n_frames - 1) - parseInt(v);
+}
+
 function showImergFrame(index) {
   if (!imergMeta || !imergSpriteCum || !imergSpriteDaily || !imergCanvas) return;
 
@@ -4997,7 +5014,6 @@ function showImergFrame(index) {
   const frame    = imergMeta.frames[index];
   const lblEl    = document.getElementById('imergTimeLabel');
   const tNoteEl  = document.getElementById('imergThreshNote');
-  const indEl    = document.getElementById('imergSourceIndicator');
   const wLblEl   = document.getElementById('imergWindowLabel');
 
   if (frame && lblEl) {
@@ -5023,12 +5039,6 @@ function showImergFrame(index) {
     if (cumThreshEl)   cumThreshEl.textContent   = 'Transp. < ' + (frame.thresh_cumulative_mm || 2) + 'mm';
     if (dailyThreshEl) dailyThreshEl.textContent = 'Transp. < ' + (frame.thresh_daily_mm || 2) + 'mm';
   }
-  if (frame && indEl) {
-    indEl.textContent = (frame.indicator || '') + ' '
-      + (frame.data_source === 'late'  ? 'Late Run'
-       : frame.data_source === 'early' ? 'Early Run'
-       : 'Mixed (' + frame.late_run_pct + '% Late)');
-  }
 
   // Highlight active date tick
   const tickContainer = document.getElementById('imergTickStrip');
@@ -5040,9 +5050,25 @@ function showImergFrame(index) {
     });
   }
 
-  // Sync slider
+  // Sync slider — position is mirrored so today (index 0) sits on the right
   const scrubber = document.getElementById('imergScrubber');
-  if (scrubber) scrubber.value = index;
+  if (scrubber) scrubber.value = imergFrameForSlider(index);
+
+  // Prev/Next day buttons — disable at the two ends of the range
+  const prevBtn = document.getElementById('imergPrevDayBtn');
+  const nextBtn = document.getElementById('imergNextDayBtn');
+  if (prevBtn) {
+    const atOldest = index >= n - 1;
+    prevBtn.disabled = atOldest;
+    prevBtn.style.opacity = atOldest ? '0.35' : '1';
+    prevBtn.style.cursor  = atOldest ? 'default' : 'pointer';
+  }
+  if (nextBtn) {
+    const atToday = index <= 0;
+    nextBtn.disabled = atToday;
+    nextBtn.style.opacity = atToday ? '0.35' : '1';
+    nextBtn.style.cursor  = atToday ? 'default' : 'pointer';
+  }
 }
 
 // ── Build date-based tick marks dynamically from metadata ────────────
@@ -5107,7 +5133,7 @@ function buildImergTicks() {
 
   // Step 3 — render tick spans
   selected.forEach(({ label, frameIdx }) => {
-    const pct  = frameIdx / maxIdx;   // 0 → 1
+    const pct  = 1 - (frameIdx / maxIdx);   // mirrored: today (0) → right, oldest → left
     const left = `calc(${pct.toFixed(4)} * (100% - 16px) + 8px)`;
 
     const span = document.createElement('span');
@@ -5233,9 +5259,18 @@ function closeImergDisclaimer() {
 function scrubImerg(value) {
   stopImergAnimation();
   const idx = parseInt(value);
-  const scrubber = document.getElementById('imergScrubber');
-  if (scrubber) scrubber.value = idx;
   showImergFrame(idx);
+}
+
+// ── Prev/Next day step buttons — clamp at the ends, no wraparound ────
+function imergPrevDay() {
+  if (!imergMeta) return;
+  scrubImerg(Math.min(imergCurrentFrame + 1, imergMeta.n_frames - 1));
+}
+
+function imergNextDay() {
+  if (!imergMeta) return;
+  scrubImerg(Math.max(imergCurrentFrame - 1, 0));
 }
 
 // ── Switch between Cumulative and Daily mode ─────────────────────────
