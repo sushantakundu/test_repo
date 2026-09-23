@@ -1977,6 +1977,20 @@ function updateStaticLegends() {
   if (lViolent) lViolent.style.color = isDark ? '#ef4444' : '#7f1d1d';
 }
 
+// CARTO raster basemap — CARTO now requires an API key for anonymous
+// access to its raster PNG basemaps (previously showed an "API KEY
+// REQUIRED" watermark). Key is from Sushanta's free-tier CARTO account.
+// Single host, no {s} subdomain sharding — matches CARTO's confirmed-
+// working example for this key.
+const CARTO_API_KEY = 'cb1_3ux6_1_edfc001fd79d601943032134';
+function basemapTileLayer(isDark) {
+  const tileStyle = isDark ? 'dark_all' : 'light_all';
+  return L.tileLayer(
+    `https://basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`,
+    { attribution:'© OpenStreetMap © CARTO', maxNativeZoom:19, maxZoom:22 }
+  );
+}
+
 function toggleTheme() {
   const html   = document.documentElement;
   const target = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -1987,16 +2001,14 @@ function toggleTheme() {
   updateStaticLegends();
 
   // Replace tile layers completely — setUrl alone doesn't force redraw reliably
-  const tileStyle = target === 'dark' ? 'dark_all' : 'light_all';
-  const tileUrl   = `https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`;
-  const tileOpts  = { attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxNativeZoom:19, maxZoom:22 };
+  const isDarkNow = target === 'dark';
 
-  // Only swap CartoDB tiles on mapInteractive if default basemap is selected
+  // Only swap basemap tiles on mapInteractive if default basemap is selected
   const selectedBasemap = document.querySelector('input[name="basemapSelect"]:checked')?.value || 'default';
   [selectedBasemap === 'default' ? mapInteractive : null, dmMapRain, dmMapTemp, dashMap].forEach(m => {
     if (!m) return;
     if (m._tileLayer) m.removeLayer(m._tileLayer);
-    m._tileLayer = L.tileLayer(tileUrl, tileOpts).addTo(m);
+    m._tileLayer = basemapTileLayer(isDarkNow).addTo(m);
     m.eachLayer(l => { if (l !== m._tileLayer && l.bringToFront) l.bringToFront(); });
   });
 
@@ -2932,34 +2944,33 @@ function switchBasemap(type) {
   }
 
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  let tileUrl = '';
-  let attribution = '';
-  let maxZoom = 19;
-  let subdomains = 'abcd';
 
   if (type === 'default') {
-    const tileStyle = isDark ? 'dark_all' : 'light_all';
-    tileUrl = `https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`;
-    attribution = '© OpenStreetMap © CARTO';
-  } else if (type === 'terrain') {
-    tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
-    attribution = 'Tiles © Esri — Source: Esri, DeLorme, USGS, METI';
-  } else if (type === 'hybrid') {
-    tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
-    attribution = 'Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
-    
-    // Add hybrid overlay with boundaries, roads and labels
-    activeHybridOverlay = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
-      maxZoom: 19,
-      zIndex: 10
+    mapInteractive._tileLayer = basemapTileLayer(isDark).addTo(mapInteractive);
+  } else {
+    let tileUrl = '';
+    let attribution = '';
+    let maxZoom = 19;
+
+    if (type === 'terrain') {
+      tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}';
+      attribution = 'Tiles © Esri — Source: Esri, DeLorme, USGS, METI';
+    } else if (type === 'hybrid') {
+      tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+      attribution = 'Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community';
+
+      // Add hybrid overlay with boundaries, roads and labels
+      activeHybridOverlay = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        zIndex: 10
+      }).addTo(mapInteractive);
+    }
+
+    mapInteractive._tileLayer = L.tileLayer(tileUrl, {
+      attribution: attribution,
+      maxZoom: maxZoom
     }).addTo(mapInteractive);
   }
-
-  mapInteractive._tileLayer = L.tileLayer(tileUrl, {
-    attribution: attribution,
-    subdomains: subdomains,
-    maxZoom: maxZoom
-  }).addTo(mapInteractive);
 
   // Save preference
   localStorage.setItem('aw_basemap', type);
@@ -3642,10 +3653,7 @@ async function initDashMap() {
   const isDark = (localStorage.getItem('aw_theme') || 'light') === 'dark';
   dashMap = L.map('dashMap', { zoomControl:true, attributionControl:false })
              .setView(ASSAM_BOUNDS_CENTER, ASSAM_BOUNDS_ZOOM);
-  dashMapTileLayer = L.tileLayer(
-    `https://{s}.basemaps.cartocdn.com/${isDark?'dark_all':'light_all'}/{z}/{x}/{y}{r}.png`,
-    { attribution:'', subdomains:'abcd', maxNativeZoom:19, maxZoom:22 }
-  ).addTo(dashMap);
+  dashMapTileLayer = basemapTileLayer(isDark).addTo(dashMap);
   dashMap._tileLayer = dashMapTileLayer;
 
   setTimeout(() => { if (dashMap) dashMap.invalidateSize(); }, 200);
@@ -3838,10 +3846,7 @@ function openDashMapPopup() {
 function openDashMapPopupInner(isDark) {
   dashPopupMap = L.map('dashMapPopupMap', { zoomControl:true, attributionControl:true })
                   .setView(ASSAM_BOUNDS_CENTER, ASSAM_BOUNDS_ZOOM);
-  const tl = L.tileLayer(
-    `https://{s}.basemaps.cartocdn.com/${isDark?'dark_all':'light_all'}/{z}/{x}/{y}{r}.png`,
-    { attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxNativeZoom:19, maxZoom:22 }
-  ).addTo(dashPopupMap);
+  const tl = basemapTileLayer(isDark).addTo(dashPopupMap);
   dashPopupMap._tileLayer = tl;
 
   // Radar — current frame
@@ -4242,8 +4247,9 @@ function legendHTML(items) {
 
 function initDmMap(divId) {
   const m = L.map(divId, { zoomControl:true, attributionControl:true }).setView(ASSAM_CENTER, ASSAM_ZOOM);
-  const tileStyle = (localStorage.getItem('aw_theme') || document.documentElement.getAttribute('data-theme')) === 'dark' ? 'dark_all' : 'light_all';
-  m._tileLayer = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`, { attribution:'© OpenStreetMap © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(m); return m;
+  const isDark = (localStorage.getItem('aw_theme') || document.documentElement.getAttribute('data-theme')) === 'dark';
+  m._tileLayer = basemapTileLayer(isDark).addTo(m);
+  return m;
 }
 
 function buildLayer(map, lookup, colorFn, tooltipFn) {
